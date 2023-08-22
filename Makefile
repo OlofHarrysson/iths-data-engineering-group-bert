@@ -7,3 +7,8 @@ install_dependencies:
 
 run_precommit:
 	pre-commit run --all-files
+
+
+.PHONY: run_tests
+run_tests:
+	pytest -s tests/test_download_blogs_from_rss.py
