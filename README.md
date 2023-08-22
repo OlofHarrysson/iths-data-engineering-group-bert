@@ -32,9 +32,6 @@ source venv/bin/activate
 
 ## Pull Request Practice
 
-🐰 The Adventures of Benny Bunny 🐰
-Once upon a time, in a lush meadow, lived Benny Bunny. One sunny day, Benny hopped through the tall grass and discovered a hidden carrot patch. Excitedly, he nibbled on the juiciest carrot he could find. But little did Benny know, the carrot patch belonged to Farmer Fred! Will Benny be able to outsmart the farmer and enjoy his delicious carrots? Join Benny Bunny on his thrilling adventure!
-
 🐢 Tommy the Brave Turtle 🐢
 In a peaceful pond, Tommy the Turtle lived with his friends. One day, a baby duckling named Daisy got lost in the nearby forest. Tommy, being the bravest turtle, volunteered to find her. Through thick bushes and over fallen logs, Tommy searched tirelessly. Will he be able to find Daisy and bring her back safely to the pond? Follow Tommy's courageous journey and find out!
 
