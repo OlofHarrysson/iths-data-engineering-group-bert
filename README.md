@@ -34,6 +34,3 @@ source venv/bin/activate
 
 🐻 Polly the Dancing Bear 🐻
 Deep in the enchanted forest, Polly the Bear loved to dance. She twirled and spun with grace, bringing joy to all the animals. One day, a grand dance competition was announced, and Polly knew she had to participate. But there was a problem – Polly didn't have a partner! Will she find the perfect dance partner and win the competition? Join Polly on her rhythmic adventure and discover the power of friendship.
-
-🐠 Sammy the Adventurous Fish 🐠
-In a vibrant coral reef, Sammy the Fish swam happily with his colorful friends. But Sammy dreamed of exploring the vast ocean beyond. One day, he gathered his courage and set off on an adventurous journey. Along the way, he encountered dangerous predators and mesmerizing underwater wonders. Will Sammy fulfill his dream and return safely to his friends in the coral reef? Dive into Sammy's daring escapade and discover the wonders of the deep sea.
