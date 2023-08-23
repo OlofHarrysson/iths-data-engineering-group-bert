@@ -15,3 +15,6 @@ jobs:
 
     - name: Install Dependencies
       run: make install_dependencies # use Makefile command to install dependencies
+
+    - name: Run Precommit
+      run: make run_precommit # use Makefile command to run precommit on ALL files
