@@ -12,3 +12,6 @@ jobs:
       uses: actions/setup-python@v4    # install python 3.10
       with:
         python-version: '3.10'
+
+    - name: Install Dependencies
+      run: make install_dependencies # use Makefile command to install dependencies
