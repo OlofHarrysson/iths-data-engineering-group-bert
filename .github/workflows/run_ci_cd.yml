@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3    # checkout repository (if pull request; merge branch to main temporarily for testing purposes)
+      uses: actions/checkout@v3    # checkout repository
 
     - name: Install Python 3.10
       uses: actions/setup-python@v4    # install python 3.10
@@ -15,6 +15,11 @@ jobs:
 
     - name: Install Dependencies
       run: make install_dependencies # use Makefile command to install dependencies
+
+    - name: Run Precommit
+      run: |
+        source venv/bin/activate # need to activate venv before running
+        make run_precommit # use Makefile command to run precommit on ALL files
 
     - name: Run tests
       run: |
