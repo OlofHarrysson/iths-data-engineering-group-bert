@@ -20,3 +20,8 @@ jobs:
       run: |
         source venv/bin/activate # need to activate venv before running
         make run_precommit # use Makefile command to run precommit on ALL files
+
+    - name: Run tests
+      run: |
+        source venv/bin/activate
+        make run_tests
