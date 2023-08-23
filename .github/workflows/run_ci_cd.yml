@@ -11,4 +11,4 @@ jobs:
     - name: Install Python 3.10
       uses: actions/setup-python@v4    # install python 3.10
       with:
-        python-version: 3.10
+        python-version: '3.10'
