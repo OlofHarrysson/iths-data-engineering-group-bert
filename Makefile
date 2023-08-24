@@ -12,3 +12,4 @@ run_precommit:
 .PHONY: run_tests
 run_tests:
 	pytest -s tests/test_download_blogs_from_rss.py
+	pytest -s tests/test_python_version.py
