@@ -1,8 +1,10 @@
 import requests
 
 
-def send_summary(title="Article title", content="Article content", url="https://www.example.com"):
-    url = "https://discord.com/api/webhooks/1143844243111170199/n5PipEY2WvDVniMpsJC-wXnrUN2q7aG18HqsG7wpm_Qu3MjuyIulsR3LKC64hziTsHM3"  # URL of the webhook
+def send_summary(
+    title="Article title", content="Article content", article_url="https://www.example.com"
+):
+    webhook_url = "https://discord.com/api/webhooks/1143844243111170199/n5PipEY2WvDVniMpsJC-wXnrUN2q7aG18HqsG7wpm_Qu3MjuyIulsR3LKC64hziTsHM3"  # URL of the webhook
 
     data = {"username": "BertSummary"}  # Name shown in discord when message is sent
 
@@ -18,18 +20,27 @@ def send_summary(title="Article title", content="Article content", url="https://
                 }
             ],
             "footer": {"text": "Group: Bert"},
-            "url": url,  # URL of the article, REPLACE WITH ACTUAL URL!!
+            "url": article_url,  # URL of the article, REPLACE WITH ACTUAL URL!!
         },
     ]
 
-    result = requests.post(url, json=data)  # Sends/posts the message
-
-    try:  # Checks if the message was sent successfully
-        result.raise_for_status()
-    except requests.exceptions.HTTPError as err:  # If not, prints the error
-        print(err)
-    else:  # If so, prints delivered and the status code
-        print("Payload delivered successfully, code {}.".format(result.status_code))
+    try:
+        result = requests.post(webhook_url, json=data)
+        result.raise_for_status()  # Check for HTTP errors
+    except requests.exceptions.RequestException as req_err:
+        print(
+            "An error occurred during the request:", req_err
+        )  # Handle connection errors, timeouts, and other request-related issues here
+    except requests.exceptions.HTTPError as http_err:
+        print("HTTP error:", http_err)
+        print("Response text:", result.text)
+        # Handle HTTP errors, such as 4xx and 5xx status codes, here
+    except Exception as err:
+        print("An unexpected error occurred:", err)  # Handle any other errors here
+    else:
+        print(
+            "Payload delivered successfully, code {}.".format(result.status_code)
+        )  # If no errors occurred, print the result code
 
 
 # Example usage:
