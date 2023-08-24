@@ -2,12 +2,11 @@ import json
 import os
 import re
 
+from datatypes import BlogInfo
 from dotenv import load_dotenv
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
-
-from newsfeed.datatypes import BlogInfo
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
@@ -24,24 +23,19 @@ def summarize_text(blog_text):
     return chain.run(docs)
 
 
-# summary = summarize_text2("test")
-# print(summary)
-
-
 directory_path = "data/data_warehouse/"
 
 
 def read_articles_in_dir(dir):
-    article_jsons = []
+    BlogInfo_list = []
 
     for filename in os.listdir(dir):
         if filename.endswith(".json"):
             file_path = os.path.join(dir, filename)
-            with open(file_path, "r", encoding="utf-8") as file:
-                json_data = json.load(file)
-                article_jsons.append(json_data)
 
-    return article_jsons
+            BlogInfo_list.append(BlogInfo.parse_file(file_path))
+
+    return BlogInfo_list
 
 
 def save_articles():
@@ -58,16 +52,20 @@ def save_articles():
         pass
 
     for dir in subdirectories:
-        article_jsons = read_articles_in_dir(directory_path + dir + "/articles")
+        BlogInfo_list = read_articles_in_dir(directory_path + dir + "/articles")
 
-        for article in article_jsons:
-            file_name = re.sub(r'[\/:*?"<>|]', "", article["title"].replace(" ", "_"))
+        for BlogInfo in BlogInfo_list:
+            file_name = re.sub(r'[\/:*?"<>|]', "", BlogInfo.title.replace(" ", "_"))
 
             print(file_name)
 
             os.makedirs(
                 os.path.dirname(directory_path + "/summaries/" + dir + "/articles/"), exist_ok=True
             )
+
+            ff = summarize_text(BlogInfo.blog_text)
+
+            j = {"unique_id": BlogInfo.unique_id, "title": BlogInfo.title, "text": ff}
 
             with open(
                 directory_path
@@ -78,7 +76,8 @@ def save_articles():
                 + "SUMMARYSUMMARY.json",
                 "w",
             ) as file:
-                file.write("content")
+                # file.write("content")
+                json.dump(j, file, indent=4)
 
 
 save_articles()
