@@ -63,21 +63,21 @@ def save_articles():
                 os.path.dirname(directory_path + "/summaries/" + dir + "/articles/"), exist_ok=True
             )
 
-            ff = summarize_text(BlogInfo.blog_text)
+            summary = summarize_text(BlogInfo.blog_text)
 
-            j = {"unique_id": BlogInfo.unique_id, "title": BlogInfo.title, "text": ff}
+            BlogSummary = {
+                "unique_id": BlogInfo.unique_id,
+                "title": BlogInfo.title,
+                "summary": summary,
+                "link": BlogInfo.link,
+                "published": str(BlogInfo.published),
+            }
 
             with open(
-                directory_path
-                + "/summaries/"
-                + dir
-                + "/articles/"
-                + file_name
-                + "SUMMARYSUMMARY.json",
+                directory_path + "/summaries/" + dir + "/articles/" + file_name + ".json",
                 "w",
             ) as file:
-                # file.write("content")
-                json.dump(j, file, indent=4)
+                json.dump(BlogSummary, file, indent=4)
 
 
 save_articles()
