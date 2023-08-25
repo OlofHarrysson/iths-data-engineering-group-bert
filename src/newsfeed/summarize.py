@@ -11,6 +11,8 @@ from langchain.docstore.document import Document
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
 
+data_directory_path = "data/data_warehouse/"
+
 
 def summarize_text(blog_text):
     # Create a document object list for the library
@@ -20,64 +22,75 @@ def summarize_text(blog_text):
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
     chain = load_summarize_chain(llm, chain_type="stuff")
 
+    # return a string
     return chain.run(docs)
 
 
-directory_path = "data/data_warehouse/"
+def read_articles(dir):
+    blogs = []
 
-
-def read_articles_in_dir(dir):
-    BlogInfo_list = []
-
+    # Find all files in the the directory and parse them
     for filename in os.listdir(dir):
         if filename.endswith(".json"):
             file_path = os.path.join(dir, filename)
 
-            BlogInfo_list.append(BlogInfo.parse_file(file_path))
+            # Use the BlogInfo object
+            blog = BlogInfo.parse_file(file_path)
+            blogs.append(blog)
 
-    return BlogInfo_list
+    return blogs
 
 
-def save_articles():
-    # For future kev to deal with.
-    # Fix bug where it fucks up if the articles directory is empty
+def get_article_directories():
+    article_directories = []
 
-    subdirectories = [
-        d for d in os.listdir(directory_path) if os.path.isdir(os.path.join(directory_path, d))
-    ]
+    # Make a list of all article directories
+    for dir in os.listdir(data_directory_path):
+        if os.path.isdir(os.path.join(data_directory_path, dir)):
+            article_directories.append(dir + "/articles")
 
+    # Remove summaries directory from list, as we don't wanna summarize the summaries
     try:
-        subdirectories.remove("summaries")
+        article_directories.remove("summaries/articles")
     except:
         pass
 
-    for dir in subdirectories:
-        BlogInfo_list = read_articles_in_dir(directory_path + dir + "/articles")
+    return article_directories
 
-        for BlogInfo in BlogInfo_list:
-            file_name = re.sub(r'[\/:*?"<>|]', "", BlogInfo.title.replace(" ", "_"))
 
-            print(file_name)
+def summarize_articles():
+    # For future kev to deal with.
+    # Fix bug where it fucks up if the articles directory is empty
 
-            os.makedirs(
-                os.path.dirname(directory_path + "/summaries/" + dir + "/articles/"), exist_ok=True
-            )
+    article_directories = get_article_directories()
 
-            summary = summarize_text(BlogInfo.blog_text)
+    for dir in article_directories:
+        os.makedirs(os.path.dirname(data_directory_path + "/summaries/" + dir + "/"), exist_ok=True)
 
-            BlogSummary = {
-                "unique_id": BlogInfo.unique_id,
-                "title": BlogInfo.title,
+        blogs = read_articles(data_directory_path + dir)
+
+        for blog in blogs:
+            # Remove file name characters disallowed by the filesystem
+            file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
+
+            print(f"summarizing: {file_name[:10]}...")
+
+            summary = summarize_text(blog.blog_text)
+
+            # Follow BlogSummary schema
+            blog_summary = {
+                "unique_id": blog.unique_id,
+                "title": blog.title,
                 "summary": summary,
-                "link": BlogInfo.link,
-                "published": str(BlogInfo.published),
+                "link": blog.link,
+                "published": str(blog.published),
             }
 
             with open(
-                directory_path + "/summaries/" + dir + "/articles/" + file_name + ".json",
+                data_directory_path + "/summaries/" + dir + "/" + file_name + ".json",
                 "w",
             ) as file:
-                json.dump(BlogSummary, file, indent=4)
+                json.dump(blog_summary, file, indent=4)
 
 
-save_articles()
+summarize_articles()
