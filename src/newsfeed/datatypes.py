@@ -17,3 +17,14 @@ class BlogInfo(pydantic.BaseModel):
     def get_filename(self):
         filename = f'{self.title.replace(" ", "_")}.json'
         return filename
+
+
+class BlogSummary(pydantic.BaseModel):
+    unique_id: str  # This should be the same as for BlogInfo so that they can be linked
+    title: str
+    summary: str
+    link: str
+    published: date
+
+    def get_filename(self):
+        return f'{self.title.replace(" ", "_")}.json'
