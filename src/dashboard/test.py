@@ -11,12 +11,10 @@ articles = [
     {
         "title": "Article 1",
         "summary": "This is the summary of article 1.",
-        "content": "This is the content of article 1. It's a very interesting article.",
     },
     {
         "title": "Article 2",
         "summary": "This is the summary of article 2.",
-        "content": "This is the content of article 2. It's another exciting article.",
     },
 ]
 
@@ -24,6 +22,7 @@ articles = [
 app.layout = html.Div(
     [
         html.H1("Article Summaries"),
+        html.Hr(),
         html.Div(
             id="summary-container",
             children=[
