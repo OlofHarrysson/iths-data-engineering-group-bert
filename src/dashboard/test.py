@@ -18,6 +18,10 @@ articles = [
     },
 ]
 
+# from src.newsfeed.summarize import summarize_text
+# articles = [summarize_text]
+
+
 # Define the layout of the app
 app.layout = html.Div(
     [
