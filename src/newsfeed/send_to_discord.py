@@ -1,8 +1,36 @@
+import json
+import os
+
 import requests
+from datatypes import BlogSummary
+from summarize import data_directory_path
+
+
+def get_summary_file_paths():
+    all_files = []
+
+    # loop through and get all files in the summaries folder
+    for root, _, files in os.walk(data_directory_path + "summaries"):
+        for file in files:
+            file_path = os.path.join(root, file)
+            all_files.append(file_path)
+
+    return all_files
+
+
+def load_data_from_json_file(file_path):
+    # Load the summary data into a BlogSummary object
+    with open(file_path, "r") as file:
+        json_data = json.load(file)
+        data_model = BlogSummary(**json_data)
+        return data_model
 
 
 def send_summary(
-    title="Article title", content="Article content", article_url="https://www.example.com"
+    title="Article title",
+    content="Article content",
+    published="date",
+    article_url="https://www.example.com",
 ):
     webhook_url = "https://discord.com/api/webhooks/1143844243111170199/n5PipEY2WvDVniMpsJC-wXnrUN2q7aG18HqsG7wpm_Qu3MjuyIulsR3LKC64hziTsHM3"  # URL of the webhook
 
@@ -17,10 +45,15 @@ def send_summary(
                     "name": "Summary:",  # Name of the field
                     "value": content,  # The summarized content of the article, REPLACE WITH ACTUAL CONTENT!!
                     "inline": False,  # If true the field will be side by side with the previous field, keep false please
-                }
+                },
+                {
+                    "name": "Published:",  # Name of the field
+                    "value": published,  # The summarized content of the article, REPLACE WITH ACTUAL CONTENT!!
+                    "inline": False,  # If true the field will be side by side with the previous field, keep false please
+                },
             ],
             "footer": {"text": "Group: Bert"},
-            "url": article_url,  # URL of the article, REPLACE WITH ACTUAL URL!!
+            "url": article_url,  # URL of the article, REPLACE WITH ACTUAL URL!!,
         },
     ]
 
@@ -43,5 +76,15 @@ def send_summary(
         )  # If no errors occurred, print the result code
 
 
-# Example usage:
-send_summary("Article title", "Article content", "https://www.example.com")
+if __name__ == "__main__":
+    summary_files = get_summary_file_paths()
+
+    for file_path in summary_files:
+        summary = load_data_from_json_file(file_path)
+
+        send_summary(
+            title=summary.title,
+            content=summary.summary,
+            published=str(summary.published),
+            article_url=summary.link,
+        )
