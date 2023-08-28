@@ -8,10 +8,14 @@ from pathlib import Path
 
 from dash import Dash, Input, Output, State, dcc, html
 from dash.html import H1, H2, Button, Div, P
+from layout import create_layout
 
 
 def main() -> None:
-    pass
+    app = Dash()
+    app.title = "Dash App"
+    app.layout = create_layout(app)
+    app.run()
 
 
 if __name__ == "__main__":
