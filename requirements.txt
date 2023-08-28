@@ -7,4 +7,5 @@ pre-commit
 requests
 beautifulsoup4
 lxml
+dash
 pydantic==1.10.10
