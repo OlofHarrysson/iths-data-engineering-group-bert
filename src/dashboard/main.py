@@ -8,3 +8,11 @@ from pathlib import Path
 
 from dash import Dash, Input, Output, State, dcc, html
 from dash.html import H1, H2, Button, Div, P
+
+
+def main() -> None:
+    pass
+
+
+if __name__ == "__main__":
+    main()
