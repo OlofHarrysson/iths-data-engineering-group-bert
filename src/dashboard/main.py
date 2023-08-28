@@ -6,6 +6,9 @@
 # Button represents a clickable button.
 from pathlib import Path
 
+import dash_bootstrap_components as dbc
+
+# TODO: Clean the imports
 from dash import Dash, Input, Output, State, dcc, html
 from dash.html import H1, H2, Button, Div, P
 from layout import create_layout
