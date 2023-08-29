@@ -4,14 +4,13 @@ import re
 
 from datatypes import BlogInfo
 from dotenv import load_dotenv
+from get_summaries import check_summary_cache, data_directory_path
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
-
-data_directory_path = "data/data_warehouse/"
 
 
 def summarize_text(blog_text):
@@ -70,27 +69,29 @@ def summarize_articles():
         blogs = read_articles(data_directory_path + dir)
 
         for blog in blogs:
-            # Remove file name characters disallowed by the filesystem
-            file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
+            # Check if the blog summary already exists
+            if not check_summary_cache(blog.unique_id):
+                # Remove file name characters disallowed by the filesystem
+                file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
 
-            print(f"summarizing: {file_name[:10]}...")
+                print(f"summarizing: {file_name[:10]}...")
 
-            summary = summarize_text(blog.blog_text)
+                summary = summarize_text(blog.blog_text)
 
-            # Follow BlogSummary schema
-            blog_summary = {
-                "unique_id": blog.unique_id,
-                "title": blog.title,
-                "summary": summary,
-                "link": blog.link,
-                "published": str(blog.published),
-            }
+                # Follow BlogSummary schema
+                blog_summary = {
+                    "unique_id": blog.unique_id,
+                    "title": blog.title,
+                    "summary": summary,
+                    "link": blog.link,
+                    "published": str(blog.published),
+                }
 
-            with open(
-                data_directory_path + "/summaries/" + dir + "/" + file_name + ".json",
-                "w",
-            ) as file:
-                json.dump(blog_summary, file, indent=4)
+                with open(
+                    data_directory_path + "/summaries/" + dir + "/" + file_name + ".json",
+                    "w",
+                ) as file:
+                    json.dump(blog_summary, file, indent=4)
 
 
 if __name__ == "__main__":

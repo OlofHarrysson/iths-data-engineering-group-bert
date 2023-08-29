@@ -2,7 +2,8 @@ import json
 import os
 
 from datatypes import BlogSummary
-from summarize import data_directory_path
+
+data_directory_path = "data/data_warehouse/"
 
 
 def get_summary_file_paths():
@@ -33,3 +34,14 @@ def get_summaries():
         summaries.append(load_data_from_json_file(file_path))
 
     return summaries
+
+
+# Check if the id of the file already exists in the summaries. if so, a new summary isn't needed
+def check_summary_cache(id):
+    summaries = get_summaries()
+
+    for summary in summaries:
+        if summary.unique_id == id:
+            return True
+
+    return False
