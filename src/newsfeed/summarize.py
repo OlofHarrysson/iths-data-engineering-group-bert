@@ -93,4 +93,5 @@ def summarize_articles():
                 json.dump(blog_summary, file, indent=4)
 
 
-summarize_articles()
+if __name__ == "__main__":
+    summarize_articles()

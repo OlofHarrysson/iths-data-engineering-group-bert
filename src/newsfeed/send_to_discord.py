@@ -1,8 +1,12 @@
 import requests
+from get_summaries import get_summaries
 
 
 def send_summary(
-    title="Article title", content="Article content", article_url="https://www.example.com"
+    title="Article title",
+    content="Article content",
+    published="date",
+    article_url="https://www.example.com",
 ):
     webhook_url = "https://discord.com/api/webhooks/1143844243111170199/n5PipEY2WvDVniMpsJC-wXnrUN2q7aG18HqsG7wpm_Qu3MjuyIulsR3LKC64hziTsHM3"  # URL of the webhook
 
@@ -17,31 +21,47 @@ def send_summary(
                     "name": "Summary:",  # Name of the field
                     "value": content,  # The summarized content of the article, REPLACE WITH ACTUAL CONTENT!!
                     "inline": False,  # If true the field will be side by side with the previous field, keep false please
-                }
+                },
+                {
+                    "name": "Published:",  # Name of the field
+                    "value": published,  # The summarized content of the article, REPLACE WITH ACTUAL CONTENT!!
+                    "inline": False,  # If true the field will be side by side with the previous field, keep false please
+                },
             ],
             "footer": {"text": "Group: Bert"},
-            "url": article_url,  # URL of the article, REPLACE WITH ACTUAL URL!!
+            "url": article_url,  # URL of the article, REPLACE WITH ACTUAL URL!!,
         },
     ]
 
-    try:
-        result = requests.post(webhook_url, json=data)
-        result.raise_for_status()  # Check for HTTP errors
-    except requests.exceptions.RequestException as req_err:
-        print(
-            "An error occurred during the request:", req_err
-        )  # Handle connection errors, timeouts, and other request-related issues here
-    except requests.exceptions.HTTPError as http_err:
-        print("HTTP error:", http_err)
-        print("Response text:", result.text)
-        # Handle HTTP errors, such as 4xx and 5xx status codes, here
-    except Exception as err:
-        print("An unexpected error occurred:", err)  # Handle any other errors here
-    else:
-        print(
-            "Payload delivered successfully, code {}.".format(result.status_code)
-        )  # If no errors occurred, print the result code
+    result = requests.post(webhook_url, json=data)
+    result.raise_for_status()  # Check for HTTP errors
+
+    # try:
+    #     result = requests.post(webhook_url, json=data)
+    #     result.raise_for_status()  # Check for HTTP errors
+    # except requests.exceptions.RequestException as req_err:
+    #     print(
+    #         "An error occurred during the request:", req_err
+    #     )  # Handle connection errors, timeouts, and other request-related issues here
+    # except requests.exceptions.HTTPError as http_err:
+    #     print("HTTP error:", http_err)
+    #     print("Response text:", result.text)
+    #     # Handle HTTP errors, such as 4xx and 5xx status codes, here
+    # except Exception as err:
+    #     print("An unexpected error occurred:", err)  # Handle any other errors here
+    # else:
+    #     print(
+    #         "Payload delivered successfully, code {}.".format(result.status_code)
+    #     )  # If no errors occurred, print the result code
 
 
-# Example usage:
-send_summary("Article title", "Article content", "https://www.example.com")
+if __name__ == "__main__":
+    summaries = get_summaries()
+
+    for summary in summaries:
+        send_summary(
+            title=summary.title,
+            content=summary.summary,
+            published=str(summary.published),
+            article_url=summary.link,
+        )
