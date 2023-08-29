@@ -1,39 +1,32 @@
+import datetime
+
+import dash_bootstrap_components as dbc
 from dash import Dash, html
 
-# Sample article data (replace this with your data)
-articles = [
-    {
-        "title": "Article 1",
-        "summary": "This is the summary of article 1.",
-    },
-    {
-        "title": "Article 2",
-        "summary": "This is the summary of article 2.",
-    },
-]
+# Note the arguments maybe has to be changed for when the real data comes in.
+# title: str
+# summary: str
+# link: str
+# published: date
 
 
-def create_layout(app: Dash) -> html.Div:
-    return html.Div(
-        [
-            # html.H1("Article Summaries"),
-            # html.Hr(),
-            html.Div(
-                id="summary-container",
-                children=[
-                    # Generate a list of article summaries with read links
-                    html.Div(
-                        [
-                            html.P(article["summary"], className="article-summary"),
-                            html.A(
-                                "Read full article", href=f"/article/{index}", className="read-link"
-                            ),
-                        ]
-                    )
-                    for index, article in enumerate(
-                        articles
-                    )  # Loop through articles and create summaries
-                ],
-            ),
-        ]
+def create_layout(app: Dash) -> dbc.CardBody:
+    return dbc.Card(
+        dbc.CardBody(
+            [
+                html.Div(id="card-container"),
+                html.Div(
+                    [
+                        html.H5("Article Summary", className="card-title"),
+                        html.Hr(),
+                        html.P(
+                            "This is where the summary for the text shall be "
+                            "This is where the summary for the text shall be"
+                        ),
+                        dbc.Button("Read full article", color="primary"),
+                    ],
+                    id="card-title",
+                ),
+            ]
+        )
     )

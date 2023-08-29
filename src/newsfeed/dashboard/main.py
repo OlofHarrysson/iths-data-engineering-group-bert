@@ -16,10 +16,8 @@ def main() -> None:
     app.layout = create_layout(app)
 
     @app.callback(
-        Output("summary-container", "children"),  # Output: summary container's children
-        Input(
-            "summary-container", "children"
-        ),  # Input: summary container's children (not used here)
+        Output("card-title", "children"),  # Output: summary container's children
+        Input("card-title", "children"),  # Input: summary container's children (not used here)
     )
     def update_summary_container(children):
         # You can perform data updates or calculations here if needed
@@ -28,23 +26,7 @@ def main() -> None:
     return app
 
 
-# # Run the app when the script is executed
+# Run the app when the script is executed
 if __name__ == "__main__":
     app_instance = main()
     app_instance.run_server(debug=True)  # Run the app in debug mode
-
-
-# def update_summary_container(children):
-#     # You can perform data updates or calculations here if needed
-#     return children  # Return the unchanged children
-
-
-# def main(app) -> None:
-#     app = dash.Dash(__name__) # Initialize the Dash app
-#     app.title = "Article Summaries from main"
-#     app.layout = create_layout(app)
-#         @app.callback(
-#         Output("summary-container", "children"),  # Output: summary container's children
-#         Input("summary-container", "children"),  # Input: summary container's children (not used here)
-
-#     return app
