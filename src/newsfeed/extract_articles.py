@@ -1,4 +1,5 @@
 import argparse
+import time
 import uuid
 from datetime import datetime
 from pathlib import Path
@@ -24,28 +25,41 @@ def load_metadata(blog_name):
     return parsed_xml
 
 
+def get_blog_text_mit(item):
+    raw_blog_text = item.find("content:encoded").text
+    soup = BeautifulSoup(raw_blog_text, "html.parser")
+    blog_text = soup.get_text()
+
+    return blog_text
+
+
+def get_blog_text_sd(item):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    }
+    url = item.find("link").text
+    response = requests.get(url, headers=headers)
+    raw_blog_text = response.text
+    soup = BeautifulSoup(raw_blog_text, "html.parser")
+    blog_text = soup.find("div", id="text").get_text()
+    time.sleep(0.2)
+    print("request done! sleeping 200ms between requests")
+
+    return blog_text
+
+
 def extract_articles_from_xml(parsed_xml, blog_name):
     articles = []
     for item in parsed_xml.find_all("item"):
         if blog_name == "mit":
-            raw_blog_text = item.find("content:encoded").text
-            soup = BeautifulSoup(raw_blog_text, "html.parser")
-            blog_text = soup.get_text()
+            blog_text = get_blog_text_mit(item)
 
         if blog_name == "sd":
-            headers = {
-                "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
-            }
-            url = item.find("link").text
-            response = requests.get(url, headers=headers)
-            html_content = response.text
-            soup = BeautifulSoup(html_content, "html.parser")
-            textest = soup.find("div", id="text")
-            blog_text = textest.get_text()
-            break
+            blog_text = get_blog_text_sd(item)
 
         title = item.title.text
         unique_id = create_uuid_from_string(title)
+
         article_info = BlogInfo(
             unique_id=unique_id,
             title=title,
@@ -55,8 +69,8 @@ def extract_articles_from_xml(parsed_xml, blog_name):
             published=pd.to_datetime(item.pubDate.text).date(),
             timestamp=datetime.now(),
         )
+
         articles.append(article_info)
-        print(articles)
 
     return articles
 
