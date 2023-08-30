@@ -1,0 +1,7 @@
+{
+    "unique_id": "4be49c33-e9cb-598d-95f6-e7deec75c806",
+    "title": "New tool helps people choose the right method for evaluating AI models",
+    "summary": "Researchers from MIT and IBM Research have developed a tool called saliency cards to help users choose the best saliency method for their machine-learning models. Saliency methods are used to explain how machine-learning models make predictions. The saliency cards provide standardized documentation of how a method operates, including its strengths and weaknesses, to help users interpret it correctly. The researchers hope that users can select an appropriate saliency method based on the type of model and task, leading to more accurate interpretations of model predictions. The cards have been found to be helpful in conducting a side-by-side comparison of different methods.",
+    "link": "https://news.mit.edu/2023/new-tool-helps-people-choose-right-method-evaluating-ai-models-0531",
+    "published": "2023-05-31"
+}

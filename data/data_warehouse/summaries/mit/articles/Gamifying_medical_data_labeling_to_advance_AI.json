@@ -1,0 +1,7 @@
+{
+    "unique_id": "78aa693a-33f8-5329-841d-6862accc0db7",
+    "title": "Gamifying medical data labeling to advance AI",
+    "summary": "Centaur Labs, founded by Erik Duhaime, has developed a mobile app called DiagnosUs that gathers the opinions of medical experts on real-world scientific and biomedical data. Users of the app review images and audio clips related to medical conditions and are awarded cash prizes for accurate opinions. The data collected helps train and improve medical AI algorithms. The approach combines the desire of medical experts to improve their skills with the need for well-labeled medical data by AI companies. Centaur Labs has found success in crowdsourcing opinions, with studies showing that crowdsourced labeling can be as accurate or even more accurate than expert opinions. The company envisions its platform being used not only for training algorithms but also for monitoring and providing feedback on AI models.",
+    "link": "https://news.mit.edu/2023/gamifying-medical-data-labeling-ai-0628",
+    "published": "2023-06-28"
+}
