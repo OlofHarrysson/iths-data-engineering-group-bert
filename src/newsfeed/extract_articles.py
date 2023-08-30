@@ -25,25 +25,25 @@ def load_metadata(blog_name):
     return parsed_xml
 
 
-def get_blog_text_mit(item):
-    raw_blog_text = item.find("content:encoded").text
-    soup = BeautifulSoup(raw_blog_text, "html.parser")
+def get_blog_text_mit(item) -> str:
+    """extract blog text from mit source, returns str containing blog text"""
+    raw_text = item.find("content:encoded").text
+    soup = BeautifulSoup(raw_text, "html.parser")
     blog_text = soup.get_text()
 
     return blog_text
 
 
-def get_blog_text_sd(item):
+def get_blog_text_sd(item) -> str:
+    """send request to sd site to get article contents and extract its text, returns str containing article text"""
     headers = {
         "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     }
-    url = item.find("link").text
+    url = item.find("link").text  # get url to article from xml
     response = requests.get(url, headers=headers)
-    raw_blog_text = response.text
-    soup = BeautifulSoup(raw_blog_text, "html.parser")
-    blog_text = soup.find("div", id="text").get_text()
-    time.sleep(0.2)
-    print("request done! sleeping 200ms between requests")
+    raw_text = response.text
+    soup = BeautifulSoup(raw_text, "html.parser")
+    blog_text = soup.find("div", id="text").get_text()  # article text is under div with id "text"
 
     return blog_text
 
@@ -56,6 +56,9 @@ def extract_articles_from_xml(parsed_xml, blog_name):
 
         if blog_name == "sd":
             blog_text = get_blog_text_sd(item)
+            time.sleep(
+                0.2
+            )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
 
         title = item.title.text
         unique_id = create_uuid_from_string(title)
