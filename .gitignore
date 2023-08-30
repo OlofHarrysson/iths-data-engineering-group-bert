@@ -3,6 +3,7 @@ data/data_lake/*
 data/data_warehouse/*
 !data/data_lake/README.md
 !data/data_warehouse/README.md
+!data/data_warehouse/summaries/
 logs
 
 # Byte-compiled / optimized / DLL files
