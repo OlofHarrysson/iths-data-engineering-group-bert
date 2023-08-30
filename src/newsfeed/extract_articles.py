@@ -66,7 +66,7 @@ def extract_articles_from_xml(parsed_xml, blog_name):
             description=item.description.text,
             link=item.link.text,
             blog_text=blog_text,
-            published=pd.to_datetime(item.pubDate.text).date(),
+            published=pd.to_datetime(item.pubDate.text.replace("EDT", "-0400")).date(),
             timestamp=datetime.now(),
         )
 
