@@ -1,0 +1,7 @@
+{
+    "unique_id": "10398e11-bcdc-5518-844a-78583082cef3",
+    "title": "MIT researchers make language models scalable self-learners",
+    "summary": "Researchers from MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed a logic-aware model that outperforms larger language models (LLMs) on language understanding tasks. The model utilizes the concept of textual entailment to train an \"entailment model\" that is less biased than other language models. By using prompts to determine if certain information is entailed by a given sentence, the model can adapt to different tasks without additional training. The researchers also employed self-training and a new algorithm called SimPLE to improve the model's performance and robustness. The study shows that smaller models can perform at the same level as larger ones, providing a more scalable and privacy-preserving solution to language modeling.",
+    "link": "https://news.mit.edu/2023/language-models-scalable-self-learners-0608",
+    "published": "2023-06-08"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "826ea793-aa03-5c6f-97eb-2a42c856119c",
+    "title": "A step toward safe and reliable autopilots for flying",
+    "summary": "Researchers at MIT have developed a new machine-learning technique that can solve complex stabilize-avoid problems better than existing methods. The technique was able to pilot a simulated jet aircraft through a narrow corridor without crashing into the ground. The researchers reframed the problem as a constrained optimization problem and used a deep reinforcement learning algorithm to solve it. Their approach was the only one that could stabilize all trajectories while maintaining safety. The technique could be used to design controllers for autonomous delivery drones or be implemented in larger systems to assist with navigation in extreme scenarios. The researchers plan to enhance the technique to better handle uncertainty and investigate its performance when deployed on hardware.",
+    "link": "https://news.mit.edu/2023/safe-and-reliable-autopilots-flying-0612",
+    "published": "2023-06-12"
+}
