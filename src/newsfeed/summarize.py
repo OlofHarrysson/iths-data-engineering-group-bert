@@ -18,7 +18,7 @@ def summarize_text(blog_text):
     docs = [Document(page_content=blog_text)]
 
     # declare the model with a temperature of 0 in order to maximize conciseness
-    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-16k")
+    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     chain = load_summarize_chain(llm, chain_type="stuff")
 
     # return a string
