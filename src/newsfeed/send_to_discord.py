@@ -1,6 +1,6 @@
 import requests
 
-from newsfeed.get_summaries import get_contents
+from newsfeed.get_cached_files import get_contents
 
 
 def send_summary(
