@@ -15,6 +15,7 @@ def main() -> None:
     app.title = "Article Summaries from main"
     # app.layout = create_layout(app)
 
+    # get the actual layout which is in another file
     app.layout = create_layout(app)
 
     @app.callback(

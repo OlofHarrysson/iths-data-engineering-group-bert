@@ -1,16 +1,9 @@
-import datetime
-
 import dash_bootstrap_components as dbc
 from dash import Dash, html
 from get_summaries import get_summaries
 
-# Note the arguments maybe has to be changed for when the real data comes in.
-# title: str
-# summary: str
-# link: str
-# published: date
 
-
+# The actual layout for the dash app
 def create_layout(app: Dash) -> dbc.CardBody:
     summaries = get_summaries()
 
@@ -20,17 +13,21 @@ def create_layout(app: Dash) -> dbc.CardBody:
                 dbc.Col(
                     [
                         dbc.Card(
+                            # Use list comprehension to loop over all articles and create cards for each
                             dbc.CardBody(
                                 [
                                     html.H4(summary.title, className="card-title"),
                                     html.P(summary.summary),
+                                    html.P(
+                                        f"Published: {summary.published}",
+                                        style={"font-size": "12px", "color": "gray"},
+                                    ),
                                     dbc.Button(
-                                        "Go somewhere",
+                                        "Visit Blog",
                                         color="primary",
                                         href=summary.link,
                                         target="_blank",
                                     ),
-                                    html.P("Test", style={"font-size": "10px", "color": "gray"}),
                                 ]
                             )  # ,
                             # id="card-title"
