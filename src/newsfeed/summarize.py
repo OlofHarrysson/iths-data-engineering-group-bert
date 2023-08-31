@@ -18,7 +18,6 @@ load_dotenv()
 
 def summarize_text(blog_text):
     # Create a document object list for the library
-    print("hejj")  # den kör inte
     docs = [Document(page_content=blog_text)]
 
     # declare the model with a temperature of 0 in order to maximize conciseness
@@ -29,7 +28,6 @@ def summarize_text(blog_text):
 
 
 def summarize_local_model(blog_text):
-    print("hej")  # den kör inte
     docs = [Document(page_content=blog_text)]
 
     summarizer = Summarizer()
