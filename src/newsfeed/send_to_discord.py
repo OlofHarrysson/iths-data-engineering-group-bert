@@ -1,6 +1,6 @@
 import requests
 
-from newsfeed.get_summaries import get_summaries
+from newsfeed.get_summaries import get_contents
 
 
 def send_summary(
@@ -57,7 +57,7 @@ def send_summary(
 
 
 if __name__ == "__main__":
-    summaries = get_summaries()
+    summaries = get_contents()
 
     for summary in summaries:
         send_summary(
