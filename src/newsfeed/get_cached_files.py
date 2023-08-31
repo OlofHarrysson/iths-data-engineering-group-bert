@@ -6,7 +6,7 @@ from newsfeed.datatypes import BlogSummary
 data_directory_path = "data/data_warehouse/"
 
 
-def get_summary_file_paths():
+def get_file_paths():  # TODO: add type of file "technical" "non-technical" "article"
     all_files = []
 
     # loop through and get all files in the summaries folder
@@ -26,8 +26,8 @@ def load_data_from_json_file(file_path):
         return data_model
 
 
-def get_summaries():
-    summary_files = get_summary_file_paths()
+def get_contents():
+    summary_files = get_file_paths()
     summaries = []
 
     for file_path in summary_files:
@@ -37,8 +37,8 @@ def get_summaries():
 
 
 # Check if the id of the file already exists in the summaries. if so, a new summary isn't needed
-def check_summary_cache(id):
-    summaries = get_summaries()
+def check_cache(id):
+    summaries = get_contents()
 
     for summary in summaries:
         if summary.unique_id == id:
