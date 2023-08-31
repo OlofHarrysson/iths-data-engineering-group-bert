@@ -79,7 +79,9 @@ def extract_articles_from_xml(parsed_xml, blog_name):
 
 
 def save_articles(articles, blog_name):
-    save_dir = Path("data/data_warehouse", blog_name, "articles")
+    save_dir = Path(
+        "data/data_warehouse", "articles", blog_name
+    )  # NOTE: changed to articles / blog_name
     save_dir.mkdir(exist_ok=True, parents=True)
     for article in articles:
         save_path = save_dir / article.get_filename()
