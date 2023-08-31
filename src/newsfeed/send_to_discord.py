@@ -1,5 +1,6 @@
 import requests
-from get_summaries import get_summaries
+
+from newsfeed.get_summaries import get_summaries
 
 
 def send_summary(
