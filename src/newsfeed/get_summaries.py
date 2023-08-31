@@ -1,7 +1,7 @@
 import json
 import os
 
-from datatypes import BlogSummary
+from newsfeed.datatypes import BlogSummary
 
 data_directory_path = "data/data_warehouse/"
 
