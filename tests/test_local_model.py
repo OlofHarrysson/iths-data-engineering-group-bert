@@ -1,8 +1,9 @@
 from textsum.summarize import Summarizer
 
+from newsfeed.summarize import summarize_local_model
+
 
 def test_local_model_inference():
     text = """This is a test"""
-    summarizer = Summarizer()
-    summary = summarizer.summarize_string(text)
+    summary = summarize_local_model(text)
     print(f"Summary: {summary}")
