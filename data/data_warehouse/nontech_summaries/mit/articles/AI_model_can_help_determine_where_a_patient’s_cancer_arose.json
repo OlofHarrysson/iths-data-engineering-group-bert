@@ -1,0 +1,7 @@
+{
+    "unique_id": "edb1375e-6042-5269-a2c8-ec6005731bcf",
+    "title": "AI model can help determine where a patient\u2019s cancer arose",
+    "summary": "Researchers at MIT and Dana-Farber Cancer Institute have developed a computational model that uses machine learning to predict the origin of cancer in patients with unknown primary tumors. The model analyzes the sequence of around 400 genes and accurately classified at least 40% of tumors of unknown origin in a dataset of 900 patients. This approach could potentially guide doctors towards personalized treatments for patients with cancers of unknown primary origin, increasing the number of patients eligible for targeted treatments based on where their cancer originated. The researchers hope to expand the model to include other types of data, such as pathology and radiology images, to provide a more comprehensive prediction.",
+    "link": "https://news.mit.edu/2023/ai-model-can-help-determine-where-patients-cancer-arose-0807",
+    "published": "2023-08-07"
+}

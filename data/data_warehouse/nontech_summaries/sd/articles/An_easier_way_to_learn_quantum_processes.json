@@ -1,0 +1,7 @@
+{
+    "unique_id": "805f5c27-e011-5a2d-9371-2ca4cb5a57f4",
+    "title": "An easier way to learn quantum processes",
+    "summary": "Researchers at EPFL, Caltech, the Free University of Berlin, and the Los Alamos National Laboratory have made progress in teaching quantum computers to understand and predict the behavior of quantum systems. They used quantum neural networks (QNNs), which are machine-learning models that mimic the behavior of quantum systems using principles inspired by quantum mechanics. By training QNNs with a few simple examples called \"product states,\" the researchers showed that computers can effectively grasp the complex dynamics of entangled quantum systems. This means that in the future, smaller and simpler quantum computers could be used to learn about and understand quantum systems, instead of needing large and complex ones. The method also improves the performance of quantum computers by enabling the creation of shorter and more error-resistant programs, leading to improved efficiency and reliability.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230705105838.htm",
+    "published": "2023-07-05"
+}

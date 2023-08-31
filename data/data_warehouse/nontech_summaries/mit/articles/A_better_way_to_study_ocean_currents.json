@@ -1,0 +1,7 @@
+{
+    "unique_id": "54e3beb5-1cfb-57d9-bec0-d455ebd1d07a",
+    "title": "A better way to study ocean currents",
+    "summary": "Scientists use GPS-tagged buoys to study ocean currents and record their velocities. This data helps them understand how currents transport various substances in the ocean, such as biomass, carbon, plastics, oil, and nutrients. However, the current statistical model used to analyze buoy data makes unrealistic assumptions about the behavior of water, leading to inaccurate predictions of currents and identification of divergences.\n\nTo address this issue, a multidisciplinary research team developed a new model that incorporates knowledge from fluid dynamics to better reflect the physics of ocean currents. This new model, which only requires a small amount of additional computational expense, is more accurate at predicting currents and identifying divergences than the traditional model.\n\nThe improved accuracy of this new model could help oceanographers monitor the transportation of substances in the ocean more effectively, which is crucial for understanding and tracking climate change. The researchers plan to further enhance the model by incorporating a time element and better accounting for noise in the data.",
+    "link": "https://news.mit.edu/2023/new-machine-learning-model-ocean-currents-0517",
+    "published": "2023-05-17"
+}

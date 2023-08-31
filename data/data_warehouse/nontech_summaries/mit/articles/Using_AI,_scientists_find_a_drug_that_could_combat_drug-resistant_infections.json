@@ -1,0 +1,7 @@
+{
+    "unique_id": "4ea34ed3-2db6-58f5-94a2-47951d344609",
+    "title": "Using AI, scientists find a drug that could combat drug-resistant infections",
+    "summary": "Researchers at MIT and McMaster University have used artificial intelligence (AI) to identify a new antibiotic that can kill drug-resistant bacteria. The antibiotic, called abaucin, was discovered using a machine-learning algorithm that evaluated whether a chemical compound could inhibit the growth of Acinetobacter baumannii, a bacteria responsible for many drug-resistant infections. The researchers trained the algorithm using a library of nearly 7,000 potential drug compounds and then tested the top hits experimentally in the lab. Abaucin was found to be extremely effective at killing A. baumannii but had no effect on other species of bacteria. The researchers believe that the drug's selectivity is due to slight differences in how A. baumannii performs a specific process called lipoprotein trafficking. The researchers are now working to optimize the compound for use in patients and plan to use their AI modeling approach to identify potential antibiotics for other drug-resistant infections.",
+    "link": "https://news.mit.edu/2023/using-ai-scientists-combat-drug-resistant-infections-0525",
+    "published": "2023-05-25"
+}
