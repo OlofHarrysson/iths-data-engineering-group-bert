@@ -2,12 +2,13 @@ import json
 import os
 import re
 
-from datatypes import BlogInfo
 from dotenv import load_dotenv
-from get_summaries import check_summary_cache, data_directory_path
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
+
+from newsfeed.datatypes import BlogInfo
+from newsfeed.get_summaries import check_summary_cache, data_directory_path
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
