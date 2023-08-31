@@ -30,6 +30,7 @@ def create_layout(app: Dash) -> dbc.CardBody:
                                         href=summary.link,
                                         target="_blank",
                                     ),
+                                    html.P("Test", style={"font-size": "10px", "color": "gray"}),
                                 ]
                             )  # ,
                             # id="card-title"
@@ -42,14 +43,3 @@ def create_layout(app: Dash) -> dbc.CardBody:
         ],
         fluid=True,
     )
-
-    # return dbc.Card(
-    #     dbc.CardBody(
-    #         [
-    #             html.H4("Card Title", className="card-title"),
-    #             html.P("This is some example card content."),
-    #             dbc.Button("Go somewhere", color="primary"),
-    #         ],
-    #         id="card-title"
-    #     )
-    # )
