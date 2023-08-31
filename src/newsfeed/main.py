@@ -6,13 +6,15 @@ from dash import Dash, Input, Output, State, dcc, html
 from dash.dependencies import Input, Output
 from dash.html import H1, H2, Button, Div, P
 
-from newsfeed.dashboard.layout import create_layout
+from newsfeed.layout import create_layout
 
-app = dash.Dash(__name__)  # Initialize the Dash app
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])  # Initialize the Dash app
 
 
 def main() -> None:
     app.title = "Article Summaries from main"
+    # app.layout = create_layout(app)
+
     app.layout = create_layout(app)
 
     @app.callback(
