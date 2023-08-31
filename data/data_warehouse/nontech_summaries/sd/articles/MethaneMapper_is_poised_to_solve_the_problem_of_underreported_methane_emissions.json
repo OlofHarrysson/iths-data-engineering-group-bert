@@ -1,0 +1,7 @@
+{
+    "unique_id": "23feff4b-aabe-576e-ba26-41d4d9cff68d",
+    "title": "MethaneMapper is poised to solve the problem of underreported methane emissions",
+    "summary": "The blog discusses the issue of methane emissions and the development of an artificial intelligence-powered tool called MethaneMapper to detect and trace these emissions. Methane is a potent greenhouse gas that is more than 25 times as potent as carbon dioxide at trapping heat. The tool uses hyperspectral imaging to gather data and machine learning to differentiate methane from other hydrocarbons. What sets MethaneMapper apart is its ability to work in diverse terrains and backgrounds. Currently, the tool operates using airplanes, but there are plans to develop a satellite-enabled program for wider coverage. The goal is to make the tool accessible to a wide range of users through a web platform. The project is funded by the National Science Foundation and will be featured at a computer vision conference.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230608195752.htm",
+    "published": "2023-06-08"
+}
