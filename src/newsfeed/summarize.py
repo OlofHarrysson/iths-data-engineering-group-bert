@@ -12,9 +12,6 @@ from textsum.summarize import Summarizer
 from newsfeed.datatypes import BlogInfo
 from newsfeed.get_summaries import check_summary_cache, data_directory_path
 
-from newsfeed.datatypes import BlogInfo
-from newsfeed.get_summaries import check_summary_cache, data_directory_path
-
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
 
