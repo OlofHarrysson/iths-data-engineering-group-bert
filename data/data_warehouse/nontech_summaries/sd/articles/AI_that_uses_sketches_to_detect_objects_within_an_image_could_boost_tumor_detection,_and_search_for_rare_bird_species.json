@@ -1,0 +1,7 @@
+{
+    "unique_id": "0dc5e953-a08b-534f-b31f-e1cdff4af2e1",
+    "title": "AI that uses sketches to detect objects within an image could boost tumor detection, and search for rare bird species",
+    "summary": "Researchers at the University of Surrey have developed a sketch-based object detection tool that will be presented at the Computer Vision, Pattern, and Recognition Conference (CVPR). The tool allows users to sketch an object, and the AI will search within an image to find a match based on the sketch. This tool can be useful in various fields such as medicine, where it can help detect aggressive tumors, and wildlife conservation, where it can identify rare animals. The AI takes into account visual cues like pose and structure but follows the exact instructions given by the user. This research showcases the potential for AI to harness human creativity in computer vision and allows humans to interact with AI from a different perspective. The University of Surrey is known for its world-leading research and innovation in teaching, particularly in the field of machine learning. The university's Institute for People-Centred AI focuses on addressing the technical, ethical, and governance aspects of AI to ensure it is people-centered.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230621105422.htm",
+    "published": "2023-06-21"
+}

@@ -9,6 +9,5 @@ run_precommit:
 	pre-commit run --all-files
 
 
-.PHONY: run_tests
 run_tests:
 	pytest -s tests/*.py
