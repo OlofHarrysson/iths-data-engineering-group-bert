@@ -1,0 +1,7 @@
+{
+    "unique_id": "cd01dbe0-de8f-50e8-a3cc-703092da3906",
+    "title": "Pros and cons of ChatGPT plugin, Code Interpreter, in education, biology, health",
+    "summary": "The blog discusses the use of Code Interpreter, a plugin for the artificial intelligence chatbot ChatGPT, in the field of bioinformatics. While Code Interpreter has been helpful in making coding more accessible to students in STEM fields, it falls short in meeting the specific needs of bioinformaticians. The plugin lacks features such as internet access for downloading genome data, support for bioinformatics software packages, and the ability to work with large files and perform parallel processing. Despite these limitations, Code Interpreter does provide some benefits, such as helping users determine the accuracy of responses and converting data into charts and graphs. The blog suggests that future developments of Code Interpreter may address these issues and extend its use to fields like bioinformatics, finance, and economics. The author, Gangqing \"Michael\" Hu, plans to introduce the plugin in his class to teach students about data visualization and remains optimistic about the potential of AI programming in the future.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230825122024.htm",
+    "published": "2023-08-25"
+}
