@@ -3,6 +3,7 @@ import json
 import os
 import re
 
+import openai
 from dotenv import load_dotenv
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
@@ -13,18 +14,25 @@ from newsfeed.get_cached_files import check_cache, data_directory_path
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def summarize_text(blog_text):
+def summarize_text(blog_text, summary_type):
     # Create a document object list for the library
-    docs = [Document(page_content=blog_text)]
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are going to summarize the following blog:"
+                if summary_type == "tech"
+                else "You are going to summarize the following blog for a non-technical person:"
+            ),
+        },
+        {"role": "user", "content": blog_text},
+    ]
 
-    # declare the model with a temperature of 0 in order to maximize conciseness
-    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-    chain = load_summarize_chain(llm, chain_type="stuff")
-
-    # return a string
-    return chain.run(docs)
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, temperature=0)
+    return response.choices[0].message.content
 
 
 def read_articles(dir):
@@ -84,7 +92,7 @@ def summarize_articles(summary_type):
 
                 print(f"summarizing: {file_name[:10]}...")
 
-                summary = summarize_text(blog.blog_text)
+                summary = summarize_text(blog.blog_text, summary_type)
 
                 # Follow BlogSummary schema
                 blog_summary = {
