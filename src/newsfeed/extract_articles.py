@@ -51,6 +51,13 @@ def get_blog_text_sd(item) -> str:
 def extract_articles_from_xml(parsed_xml, blog_name):
     articles = []
     for item in parsed_xml.find_all("item"):
+        title = item.title.text
+        unique_id = create_uuid_from_string(title)
+
+        # TODO: check if unique_id exists in articles and skip extracting current one
+        if unique_id:
+            pass
+
         if blog_name == "mit":
             blog_text = get_blog_text_mit(item)
 
@@ -59,9 +66,6 @@ def extract_articles_from_xml(parsed_xml, blog_name):
             time.sleep(
                 0.2
             )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
-
-        title = item.title.text
-        unique_id = create_uuid_from_string(title)
 
         article_info = BlogInfo(
             unique_id=unique_id,
