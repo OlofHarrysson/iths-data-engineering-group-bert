@@ -28,14 +28,10 @@ def summarize_text(blog_text):
 
 
 def summarize_local_model(blog_text):
-    # docs = [Document(page_content=blog_text)]
-
     summarizer = Summarizer()
     summarized_text = summarizer.summarize_string(blog_text)
     print(summarized_text)
     return summarized_text
-    # I'm not sure it shall return summarized_text
-    # return summarized_text(docs)
 
 
 def read_articles(dir):
