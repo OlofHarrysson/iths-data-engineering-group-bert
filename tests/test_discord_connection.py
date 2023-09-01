@@ -2,6 +2,7 @@ import requests
 
 
 def test_discord_connection():
+    # Check if discord is up
     requests.get("https://discord.com/", timeout=10)
 
 

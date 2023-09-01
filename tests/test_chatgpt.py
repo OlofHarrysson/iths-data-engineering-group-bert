@@ -2,6 +2,7 @@ from newsfeed.summarize import summarize_text
 
 
 def test_chatgpt():
+    # test if summarization is possible
     summarize_text("respond with 'ok'")
 
 
