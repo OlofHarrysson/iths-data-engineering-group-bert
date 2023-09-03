@@ -10,7 +10,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
 
 from newsfeed.datatypes import BlogInfo
-from newsfeed.get_cached_files import check_cache, data_directory_path
+from newsfeed.get_cached_files import data_directory_path, is_cached
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
@@ -89,7 +89,7 @@ def summarize_articles(summary_type):
             summary_dir = (
                 f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
             )
-            if not check_cache(
+            if not is_cached(
                 blog.unique_id, summary_dir
             ):  # goes into data warehouse / summary_dir and searches for matching ID
                 # Remove file name characters disallowed by the filesystem
