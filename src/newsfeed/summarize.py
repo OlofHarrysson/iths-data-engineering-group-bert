@@ -86,7 +86,12 @@ def summarize_articles(summary_type):
 
         for blog in blogs:
             # Check if the blog summary already exists
-            if not check_cache(blog.unique_id, summary_type):  # TODO: pass in article type
+            summary_dir = (
+                f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
+            )
+            if not check_cache(
+                blog.unique_id, summary_dir
+            ):  # goes into data warehouse / summary_dir and searches for matching ID
                 # Remove file name characters disallowed by the filesystem
                 file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
 
