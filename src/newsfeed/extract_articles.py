@@ -55,9 +55,10 @@ def extract_articles_from_xml(parsed_xml, blog_name):
         title = item.title.text
         unique_id = create_uuid_from_string(title)
 
-        # TODO: check if unique_id exists in articles and skip extracting current one
-        if unique_id:
-            pass
+        if is_cached(
+            unique_id, "articles"
+        ):  # if unique ID is found in the articles directory (already extracted)
+            continue
 
         if blog_name == "mit":
             blog_text = get_blog_text_mit(item)
