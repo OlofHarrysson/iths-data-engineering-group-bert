@@ -1,7 +1,7 @@
 import json
 import os
 
-from newsfeed.datatypes import BlogSummary
+from newsfeed.datatypes import BlogInfo, BlogSummary
 
 data_directory_path = "data/data_warehouse/"
 
@@ -22,10 +22,15 @@ def load_data_from_json_file(file_path):
     # Load the file data
     with open(file_path, "r") as file:
         json_data = json.load(file)
-        # TODO if summary:
-        data_model = BlogSummary(**json_data)
-        # TODO if article:
-        # create BlogInfo object
+
+        # if loading an article use the article datatype
+        if file_path.startswith("data/data_warehouse/articles/"):
+            data_model = BlogInfo(**json_data)
+
+        # else use the summary datatype
+        else:
+            data_model = BlogSummary(**json_data)
+
         return data_model
 
 
