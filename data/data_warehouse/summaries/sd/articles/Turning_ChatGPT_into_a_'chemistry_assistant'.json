@@ -1,7 +1,0 @@
-{
-    "unique_id": "4c80a19f-c3e9-5c09-a52b-4f00afd75ed1",
-    "title": "Turning ChatGPT into a 'chemistry assistant'",
-    "summary": "Researchers have developed a new AI system called ChatGPT Chemistry Assistant that can extract and summarize experimental information from scientific papers on metal-organic frameworks (MOFs). The system was able to identify over 26,000 relevant factors for making around 800 compounds and was trained to predict the crystalline state of MOFs. The researchers also built a chatbot to answer questions about the data, and the system can be easily adjusted to focus on different topics without requiring coding expertise. The system has potential applications in other fields of chemistry as well.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230810105459.htm",
-    "published": "2023-08-10"
-}

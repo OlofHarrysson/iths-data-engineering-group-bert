@@ -1,7 +1,0 @@
-{
-    "unique_id": "39a72cb7-ff26-5be5-815d-2319c8e3f7c5",
-    "title": "New method improves efficiency of 'vision transformer' AI systems",
-    "summary": "Researchers have developed a new methodology called \"Patch-to-Cluster attention\" (PaCa) to address challenges faced by transformer-based AI models called Vision Transformers (ViTs). ViTs require significant computational power and memory due to the complexity of transformer models and the large amount of data in images. PaCa uses clustering techniques to reduce computational demands by grouping similar sections of an image together. This also improves model interpretability by allowing researchers to understand how the AI created the clusters. Comprehensive testing showed that PaCa outperformed other ViTs in classifying and identifying objects in images, as well as segmentation. The next step is to scale up PaCa by training on larger datasets. The research was supported by various organizations including the Office of the Director of National Intelligence and the National Science Foundation.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230601160053.htm",
-    "published": "2023-06-01"
-}

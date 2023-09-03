@@ -1,7 +1,0 @@
-{
-    "unique_id": "4cf1ffa8-ef0f-52ab-a8bb-4f43c9a144b7",
-    "title": "Four-legged robot traverses tricky terrains thanks to improved 3D vision",
-    "summary": "Researchers at the University of California, San Diego have developed a model that improves a robot's 3D perception of its surroundings. By using a depth camera and analyzing previous frames, the model creates a 3D representation of the environment, allowing the robot to remember what it has seen and inform its next moves. The researchers will present their work at the 2023 Conference on Computer Vision and Pattern Recognition. While the approach has limitations and does not guide the robot to a specific goal, it enables the robot to traverse more challenging terrain. The study was supported by the National Science Foundation and an Amazon Research Award.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230612200423.htm",
-    "published": "2023-06-12"
-}
