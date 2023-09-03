@@ -23,9 +23,9 @@ def summarize_text(blog_text, summary_type):
         {
             "role": "system",
             "content": (
-                "You are going to summarize the following blog:"
+                "You are going to summarize the following blog in a short and concise manner, max 100 words, ideally less:"
                 if summary_type == "tech"
-                else "You are going to summarize the following blog for a non-technical person:"
+                else "You are going to summarize the following blog for a non-technical person in a short and concise manner, max 100 words, ideally less:"
             ),
         },
         {"role": "user", "content": blog_text},
@@ -75,20 +75,18 @@ def summarize_articles(summary_type):
     """summarize all articles into summary_type, i.e. tech or nontech, if they are not already summarized"""
 
     article_directories = get_article_directories()
+    summary_dir = f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
 
     for dir in article_directories:
         os.makedirs(
-            os.path.dirname(data_directory_path + f"/{summary_type}_summaries/" + dir + "/"),
+            os.path.dirname(data_directory_path + f"/{summary_dir}/" + dir + "/"),
             exist_ok=True,
         )
 
-        blogs = read_articles(data_directory_path + dir)
+        blogs = read_articles(data_directory_path + "articles/" + dir)
 
         for blog in blogs:
             # Check if the blog summary already exists
-            summary_dir = (
-                f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
-            )
             if not is_cached(
                 blog.unique_id, summary_dir
             ):  # goes into data warehouse / summary_dir and searches for matching ID
