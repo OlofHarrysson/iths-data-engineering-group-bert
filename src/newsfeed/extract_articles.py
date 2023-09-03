@@ -9,6 +9,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from newsfeed.datatypes import BlogInfo
+from newsfeed.get_cached_files import is_cached
 
 
 def create_uuid_from_string(title):
