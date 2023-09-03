@@ -6,11 +6,11 @@ from newsfeed.datatypes import BlogSummary
 data_directory_path = "data/data_warehouse/"
 
 
-def get_file_paths(filetype):  # NOTE: filetype is "article", "tech", or "nontech"
+def get_file_paths(warehouse_dir):
     all_files = []
 
     # loop through and get all files in the summaries folder
-    for root, _, files in os.walk(data_directory_path + filetype):
+    for root, _, files in os.walk(data_directory_path + warehouse_dir):
         for file in files:
             file_path = os.path.join(root, file)
             all_files.append(file_path)
@@ -29,8 +29,8 @@ def load_data_from_json_file(file_path):
         return data_model
 
 
-def get_contents(filetype):
-    files = get_file_paths(filetype)
+def get_contents(warehouse_dir):
+    files = get_file_paths(warehouse_dir)
     contents = []
 
     for file_path in files:
@@ -40,8 +40,8 @@ def get_contents(filetype):
 
 
 # Check if the id of the file already exists. if so, it can be excluded
-def check_cache(id, filetype):
-    contents = get_contents(filetype)
+def is_cached(id, warehouse_dir):
+    contents = get_contents(warehouse_dir)
 
     for content in contents:
         if content.unique_id == id:
