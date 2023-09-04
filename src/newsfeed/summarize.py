@@ -61,17 +61,6 @@ def read_articles(dir):
 def get_article_directories():
     article_directories = []
 
-    # # Make a list of all article directories
-    # for dir in os.listdir(data_directory_path):
-    #     if os.path.isdir(os.path.join(data_directory_path, dir)):
-    #         article_directories.append(dir + "/articles")
-
-    # # Remove summaries directory from list, as we don't wanna summarize the summaries
-    # try:
-    #     article_directories.remove("summaries/articles")
-    # except:
-    #     pass
-
     # NOTE: code not tested properly
     for dir in os.listdir(os.path.join(data_directory_path, "articles")):
         article_directories.append(dir)
