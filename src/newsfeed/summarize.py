@@ -3,6 +3,7 @@ import json
 import os
 import re
 
+import openai
 from dotenv import load_dotenv
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
@@ -10,21 +11,29 @@ from langchain.docstore.document import Document
 from textsum.summarize import Summarizer
 
 from newsfeed.datatypes import BlogInfo
-from newsfeed.get_summaries import check_summary_cache, data_directory_path
+from newsfeed.get_cached_files import data_directory_path, is_cached
 
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def summarize_text(blog_text):
+def summarize_text(blog_text, summary_type):
     # Create a document object list for the library
-    docs = [Document(page_content=blog_text)]
+    messages = [
+        {
+            "role": "system",
+            "content": (
+                "You are going to summarize the following blog in a short and concise manner, max 100 words, ideally less:"
+                if summary_type == "tech"
+                else "You are going to summarize the following blog for a non-technical person in a short and concise manner, max 100 words, ideally less:"
+            ),
+        },
+        {"role": "user", "content": blog_text},
+    ]
 
-    # declare the model with a temperature of 0 in order to maximize conciseness
-    llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
-    chain = load_summarize_chain(llm, chain_type="stuff")
-
-    return chain.run(docs)
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, temperature=0)
+    return response.choices[0].message.content
 
 
 def summarize_local_model(blog_text):
@@ -52,42 +61,39 @@ def read_articles(dir):
 def get_article_directories():
     article_directories = []
 
-    # Make a list of all article directories
-    for dir in os.listdir(data_directory_path):
-        if os.path.isdir(os.path.join(data_directory_path, dir)):
-            article_directories.append(dir + "/articles")
-
-    # Remove summaries directory from list, as we don't wanna summarize the summaries
-    try:
-        article_directories.remove("summaries/articles")
-    except:
-        pass
+    # NOTE: code not tested properly
+    for dir in os.listdir(os.path.join(data_directory_path, "articles")):
+        article_directories.append(dir)
 
     return article_directories
 
 
-def summarize_articles(model_type):
-    # For future kev to deal with.
-    # Fix bug where it fucks up if the articles directory is empty
+def summarize_articles(summary_type, model_type):
+    """summarize all articles into summary_type, i.e. tech or nontech, if they are not already summarized"""
 
     article_directories = get_article_directories()
+    summary_dir = f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
 
     for dir in article_directories:
-        os.makedirs(os.path.dirname(data_directory_path + "/summaries/" + dir + "/"), exist_ok=True)
+        os.makedirs(
+            os.path.dirname(data_directory_path + f"/{summary_dir}/" + dir + "/"),
+            exist_ok=True,
+        )
 
-        blogs = read_articles(data_directory_path + dir)
+        blogs = read_articles(data_directory_path + "articles/" + dir)
 
         for blog in blogs:
-            if check_summary_cache(blog.unique_id):
-                print(f"Summary {blog.get_filename()} already exists.")
-            else:
+            # Check if the blog summary already exists
+            if not is_cached(
+                blog.unique_id, summary_dir
+            ):  # goes into data warehouse / summary_dir and searches for matching ID
                 # Remove file name characters disallowed by the filesystem
                 file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
 
                 print(f"summarizing: {file_name[:10]}...")
 
                 if model_type == "api":
-                    summary = summarize_text(blog.blog_text)
+                    summary = summarize_text(blog.blog_text, summary_type)
                 else:
                     summary = summarize_local_model(blog.blog_text)
 
@@ -101,7 +107,12 @@ def summarize_articles(model_type):
                 }
 
                 with open(
-                    data_directory_path + "/summaries/" + dir + "/" + file_name + ".json",
+                    data_directory_path
+                    + f"/{summary_type}_summaries/"
+                    + dir
+                    + "/"
+                    + file_name
+                    + ".json",
                     "w",
                 ) as file:
                     json.dump(blog_summary, file, indent=4)
@@ -109,10 +120,16 @@ def summarize_articles(model_type):
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--summary_type",
+        type=str,
+        choices=["tech", "nontech"],
+        help='Choose either "tech" or "nontech" as the type of summary',
+    )
     parser.add_argument("--model_type", type=str, default="api", choices=["api", "local_model"])
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    summarize_articles(args.model_type)
+    summarize_articles(summary_type=args.summary_type, model_type=args.model_type)
