@@ -104,7 +104,7 @@ def summarize_articles(summary_type, model_type):
                 print(f"summarizing: {file_name[:10]}...")
 
                 if model_type == "api":
-                    summary = summarize_text(blog.blog_text)
+                    summary = summarize_text(blog.blog_text, summary_type)
                 else:
                     summary = summarize_local_model(blog.blog_text)
 
