@@ -8,6 +8,7 @@ from dotenv import load_dotenv
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
+from textsum.summarize import Summarizer
 
 from newsfeed.datatypes import BlogInfo
 from newsfeed.get_cached_files import data_directory_path, is_cached
@@ -33,6 +34,13 @@ def summarize_text(blog_text, summary_type):
 
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=messages, temperature=0)
     return response.choices[0].message.content
+
+
+def summarize_local_model(blog_text):
+    summarizer = Summarizer()
+    summarized_text = summarizer.summarize_string(blog_text)
+    print(summarized_text)
+    return summarized_text
 
 
 def read_articles(dir):
@@ -71,7 +79,7 @@ def get_article_directories():
     return article_directories
 
 
-def summarize_articles(summary_type):
+def summarize_articles(summary_type, model_type):
     """summarize all articles into summary_type, i.e. tech or nontech, if they are not already summarized"""
 
     article_directories = get_article_directories()
@@ -95,7 +103,10 @@ def summarize_articles(summary_type):
 
                 print(f"summarizing: {file_name[:10]}...")
 
-                summary = summarize_text(blog.blog_text, summary_type)
+                if model_type == "api":
+                    summary = summarize_text(blog.blog_text)
+                else:
+                    summary = summarize_local_model(blog.blog_text)
 
                 # Follow BlogSummary schema
                 blog_summary = {
@@ -126,9 +137,10 @@ def parse_args():
         choices=["tech", "nontech"],
         help='Choose either "tech" or "nontech" as the type of summary',
     )
+    parser.add_argument("--model_type", type=str, default="api", choices=["api", "local_model"])
     return parser.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    summarize_articles(summary_type=args.summary_type)
+    summarize_articles(summary_type=args.summary_type, model_type=args.model_type)
