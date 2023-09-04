@@ -1,3 +1,5 @@
+from urllib.parse import urlparse
+
 import dash_bootstrap_components as dbc
 import dash_daq as daq
 from dash import Dash, Input, Output, html
@@ -25,6 +27,9 @@ def update_summary_container(
         summaries = get_contents("nontech_summaries")
 
     summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
+    summaries = amount_summaries_from_each_source(
+        summaries, n=5
+    )  # get top n most recent summaries from each unique source
 
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
@@ -61,6 +66,30 @@ def sort_summaries(summaries):
     sorted_summaries = sorted(summaries, key=lambda x: x.published, reverse=True)
 
     return sorted_summaries
+
+
+def get_summary_by_source(summaries):
+    summaries_dict = {}
+
+    for summary in summaries:
+        source = summary.source
+
+        if source not in summaries_dict:
+            summaries_dict[source] = []
+
+        summaries_dict[summary.source].append(summary)
+
+    return summaries_dict
+
+
+def amount_summaries_from_each_source(summaries, n=5):
+    top_summaries = []
+    summaries_dict = get_summary_by_source(summaries)
+
+    for source in summaries_dict:
+        top_summaries.append(summaries_dict[source][:n:])
+
+    return top_summaries
 
 
 def create_layout():  # This function creates the layout for the dash app
