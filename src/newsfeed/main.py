@@ -70,7 +70,7 @@ def sort_summaries(summaries):
 
 def get_source(summary):
     parsed_url = urlparse(summary.link)
-    source = parsed_url.netloc
+    source = parsed_url.netloc  # netloc gives "https://example.com/something" -> "example.com"
 
     return source
 
