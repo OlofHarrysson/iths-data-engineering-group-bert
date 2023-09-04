@@ -1,0 +1,7 @@
+{
+    "unique_id": "00d21d5c-08ab-584f-8e0a-943cecd0fa55",
+    "title": "This 3D printed gripper doesn't need electronics to function",
+    "summary": "Researchers at the University of California San Diego have developed a soft gripper that can pick up, hold, and release objects. The gripper is equipped with built-in gravity and touch sensors and can be used right off the 3D printer. It is the first gripper of its kind to have both gripping and releasing capabilities. The gripper uses fluidic logic to remember when it has grasped an object and releases it when it detects the weight of the object pushing to the side. The researchers also developed a new 3D printing method that reduces leaks and defects in the printed piece and allows for printing of thin walls. This soft gripper has potential applications in industrial manufacturing, food production, research, and exploration tasks.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230727212035.htm",
+    "published": "2023-07-27"
+}
