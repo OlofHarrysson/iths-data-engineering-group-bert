@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import re
@@ -6,6 +7,7 @@ from dotenv import load_dotenv
 from langchain.chains.summarize import load_summarize_chain
 from langchain.chat_models import ChatOpenAI
 from langchain.docstore.document import Document
+from textsum.summarize import Summarizer
 
 from newsfeed.datatypes import BlogInfo
 from newsfeed.get_summaries import check_summary_cache, data_directory_path
@@ -22,8 +24,14 @@ def summarize_text(blog_text):
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
     chain = load_summarize_chain(llm, chain_type="stuff")
 
-    # return a string
     return chain.run(docs)
+
+
+def summarize_local_model(blog_text):
+    summarizer = Summarizer()
+    summarized_text = summarizer.summarize_string(blog_text)
+    print(summarized_text)
+    return summarized_text
 
 
 def read_articles(dir):
@@ -58,7 +66,7 @@ def get_article_directories():
     return article_directories
 
 
-def summarize_articles():
+def summarize_articles(model_type):
     # For future kev to deal with.
     # Fix bug where it fucks up if the articles directory is empty
 
@@ -70,14 +78,18 @@ def summarize_articles():
         blogs = read_articles(data_directory_path + dir)
 
         for blog in blogs:
-            # Check if the blog summary already exists
-            if not check_summary_cache(blog.unique_id):
+            if check_summary_cache(blog.unique_id):
+                print(f"Summary {blog.get_filename()} already exists.")
+            else:
                 # Remove file name characters disallowed by the filesystem
                 file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
 
                 print(f"summarizing: {file_name[:10]}...")
 
-                summary = summarize_text(blog.blog_text)
+                if model_type == "api":
+                    summary = summarize_text(blog.blog_text)
+                else:
+                    summary = summarize_local_model(blog.blog_text)
 
                 # Follow BlogSummary schema
                 blog_summary = {
@@ -95,5 +107,12 @@ def summarize_articles():
                     json.dump(blog_summary, file, indent=4)
 
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model_type", type=str, default="api", choices=["api", "local_model"])
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    summarize_articles()
+    args = parse_args()
+    summarize_articles(args.model_type)
