@@ -1,5 +1,3 @@
-from textsum.summarize import Summarizer
-
 from newsfeed.summarize import summarize_local_model
 
 
