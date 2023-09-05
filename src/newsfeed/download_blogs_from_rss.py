@@ -6,6 +6,7 @@ import requests
 LINK_TO_XML_FILE = {
     "mit": "https://news.mit.edu/rss/topic/artificial-intelligence2",
     "sd": "https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml",
+    "openai": "https://jamesg.blog/openai.xml",
 }
 
 
