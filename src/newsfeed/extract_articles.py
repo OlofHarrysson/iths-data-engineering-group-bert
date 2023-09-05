@@ -75,7 +75,9 @@ def extract_articles_from_xml(parsed_xml, blog_name):
             description=item.description.text,
             link=item.link.text,
             blog_text=blog_text,
-            published=pd.to_datetime(item.pubDate.text.replace("EDT", "-0400")).date(),
+            published=pd.to_datetime(
+                item.pubDate.text.replace("EDT", "-0400")
+            ).date(),  # tzinfo does not know how to handle "EDT", replacing it with equivalent "-0400" (4 hours behind UTC)
             timestamp=datetime.now(),
         )
 
