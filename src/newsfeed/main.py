@@ -28,7 +28,7 @@ def update_summary_container(
         dbc.Card(
             dbc.CardBody(
                 [
-                    html.H4(summary.title, className="ccard-title"),
+                    html.H4(summary.title),
                     html.P(summary.summary),
                     html.P(
                         f"Published: {summary.published}",
