@@ -57,7 +57,9 @@ def send_summary(
 
 
 if __name__ == "__main__":
-    summaries = get_contents("tech_summaries")
+    summaries = get_contents(
+        "tech_summaries"
+    )  # when ran, sends all tech_summaries to our summary text chat
 
     for summary in summaries:
         send_summary(
