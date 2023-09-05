@@ -57,7 +57,7 @@ def send_summary(
 
 
 if __name__ == "__main__":
-    summaries = get_contents()
+    summaries = get_contents("tech_summaries")
 
     for summary in summaries:
         send_summary(
