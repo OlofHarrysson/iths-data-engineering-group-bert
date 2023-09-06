@@ -39,7 +39,7 @@ def get_contents(warehouse_dir):
 
     # create a list of articles if dir is articles, else a list of summaries of the respective subdirectory (tech, nontech, etc)
     contents = [
-        load_blog_info(file_path) if file_path == "artices" else load_blog_summary(file_path)
+        load_blog_info(file_path) if "/articles/" in file_path else load_blog_summary(file_path)
         for file_path in files
     ]
 
