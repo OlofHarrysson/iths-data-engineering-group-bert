@@ -46,7 +46,7 @@ def update_summary_container(
                         style={"font-size": "12px", "color": "gray"},
                     ),
                     dbc.Button(
-                        "Visit Blog",
+                        f"Source: {get_source(summary)}",
                         color="primary",
                         href=summary.link,
                         target="_blank",
