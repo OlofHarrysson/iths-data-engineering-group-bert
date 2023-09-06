@@ -100,20 +100,22 @@ def amount_summaries_from_each_source(summaries, n=10):
 
 
 def create_layout():  # This function creates the layout for the dash app
+    header = (dbc.Row(dbc.Col(html.H1("Newsfeed"), width={"size": 10, "offset": 1})),)
     return dbc.CardBody(
-        [
-            dbc.Row(dbc.Col(dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True))),
+        [  # dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True)
+            header,
             dbc.Row(
                 dbc.Col(
                     daq.ToggleSwitch(
                         id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
-                    )
+                    ),
+                    width={"size": 2, "offset": 1},
                 )
             ),
             dbc.Row(
                 [
                     dbc.Col(
-                        id="article_container", width=12
+                        id="article_container", width={"size": 10, "offset": 1}
                     )  # This is the container that will hold the articles and will be updated by the callback
                 ]
             ),
