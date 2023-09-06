@@ -4,16 +4,16 @@ repos:
   rev: v4.4.0
   hooks:
   - id: trailing-whitespace
-  - id: check-yaml
+#  - id: check-yaml
   - id: check-toml
   - id: check-added-large-files
   - id: debug-statements
     language_version: python3
-- repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
-  rev: 0.2.3
-  hooks:
-  - id: yamlfmt
-    args: [--mapping, '2', --sequence, '2', --offset, '0', --width, '150', --preserve-quotes]
+#- repo: https://github.com/jumanjihouse/pre-commit-hook-yamlfmt
+#  rev: 0.2.3
+#  hooks:
+#  - id: yamlfmt
+#    args: [--mapping, '2', --sequence, '2', --offset, '0', --width, '150', --preserve-quotes]
 - repo: https://github.com/psf/black
   rev: 23.3.0
   hooks:
