@@ -123,6 +123,7 @@ def parse_args():
     parser.add_argument(
         "--summary_type",
         type=str,
+        default="tech",
         choices=["tech", "nontech"],
         help='Choose either "tech" or "nontech" as the type of summary',
     )
