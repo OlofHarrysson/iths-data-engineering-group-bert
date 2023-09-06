@@ -16,3 +16,4 @@ langchain
 textsum
 dash_daq
 apache-airflow
+python-dotenv
