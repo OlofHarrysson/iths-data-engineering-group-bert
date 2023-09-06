@@ -61,8 +61,8 @@ def parse_args():
         default="tech_summaries",
         choices=[
             "tech_summaries",
-            "non_tech_summaries",
-            "sv_non_tech_summaries",
+            "nontech_summaries",
+            "sv_nontech_summaries",
             "sv_tech_summaries",
         ],
     )
