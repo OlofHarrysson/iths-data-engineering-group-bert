@@ -53,6 +53,7 @@ def update_summary_container(
                     ),
                 ]
             ),
+            style={"margin-top": "10px"},
             color="dark",
             inverse=True,
         )
