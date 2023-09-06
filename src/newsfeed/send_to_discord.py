@@ -59,7 +59,12 @@ def parse_args():
         "--summary_type",
         type=str,
         default="tech_summaries",
-        choices=["tech_summaries", "sv_tech_summaries"],
+        choices=[
+            "tech_summaries",
+            "non_tech_summaries",
+            "sv_non_tech_summaries",
+            "sv_tech_summaries",
+        ],
     )
     return parser.parse_args()
 
