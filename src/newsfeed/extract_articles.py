@@ -87,7 +87,6 @@ def extract_articles_from_xml(parsed_xml, blog_name):
         else:
             raise ValueError(f"Unknown blog_name: {blog_name}")
 
-        # Inte säker på denna(?)
         article_info = BlogInfo(
             unique_id=unique_id,
             title=title,
