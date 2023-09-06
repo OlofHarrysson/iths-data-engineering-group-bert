@@ -18,28 +18,30 @@ def get_file_paths(warehouse_dir):
     return all_files
 
 
-def load_data_from_json_file(file_path):
+def load_blog_info(file_path):
     # Load the file data
     with open(file_path, "r") as file:
         json_data = json.load(file)
+    data_model = BlogInfo(**json_data)
+    return data_model
 
-        # if loading an article use the article datatype
-        if file_path.startswith("data/data_warehouse/articles/"):
-            data_model = BlogInfo(**json_data)
 
-        # else use the summary datatype
-        else:
-            data_model = BlogSummary(**json_data)
-
-        return data_model
+def load_blog_summary(file_path):
+    # Load the file data
+    with open(file_path, "r") as file:
+        json_data = json.load(file)
+    data_model = BlogSummary(**json_data)
+    return data_model
 
 
 def get_contents(warehouse_dir):
     files = get_file_paths(warehouse_dir)
-    contents = []
 
-    for file_path in files:
-        contents.append(load_data_from_json_file(file_path))
+    # create a list of articles if dir is articles, else a list of summaries of the respective subdirectory (tech, nontech, etc)
+    contents = [
+        load_blog_info(file_path) if file_path == "artices" else load_blog_summary(file_path)
+        for file_path in files
+    ]
 
     return contents
 
