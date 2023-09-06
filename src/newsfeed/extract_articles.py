@@ -26,24 +26,6 @@ def load_metadata(blog_name):
     return parsed_xml
 
 
-# TODO: Follow parsed_xml all the way til the end to see how it works and what it contains.
-# TODO: Change the test to get data from "item"(?) instead of links
-
-# ________________________________________________-
-
-# TODO: Write a function that extracts links from XML file, ->
-# TODO: -> Write function that extracts blog_text and other metadata like published, date etc with input of a link
-
-# def GetLinks(item) -> str:
-#     """Extract links from XML file stored locally"""
-#     links = []
-#     link_elements = item.find_all('link')
-#     for link_element in link_elements:
-#         link = link_element.text
-#         links.append(link)
-#     return links
-
-
 def get_blog_text_mit(item) -> str:
     """extract blog text from mit source, returns str containing blog text"""
     raw_text = item.find("content:encoded").text
@@ -62,7 +44,7 @@ def get_blog_text_sd(item) -> str:
     response = requests.get(url, headers=headers)
     raw_text = response.text
     soup = BeautifulSoup(raw_text, "html.parser")
-    blog_text = soup.find("div", id="text").get_text()  # article text is under div with id "text"
+    blog_text = soup.find("div", id="text").get_text()
 
     return blog_text
 
@@ -73,18 +55,16 @@ def get_blog_text_openai(item) -> str:
         "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
     }
     url = item.find("link").text  # get url to article from xml
-    response = requests.get(url, headers=headers)  # changed code here to url from item
+    response = requests.get(url, headers=headers)
     raw_text = response.text
     soup = BeautifulSoup(raw_text, "html.parser")
     blog_text = soup.find(id="content").get_text()
-    # print(content)
-    # asd
     return blog_text
 
 
 def extract_articles_from_xml(parsed_xml, blog_name):
     articles = []
-    for item in parsed_xml.find_all("item"):  # Här är jag
+    for item in parsed_xml.find_all("item"):
         title = item.title.text
         unique_id = create_uuid_from_string(title)
 
