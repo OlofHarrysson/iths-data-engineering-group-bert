@@ -1,7 +1,0 @@
-{
-    "unique_id": "1c28e90b-4f67-5e50-b75a-98f445c219e7",
-    "title": "Robotic glove that 'feels' lends a 'hand'  to relearn playing piano after a stroke",
-    "summary": "Researchers from Florida Atlantic University have developed a robotic glove that uses artificial intelligence (AI) to improve hand dexterity for piano players who have suffered a stroke. The soft robotic hand exoskeleton combines flexible tactile sensors, soft actuators, and AI to provide support and assistance to individuals relearning and regaining their motor abilities. The glove is able to \"feel\" the difference between correct and incorrect versions of a song and offers real-time feedback and adjustments to help users grasp the correct movement techniques. The glove was tested on the well-known tune \"Mary Had a Little Lamb\" and achieved a classification accuracy of 97.13% with a human subject and 94.60% without a human subject. The researchers believe that this technology could be applied to other tasks of daily life and facilitate customized rehabilitation programs for patients with neuromuscular disorders.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230630130152.htm",
-    "published": "2023-06-30"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "ec77dc51-b5da-5c62-b84d-20d23090e0ff",
-    "title": "Hybrid AI-powered computer vision combines physics and big data",
-    "summary": "A recent study published in Nature Machine Intelligence discusses a hybrid methodology that combines physics and data-driven techniques to improve the capabilities of artificial intelligence (AI) in tasks such as autonomous driving and robotic precision actions. The study highlights three ways in which physics and data are being integrated into computer vision AI: incorporating physics into AI data sets, tagging objects with additional physical information; incorporating physics into network architectures, using filters to code physical properties into what cameras capture; and incorporating physics into network loss functions, leveraging physics knowledge to help AI interpret training data. This hybrid approach has shown promising results, allowing AI to track and predict object motion more accurately and produce high-resolution images in challenging weather conditions. The researchers believe that with further progress, deep learning-based AIs may even learn the laws of physics on their own. The study was supported by grants from the Army Research Laboratory and various other organizations.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230614220605.htm",
-    "published": "2023-06-14"
-}

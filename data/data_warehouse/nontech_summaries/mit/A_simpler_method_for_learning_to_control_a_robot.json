@@ -1,7 +1,7 @@
 {
     "unique_id": "9b3fc437-d1ce-5ad5-b8a6-1de70da8010e",
     "title": "A simpler method for learning to control a robot",
-    "summary": "Researchers from MIT and Stanford University have developed a new machine-learning approach that could improve the control of robots, such as drones and autonomous vehicles, in dynamic environments. The approach incorporates structure from control theory into the learning process, allowing the system to learn effective controllers more efficiently. By learning the system's dynamics and control-oriented structures from data, the researchers can create controllers that perform better in real-world scenarios. The technique also requires less data than other approaches, making it more efficient in rapidly changing environments. The researchers believe their approach could be applied to various types of dynamical systems in the future.",
+    "summary": "Researchers from MIT and Stanford University have developed a machine-learning approach that could improve the control of robots, such as drones and autonomous vehicles, in dynamic environments. The approach incorporates structure from control theory into the learning process, enabling the creation of more effective controllers. The technique also requires less data than other approaches, making it more efficient in rapidly changing conditions. The researchers believe their approach could be applied to a range of dynamical systems, from robotic arms to spacecraft. The research was supported by NASA and the Natural Sciences and Engineering Research Council of Canada.",
     "link": "https://news.mit.edu/2023/simpler-method-learning-control-robot-0726",
     "published": "2023-07-26"
 }

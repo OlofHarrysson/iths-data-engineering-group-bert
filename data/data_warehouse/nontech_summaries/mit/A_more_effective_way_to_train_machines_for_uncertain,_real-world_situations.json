@@ -1,7 +1,7 @@
 {
     "unique_id": "d0ce8a20-45ad-5474-8bab-abbb78f59b4d",
     "title": "A more effective way to train machines for uncertain, real-world situations",
-    "summary": "Researchers from MIT and Technion have developed an algorithm that combines imitation learning and reinforcement learning to train machines more effectively. The algorithm dynamically determines when the machine should mimic a teacher and when it should explore on its own. By comparing the performance of two student machines\u2014one using imitation learning and reinforcement learning, and the other using only reinforcement learning\u2014the algorithm adjusts the weighting of the learning objectives to achieve better results. The researchers tested their approach in simulations and found that it outperformed methods that used only one type of learning. This algorithm could improve the training process for machines deployed in real-world situations.",
+    "summary": "Researchers from MIT and Technion have developed an algorithm that combines imitation learning and reinforcement learning to train machines more effectively. The algorithm dynamically determines when the machine should mimic a teacher and when it should explore on its own. By adapting the weighting of the two learning methods, the algorithm can achieve better results and faster learning. The researchers tested the approach in simulations and found that it outperformed methods that used only one type of learning. The algorithm could improve the training process for machines deployed in real-world situations, such as robots navigating unfamiliar environments.",
     "link": "https://news.mit.edu/2023/more-effective-train-machines-uncertain-real-world-situations-0531",
     "published": "2023-05-31"
 }

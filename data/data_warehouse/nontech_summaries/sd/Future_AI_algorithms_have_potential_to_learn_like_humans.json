@@ -1,7 +1,0 @@
-{
-    "unique_id": "e910406b-a331-5a2a-b927-0a8420699e89",
-    "title": "Future AI algorithms have potential to learn like humans",
-    "summary": "Researchers at The Ohio State University have made progress in addressing the issue of \"catastrophic forgetting\" in artificial neural networks, which causes them to lose information from previous tasks as they learn new ones. The team found that neural networks are better able to recall information when faced with diverse tasks in succession, rather than tasks that share similar features. This finding could help bridge the gap between how machines learn and how humans learn, and could lead to the development of intelligent machines that can learn and adapt like humans. The research was presented at the International Conference on Machine Learning.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230720124956.htm",
-    "published": "2023-07-20"
-}

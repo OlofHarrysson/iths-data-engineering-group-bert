@@ -21,8 +21,8 @@ def extract_articles_task() -> None:
 
 @task(task_id="summarize_task")
 def summarize_task() -> None:
-    summarize.main("nontech")
-    summarize.main("tech")
+    summarize.summarize_articles("nontech", "api")
+    summarize.summarize_articles("tech", "api")
 
 
 @dag(

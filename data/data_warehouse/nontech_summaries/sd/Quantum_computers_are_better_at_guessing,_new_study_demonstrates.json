@@ -1,7 +1,0 @@
-{
-    "unique_id": "645c967b-b00f-5c6a-a721-1896648475c4",
-    "title": "Quantum computers are better at guessing, new study demonstrates",
-    "summary": "Quantum computers have the potential to solve complex problems more efficiently than classical computers. However, they are also prone to errors, which is known as the \"NISQ\" era. In a recent study, researchers used a noise suppression technique called dynamical decoupling to achieve a quantum speedup. They found that as the problems became more complex, the quantum advantage became increasingly evident. While classical computers can still solve the problem faster in absolute terms, the study shows that with proper error control, quantum computers can execute algorithms with better scaling of the time it takes to find the solution.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230605181221.htm",
-    "published": "2023-06-05"
-}
