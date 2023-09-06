@@ -24,6 +24,8 @@ def update_summary_container(
     else:
         summaries = get_contents("nontech_summaries")
 
+    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
+
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
             dbc.CardBody(
@@ -52,6 +54,13 @@ def update_summary_container(
         for summary in summaries
     ]
     return cards
+
+
+def sort_summaries(summaries):
+    # sort summaries by published date in descending order (newest first)
+    sorted_summaries = sorted(summaries, key=lambda x: x.published, reverse=True)
+
+    return sorted_summaries
 
 
 def create_layout():  # This function creates the layout for the dash app
