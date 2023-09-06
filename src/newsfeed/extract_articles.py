@@ -76,14 +76,16 @@ def extract_articles_from_xml(parsed_xml, blog_name):
         if blog_name == "mit":
             blog_text = get_blog_text_mit(item)
 
-        if blog_name == "sd":
+        elif blog_name == "sd":
             blog_text = get_blog_text_sd(item)
             time.sleep(
                 0.2
             )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
-
-        if blog_name == "openai":
+        elif blog_name == "openai":
             blog_text = get_blog_text_openai(item)
+
+        else:
+            raise ValueError(f"Unknown blog_name: {blog_name}")
 
         # Inte säker på denna(?)
         article_info = BlogInfo(
