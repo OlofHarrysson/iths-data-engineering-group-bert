@@ -18,13 +18,16 @@ def create_uuid_from_string(title):
 
 
 def load_metadata(blog_name):
-    metadata_path = Path("data/data_lake") / blog_name / "metadata.xml"
+    metadata_path = Path("data/data_lake/") / blog_name / "metadata.xml"  # all xml files
     with open(metadata_path) as f:
         xml_text = f.read()
 
     parsed_xml = BeautifulSoup(xml_text, "xml")
     return parsed_xml
 
+
+# TODO: Follow parsed_xml all the way til the end to see how it works and what it contains.
+# TODO: Change the test to get data from "item"(?) instead of links
 
 # ________________________________________________-
 
@@ -64,9 +67,24 @@ def get_blog_text_sd(item) -> str:
     return blog_text
 
 
+def get_blog_text_openai(item) -> str:
+    """Send request to openai and get blog text and return str containing blog text"""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    }
+    url = item.find("link").text  # get url to article from xml
+    response = requests.get(url, headers=headers)  # changed code here to url from item
+    raw_text = response.text
+    soup = BeautifulSoup(raw_text, "html.parser")
+    blog_text = soup.find(id="content").get_text()
+    # print(content)
+    # asd
+    return blog_text
+
+
 def extract_articles_from_xml(parsed_xml, blog_name):
     articles = []
-    for item in parsed_xml.find_all("item"):
+    for item in parsed_xml.find_all("item"):  # Här är jag
         title = item.title.text
         unique_id = create_uuid_from_string(title)
 
@@ -84,9 +102,10 @@ def extract_articles_from_xml(parsed_xml, blog_name):
                 0.2
             )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
 
-        # if blog_name == "openai":
-        #     blog_text = GetLinks(item)
+        if blog_name == "openai":
+            blog_text = get_blog_text_openai(item)
 
+        # Inte säker på denna(?)
         article_info = BlogInfo(
             unique_id=unique_id,
             title=title,
@@ -130,65 +149,5 @@ def parse_args():
 
 
 if __name__ == "__main__":
-    # get_blog_text_openai()
     args = parse_args()
     main(blog_name=args.blog_name)
-
-
-# import requests
-# from bs4 import BeautifulSoup
-
-# def extract_metadata_from_link(main_link, link_to_follow):
-#     try:
-#         # Step 1: Send an HTTP GET request to the main link
-#         main_response = requests.get(main_link)
-#         main_response.raise_for_status()
-
-#         # Parse the HTML content of the main page
-#         main_soup = BeautifulSoup(main_response.text, 'html.parser')
-
-#         # Step 2: Extract the link to follow
-#         follow_link = main_soup.find('a', href=link_to_follow)
-
-#         if follow_link:
-#             # Construct the absolute URL for the link to follow
-#             absolute_follow_link = main_link + follow_link['href']
-
-#             # Send an HTTP GET request to the link to follow
-#             follow_response = requests.get(absolute_follow_link)
-#             follow_response.raise_for_status()
-
-#             # Parse the HTML content of the linked page
-#             follow_soup = BeautifulSoup(follow_response.text, 'html.parser')
-
-#             # Extract information from the linked page
-#             metadata = {}
-
-#             # Extract blog text
-#             blog_text = ''
-#             for paragraph in follow_soup.find_all('p'):
-#                 blog_text += paragraph.text + '\n'
-
-#             metadata['blog_text'] = blog_text.strip()
-
-#             # Extract other metadata (add more fields as needed)
-#             # metadata['published_date'] = follow_soup.find('span', class_='published-date').text
-
-#             return metadata
-
-#         else:
-#             print("Link to follow not found on the main page.")
-#             return None
-
-#     except requests.exceptions.RequestException as e:
-#         print(f"Error: {e}")
-#         return None
-
-# # Example usage:
-# if __name__ == "__main__":
-#     main_link = "https://example.com/"
-#     link_to_follow = "/sample-blog-link"
-#     metadata = extract_metadata_from_link(main_link, link_to_follow)
-#     if metadata:
-#         print("Blog Text:")
-#         print(metadata['blog_text'])
