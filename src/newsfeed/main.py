@@ -22,9 +22,9 @@ def update_summary_container(
     toggle_switch,
 ):  # This function will be called when the toggle switch is toggled
     if toggle_switch:
-        summaries = get_contents("tech_summaries")
-    else:
         summaries = get_contents("nontech_summaries")
+    else:
+        summaries = get_contents("tech_summaries")
 
     summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
@@ -46,7 +46,7 @@ def update_summary_container(
                         style={"font-size": "12px", "color": "gray"},
                     ),
                     dbc.Button(
-                        "Visit Blog",
+                        f"Source: {get_source(summary)}",
                         color="primary",
                         href=summary.link,
                         target="_blank",
@@ -106,7 +106,7 @@ def create_layout():  # This function creates the layout for the dash app
             dbc.Row(
                 dbc.Col(
                     daq.ToggleSwitch(
-                        id="toggle_switch", value=False, color="#9B51E0", label=["Non-Tech", "Tech"]
+                        id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
                     )
                 )
             ),
