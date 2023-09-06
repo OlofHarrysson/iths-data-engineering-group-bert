@@ -40,10 +40,11 @@ def get_contents(warehouse_dir):
 
     for file_path in files:
         if file_path.startswith("data/data_warehouse/articles/"):
-            # contents.append(load_data_from_json_file(file_path)) TODO: update function name
+            contents.append(load_blog_info(file_path))  # load article
+        else:
+            contents.append(load_blog_summary(file_path))  # load summary
 
-            # return contents
-            pass
+        return contents
 
 
 # Check if the id of the file already exists. if so, it can be excluded
