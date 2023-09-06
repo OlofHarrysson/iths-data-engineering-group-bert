@@ -36,15 +36,14 @@ def load_blog_summary(file_path):
 
 def get_contents(warehouse_dir):
     files = get_file_paths(warehouse_dir)
-    contents = []
 
-    for file_path in files:
-        if file_path.startswith("data/data_warehouse/articles/"):
-            contents.append(load_blog_info(file_path))  # load article
-        else:
-            contents.append(load_blog_summary(file_path))  # load summary
+    # create a list of articles if dir is articles, else a list of summaries of the respective subdirectory (tech, nontech, etc)
+    contents = [
+        load_blog_info(file_path) if file_path == "artices" else load_blog_summary(file_path)
+        for file_path in files
+    ]
 
-        return contents
+    return contents
 
 
 # Check if the id of the file already exists. if so, it can be excluded
