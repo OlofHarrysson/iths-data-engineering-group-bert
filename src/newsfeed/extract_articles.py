@@ -18,7 +18,7 @@ def create_uuid_from_string(title):
 
 
 def load_metadata(blog_name):
-    metadata_path = Path("data/data_lake") / blog_name / "metadata.xml"
+    metadata_path = Path("data/data_lake/") / blog_name / "metadata.xml"  # all xml files
     with open(metadata_path) as f:
         xml_text = f.read()
 
@@ -44,8 +44,21 @@ def get_blog_text_sd(item) -> str:
     response = requests.get(url, headers=headers)
     raw_text = response.text
     soup = BeautifulSoup(raw_text, "html.parser")
-    blog_text = soup.find("div", id="text").get_text()  # article text is under div with id "text"
+    blog_text = soup.find("div", id="text").get_text()
 
+    return blog_text
+
+
+def get_blog_text_openai(item) -> str:
+    """Send request to openai and get blog text and return str containing blog text"""
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Linux; U; Android 4.1.1; en-gb; Build/KLP) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Safari/534.30"
+    }
+    url = item.find("link").text  # get url to article from xml
+    response = requests.get(url, headers=headers)
+    raw_text = response.text
+    soup = BeautifulSoup(raw_text, "html.parser")
+    blog_text = soup.find(id="content").get_text()
     return blog_text
 
 
@@ -69,6 +82,10 @@ def extract_articles_from_xml(parsed_xml, blog_name):
                 0.2
             )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
 
+        if blog_name == "openai":
+            blog_text = get_blog_text_openai(item)
+
+        # Inte säker på denna(?)
         article_info = BlogInfo(
             unique_id=unique_id,
             title=title,
