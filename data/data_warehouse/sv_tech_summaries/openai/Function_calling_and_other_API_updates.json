@@ -1,0 +1,7 @@
+{
+    "unique_id": "1d322508-db87-5d89-986b-cc5a69a1fac6",
+    "title": "Function calling and other API updates",
+    "summary": "OpenAI meddelar att de f\u00f6rl\u00e4nger st\u00f6det f\u00f6r modellerna gpt-3.5-turbo-0301, gpt-4-0314 och gpt-4-32k-0314 till minst den 13 juni 2024. De arbetar ocks\u00e5 p\u00e5 att f\u00f6rb\u00e4ttra nya modellversioner genom att fokusera p\u00e5 instruktionsf\u00f6ljning, faktuell noggrannhet och avvisningsbeteende. En ny funktion som introducerats \u00e4r m\u00f6jligheten att beskriva funktioner f\u00f6r modellerna gpt-4-0613 och gpt-3.5-turbo-0613, vilket g\u00f6r det m\u00f6jligt att f\u00e5 strukturerade data fr\u00e5n modellen. Dessutom har de lanserat uppdaterade versioner av gpt-4 och gpt-3.5-turbo samt s\u00e4nkt priset p\u00e5 vissa modeller.",
+    "link": "https://openai.com/blog/function-calling-and-other-api-updates",
+    "published": "2023-06-13"
+}
