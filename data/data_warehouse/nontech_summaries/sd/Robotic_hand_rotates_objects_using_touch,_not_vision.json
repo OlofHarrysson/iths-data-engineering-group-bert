@@ -1,0 +1,7 @@
+{
+    "unique_id": "e6034b65-1b85-5823-98b0-971540b10a86",
+    "title": "Robotic hand rotates objects using touch, not vision",
+    "summary": "Researchers have developed a robotic hand that can rotate objects without damaging them using only touch information. The hand is equipped with 16 low-cost touch sensors that detect whether an object is touching them or not. This approach is unique because it uses many sensors spread over a large area of the hand, unlike other methods that rely on a few expensive sensors in a small area. The researchers trained the system using simulations and then tested it on real objects, including fruits, vegetables, and toys. The robotic hand was able to rotate the objects without losing its grip. The researchers are now working on expanding the capabilities of the hand to perform more complex tasks like catching and throwing.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230726113044.htm",
+    "published": "2023-07-26"
+}

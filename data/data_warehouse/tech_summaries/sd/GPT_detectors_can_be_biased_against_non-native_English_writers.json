@@ -1,0 +1,7 @@
+{
+    "unique_id": "1af3dc52-6eac-5251-b1b1-661d57589c16",
+    "title": "GPT detectors can be biased against non-native English writers",
+    "summary": "Researchers from Stanford University have warned against the use of AI detectors, such as OpenAI's ChatGPT, in reviewing job applications, college entrance essays, and high school assignments. The detectors, which claim to identify AI-generated text, were found to be unreliable and ineffective in a study. The detectors incorrectly labeled over half of non-native English speakers' essays as AI-generated, while correctly classifying over 90% of essays written by eighth-grade students. The detectors work by evaluating text perplexity, meaning essays with simpler word choices are more likely to be flagged as AI-generated. The researchers suggest that the detectors should be further improved and evaluated before being used in educational settings.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230710113921.htm",
+    "published": "2023-07-10"
+}
