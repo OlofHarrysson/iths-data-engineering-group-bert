@@ -154,13 +154,13 @@ def create_layout():  # This function creates the layout for the dash app
             ],
             style={"display": "flex"},
             width={"size": 2, "offset": 1},
-        )
+        ),
     )
 
     # container holding all cards with summaries
     contents = dbc.Row(dbc.Col(id="article_container", width={"size": 10, "offset": 1}))
 
-    return dbc.CardBody(
+    return dbc.Container(
         [  # dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True)
             header,
             control_panel,
