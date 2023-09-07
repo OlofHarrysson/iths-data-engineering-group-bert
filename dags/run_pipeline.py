@@ -36,7 +36,7 @@ def send_to_discord_task() -> None:
 @dag(
     dag_id="run_pipeline",
     start_date=datetime(2023, 6, 2),
-    schedule_interval=None,
+    schedule_interval="0 1 * * *",  # This schedule runs at 1 AM every day
     catchup=False,
 )
 def test_pipeline() -> None:
