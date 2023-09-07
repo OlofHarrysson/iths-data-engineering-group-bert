@@ -110,7 +110,7 @@ def save_articles(articles, blog_name):
     )  # NOTE: changed to articles / blog_name
     save_dir.mkdir(exist_ok=True, parents=True)
     for article in articles:
-        save_path = save_dir / article.get_filename()
+        save_path = save_dir / (article.get_filename() + ".json")
         with open(save_path, "w") as f:
             f.write(article.json(indent=2))
 
