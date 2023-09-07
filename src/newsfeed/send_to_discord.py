@@ -37,24 +37,6 @@ def send_summary(
     result = requests.post(webhook_url, json=data)
     result.raise_for_status()  # Check for HTTP errors
 
-    # try:
-    #     result = requests.post(webhook_url, json=data)
-    #     result.raise_for_status()  # Check for HTTP errors
-    # except requests.exceptions.RequestException as req_err:
-    #     print(
-    #         "An error occurred during the request:", req_err
-    #     )  # Handle connection errors, timeouts, and other request-related issues here
-    # except requests.exceptions.HTTPError as http_err:
-    #     print("HTTP error:", http_err)
-    #     print("Response text:", result.text)
-    #     # Handle HTTP errors, such as 4xx and 5xx status codes, here
-    # except Exception as err:
-    #     print("An unexpected error occurred:", err)  # Handle any other errors here
-    # else:
-    #     print(
-    #         "Payload delivered successfully, code {}.".format(result.status_code)
-    #     )  # If no errors occurred, print the result code
-
 
 if __name__ == "__main__":
     summaries = get_contents(
