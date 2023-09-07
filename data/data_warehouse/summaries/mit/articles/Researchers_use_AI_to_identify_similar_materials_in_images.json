@@ -1,0 +1,7 @@
+{
+    "unique_id": "7baccb63-d021-5ac3-a71a-e270332c0b66",
+    "title": "Researchers use AI to identify similar materials in images",
+    "summary": "Scientists at MIT and Adobe Research have developed a technique that allows a robot or machine to identify all pixels in an image representing a given material. The method is accurate even when objects have varying shapes and sizes, and it is not affected by shadows or lighting conditions. The researchers trained their model using synthetic data and found that it works effectively on real indoor and outdoor scenes. This technique has applications in robotics, image editing, material-based web recommendation systems, and more. The model transforms generic visual features into material-specific features and computes a material similarity score for every pixel in the image. The user can fine-tune the results by setting a similarity threshold. The researchers achieved a 92% accuracy in predicting regions of an image that contain the same material.",
+    "link": "https://news.mit.edu/2023/researchers-identify-similar-materials-images-0523",
+    "published": "2023-05-23"
+}

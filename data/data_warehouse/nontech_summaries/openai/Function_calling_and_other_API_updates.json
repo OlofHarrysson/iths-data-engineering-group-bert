@@ -1,0 +1,7 @@
+{
+    "unique_id": "1d322508-db87-5d89-986b-cc5a69a1fac6",
+    "title": "Function calling and other API updates",
+    "summary": "OpenAI has announced updates to their language models. They have extended support for certain models until at least June 2024 based on customer feedback. They are also working on improving the models in areas such as instruction following and factual accuracy. They have introduced new function calling capabilities in the Chat Completions API, updated versions of the models, and reduced pricing for certain models. They have also provided an example of how developers can use the function calling feature to connect the models with external tools and APIs.",
+    "link": "https://openai.com/blog/function-calling-and-other-api-updates",
+    "published": "2023-06-13"
+}

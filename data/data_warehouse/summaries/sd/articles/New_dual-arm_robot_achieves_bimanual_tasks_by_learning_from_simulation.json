@@ -1,0 +1,7 @@
+{
+    "unique_id": "4d573482-4f67-5166-93bf-73ac4466852c",
+    "title": "New dual-arm robot achieves bimanual tasks by learning from simulation",
+    "summary": "Scientists at the University of Bristol have developed a new system called Bi-Touch that allows robots to carry out manual tasks by sensing what to do from a digital helper. The system uses AI agents to interpret the environment through tactile and proprioceptive feedback, enabling precise sensing, gentle interaction, and effective object manipulation. This development could have applications in industries such as fruit picking, domestic service, and artificial limbs. The researchers built a virtual world to train the AI agents and developed a real-world tactile dual-arm robot system to apply the learned skills. The robot learns through Deep Reinforcement Learning, using trial and error and rewards and punishments. The system has successfully enabled the robot to safely lift fragile items. The code for the system will be open-source, allowing for further research and development of different tasks.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230824003859.htm",
+    "published": "2023-08-24"
+}

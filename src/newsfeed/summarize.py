@@ -13,21 +13,29 @@ from textsum.summarize import Summarizer
 from newsfeed.datatypes import BlogInfo
 from newsfeed.get_cached_files import data_directory_path, is_cached
 
+# import unidecode
+
+
 # Load dotenv in order to use the OpenAi API key
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def summarize_text(blog_text, summary_type):
-    # Create a document object list for the library
+def summarize_text(blog_text, summary_type):  # Removed language
+    # Define prompts for different combinations of language and summary_type
+    prompts = {
+        "tech": "You are going to summarize the following blog in a short and concise manner, max 100 words, ideally less:",
+        "nontech": "You are going to summarize the following blog for a non-technical person in a short and concise manner, max 100 words, ideally less:",
+        "sv_tech": "You are going to summarize the following blog ONLY in Swedish for a technical audience in a short and concise manner, max 100 words, ideally less:",
+        "sv_nontech": "You are going to summarize the following blog ONLY in Swedish for a non-technical person in a short and concise manner, max 100 words, ideally less:",
+    }
+
+    prompt = prompts[(summary_type)]
+
     messages = [
         {
             "role": "system",
-            "content": (
-                "You are going to summarize the following blog in a short and concise manner, max 100 words, ideally less:"
-                if summary_type == "tech"
-                else "You are going to summarize the following blog for a non-technical person in a short and concise manner, max 100 words, ideally less:"
-            ),
+            "content": prompt,
         },
         {"role": "user", "content": blog_text},
     ]
@@ -69,10 +77,10 @@ def get_article_directories():
 
 
 def summarize_articles(summary_type, model_type):
-    """summarize all articles into summary_type, i.e. tech or nontech, if they are not already summarized"""
+    """summarize all articles into summary_type, i.e., tech or nontech, if they are not already summarized"""
 
     article_directories = get_article_directories()
-    summary_dir = f"{summary_type}_summaries"  # i.e. tech_summaries or nontech_summaries etc
+    summary_dir = f"{summary_type}_summaries"  # i.e., tech_summaries or nontech_summaries, etc.
 
     for dir in article_directories:
         os.makedirs(
@@ -120,12 +128,13 @@ def summarize_articles(summary_type, model_type):
 
 def parse_args():
     parser = argparse.ArgumentParser()
+
     parser.add_argument(
         "--summary_type",
         type=str,
         default="tech",
-        choices=["tech", "nontech"],
-        help='Choose either "tech" or "nontech" as the type of summary',
+        choices=["tech", "nontech", "sv_tech", "sv_nontech"],
+        help='Choose either "tech" or "nontech" as the type of summary, there is also "sv_tech" and "sv_nontech" for swedish summaries',
     )
     parser.add_argument("--model_type", type=str, default="api", choices=["api", "local_model"])
     return parser.parse_args()
