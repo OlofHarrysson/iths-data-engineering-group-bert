@@ -1,0 +1,7 @@
+{
+    "unique_id": "e1d141b5-08cc-537d-ad3d-81f7ff9a564f",
+    "title": "New ways to manage your data in ChatGPT",
+    "summary": "OpenAI has introduced a new feature in ChatGPT that allows users to turn off chat history. This means that conversations started with chat history disabled will not be used to train the AI model or appear in the history sidebar. Users can find these controls in ChatGPT's settings and change them at any time. The unsaved chats will be deleted after 30 days, and OpenAI will only review them if necessary to monitor for abuse. OpenAI is also working on a ChatGPT Business subscription for professionals and enterprises to have more control over their data. Additionally, a new export option is available to easily export ChatGPT data.",
+    "link": "https://openai.com/blog/new-ways-to-manage-your-data-in-chatgpt",
+    "published": "2023-04-25"
+}

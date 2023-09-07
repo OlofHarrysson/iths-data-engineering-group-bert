@@ -1,0 +1,7 @@
+{
+    "unique_id": "88a6399c-555a-5852-8006-f7e333924baf",
+    "title": "Using GPT-4 for content moderation",
+    "summary": "OpenAI is exploring the use of large language models (LLMs), such as GPT-4, for content moderation on digital platforms. This approach allows for faster iteration on policy changes, reducing the time from months to hours. GPT-4 can interpret and adapt to policy updates, resulting in more consistent labeling. The use of AI-assisted moderation can help relieve the burden on human moderators and create a more positive future for digital platforms. Anyone with access to the OpenAI API can implement this approach for their own content moderation system.",
+    "link": "https://openai.com/blog/using-gpt-4-for-content-moderation",
+    "published": "2023-08-15"
+}

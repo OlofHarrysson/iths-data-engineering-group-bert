@@ -1,3 +1,5 @@
+import argparse
+
 import requests
 
 from newsfeed.get_cached_files import get_contents
@@ -38,15 +40,35 @@ def send_summary(
     result.raise_for_status()  # Check for HTTP errors
 
 
-if __name__ == "__main__":
-    summaries = get_contents(
-        "tech_summaries"
-    )  # when ran, sends all tech_summaries to our summary text chat
+def main(summary_type):
+    summaries = get_contents(summary_type)
 
     for summary in summaries:
+        print("Sending summary: " + summary.title)
         send_summary(
             title=summary.title,
             content=summary.summary,
             published=str(summary.published),
             article_url=summary.link,
         )
+
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--summary_type",
+        type=str,
+        default="tech_summaries",
+        choices=[
+            "tech_summaries",
+            "nontech_summaries",
+            "sv_nontech_summaries",
+            "sv_tech_summaries",
+        ],
+    )
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    args = parse_args()
+    main(summary_type=args.summary_type)
