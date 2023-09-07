@@ -16,15 +16,19 @@ def main():
 
 
 @app.callback(  # This is the callback that will update the article container depending on the toggle switch
-    Output("article_container", "children"), Input("toggle_switch", "value")
+    Output("article_container", "children"),
+    Input("switch_summary_type", "value"),
+    Input("switch_language", "value"),
 )
 def update_summary_container(
-    toggle_switch,
+    toggle_switch, language_switch
 ):  # This function will be called when the toggle switch is toggled
+    language = "sv_" if language_switch else ""
+
     if toggle_switch:
-        summaries = get_contents("nontech_summaries")
+        summaries = get_contents(f"{language}nontech_summaries")
     else:
-        summaries = get_contents("tech_summaries")
+        summaries = get_contents(f"{language}tech_summaries")
 
     summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
@@ -53,6 +57,7 @@ def update_summary_container(
                     ),
                 ]
             ),
+            style={"margin-top": "10px"},
             color="dark",
             inverse=True,
         )
@@ -104,19 +109,61 @@ def create_layout():  # This function creates the layout for the dash app
     header = dbc.Row(dbc.Col(html.H1("Newsfeed"), width={"size": 10, "offset": 1}))
 
     # buttons for selecting what is displayed
+    # daq.ToggleSwitch(
+    # id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
+
+    summary_type_toggle = html.Div(
+        [
+            dbc.RadioItems(
+                id="switch_summary_type",  # this id updates if dashboard displays tech or nontech
+                className="btn-group",
+                inputClassName="btn-check",
+                labelClassName="btn btn-outline-primary",
+                labelCheckedClassName="active",
+                options=[
+                    {"label": "Tech", "value": 0},
+                    {"label": "Nontech", "value": 1},
+                ],
+                value=0,  # starting value (option that will be displayed by default)
+            ),
+        ],
+        style={"margin-right": "1%"},
+        className="radio-group",
+    )
+
+    language_toggle = html.Div(
+        [
+            dbc.RadioItems(
+                id="switch_language",  # this id updates if dashboard displays english or swedish
+                className="btn-group",
+                inputClassName="btn-check",
+                labelClassName="btn btn-outline-primary",
+                labelCheckedClassName="active",
+                options=[
+                    {"label": "English", "value": 0},
+                    {"label": "Swedish", "value": 1},
+                ],
+                value=0,  # starting value (option that will be displayed by default)
+            ),
+        ],
+        className="radio-group",
+    )
+
     control_panel = dbc.Row(
         dbc.Col(
-            daq.ToggleSwitch(
-                id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
-            ),
-            width={"size": 2, "offset": 1},
-        )
+            [
+                summary_type_toggle,
+                language_toggle,
+            ],
+            style={"display": "flex"},
+            width={"size": 10, "offset": 1},
+        ),
     )
 
     # container holding all cards with summaries
     contents = dbc.Row(dbc.Col(id="article_container", width={"size": 10, "offset": 1}))
 
-    return dbc.CardBody(
+    return dbc.Container(
         [  # dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True)
             header,
             control_panel,
