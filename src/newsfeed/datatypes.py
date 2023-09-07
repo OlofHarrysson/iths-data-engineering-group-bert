@@ -1,3 +1,4 @@
+import re
 from datetime import date, datetime
 
 import pydantic
@@ -15,7 +16,7 @@ class BlogInfo(pydantic.BaseModel):
     timestamp: datetime
 
     def get_filename(self):
-        filename = f'{self.title.replace(" ", "_")}.json'
+        filename = re.sub(r'[\/:*?"<>|]', "", self.title.replace(" ", "_"))
         return filename
 
 

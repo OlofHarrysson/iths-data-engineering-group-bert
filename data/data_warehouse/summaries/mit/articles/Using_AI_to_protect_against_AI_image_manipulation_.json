@@ -1,0 +1,7 @@
+{
+    "unique_id": "cf2d0b97-5bce-574a-9d07-7aa590925f4a",
+    "title": "Using AI to protect against AI image manipulation ",
+    "summary": "Researchers from MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed a technique called \"PhotoGuard\" that uses perturbations to disrupt the ability of AI models to manipulate images. The technique involves two attack methods: an \"encoder\" attack that alters the image's latent representation, and a \"diffusion\" attack that optimizes perturbations to make the image resemble a target image. The goal is to protect images from unauthorized manipulation, which can have significant financial, reputational, and emotional consequences. The researchers emphasize the need for collaboration among model developers, social media platforms, and policymakers to address the issue of image manipulation. While PhotoGuard is not foolproof, it provides a step towards protecting against misuse of AI-powered image manipulation technologies.",
+    "link": "https://news.mit.edu/2023/using-ai-protect-against-ai-image-manipulation-0731",
+    "published": "2023-07-31"
+}
