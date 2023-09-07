@@ -16,15 +16,19 @@ def main():
 
 
 @app.callback(  # This is the callback that will update the article container depending on the toggle switch
-    Output("article_container", "children"), Input("switch_summary_type", "value")
+    Output("article_container", "children"),
+    Input("switch_summary_type", "value"),
+    Input("switch_language", "value"),
 )
 def update_summary_container(
-    toggle_switch,
+    toggle_switch, language_switch
 ):  # This function will be called when the toggle switch is toggled
+    language = "sv_" if language_switch else ""
+
     if toggle_switch:
-        summaries = get_contents("nontech_summaries")
+        summaries = get_contents(f"{language}nontech_summaries")
     else:
-        summaries = get_contents("tech_summaries")
+        summaries = get_contents(f"{language}tech_summaries")
 
     summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
