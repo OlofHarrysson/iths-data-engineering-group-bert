@@ -16,7 +16,7 @@ def main():
 
 
 @app.callback(  # This is the callback that will update the article container depending on the toggle switch
-    Output("article_container", "children"), Input("toggle_switch", "value")
+    Output("article_container", "children"), Input("switch_summary_type", "value")
 )
 def update_summary_container(
     toggle_switch,
@@ -105,11 +105,54 @@ def create_layout():  # This function creates the layout for the dash app
     header = dbc.Row(dbc.Col(html.H1("Newsfeed"), width={"size": 10, "offset": 1}))
 
     # buttons for selecting what is displayed
+    # daq.ToggleSwitch(
+    # id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
+
+    summary_type_toggle = html.Div(
+        [
+            dbc.RadioItems(
+                id="switch_summary_type",  # this id updates if dashboard displays tech or nontech
+                className="btn-group",
+                inputClassName="btn-check",
+                labelClassName="btn btn-outline-primary",
+                labelCheckedClassName="active",
+                options=[
+                    {"label": "Tech", "value": 0},
+                    {"label": "Nontech", "value": 1},
+                ],
+                value=0,  # starting value (option that will be displayed by default)
+            ),
+            html.Div(id="output"),
+        ],
+        className="radio-group",
+    )
+
+    language_toggle = html.Div(
+        [
+            dbc.RadioItems(
+                id="switch_language",  # this id updates if dashboard displays english or swedish
+                className="btn-group",
+                inputClassName="btn-check",
+                labelClassName="btn btn-outline-primary",
+                labelCheckedClassName="active",
+                options=[
+                    {"label": "English", "value": 0},
+                    {"label": "Swedish", "value": 1},
+                ],
+                value=0,  # starting value (option that will be displayed by default)
+            ),
+            html.Div(id="output2"),
+        ],
+        className="radio-group",
+    )
+
     control_panel = dbc.Row(
         dbc.Col(
-            daq.ToggleSwitch(
-                id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
-            ),
+            [
+                summary_type_toggle,
+                language_toggle,
+            ],
+            style={"display": "flex"},
             width={"size": 2, "offset": 1},
         )
     )
