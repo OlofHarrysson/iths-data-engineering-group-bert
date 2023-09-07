@@ -122,8 +122,8 @@ def create_layout():  # This function creates the layout for the dash app
                 ],
                 value=0,  # starting value (option that will be displayed by default)
             ),
-            html.Div(id="output"),
         ],
+        style={"margin-right": "1%"},
         className="radio-group",
     )
 
@@ -141,7 +141,6 @@ def create_layout():  # This function creates the layout for the dash app
                 ],
                 value=0,  # starting value (option that will be displayed by default)
             ),
-            html.Div(id="output2"),
         ],
         className="radio-group",
     )
@@ -153,7 +152,7 @@ def create_layout():  # This function creates the layout for the dash app
                 language_toggle,
             ],
             style={"display": "flex"},
-            width={"size": 2, "offset": 1},
+            width={"size": 10, "offset": 1},
         ),
     )
 
