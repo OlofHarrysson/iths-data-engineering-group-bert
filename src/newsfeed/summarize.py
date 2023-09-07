@@ -2,6 +2,7 @@ import argparse
 import json
 import os
 import re
+from pathlib import Path
 
 import openai
 from dotenv import load_dotenv
@@ -46,14 +47,12 @@ def summarize_local_model(blog_text):
 def read_articles(dir):
     blogs = []
 
-    # Find all files in the the directory and parse them
-    for filename in os.listdir(dir):
-        if filename.endswith(".json"):
-            file_path = os.path.join(dir, filename)
-
-            # Use the BlogInfo object
-            blog = BlogInfo.parse_file(file_path)
-            blogs.append(blog)
+    # Find all json files in the the directory and parse them
+    files = Path(dir).glob("*.json")
+    for file in files:
+        # Use the BlogInfo object
+        blog = BlogInfo.parse_file(file)
+        blogs.append(blog)
 
     return blogs
 
