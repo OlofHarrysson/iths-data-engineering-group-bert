@@ -95,7 +95,7 @@ def summarize_articles(summary_type, model_type):
                 blog.unique_id, summary_dir
             ):  # goes into data warehouse / summary_dir and searches for matching ID
                 # Remove file name characters disallowed by the filesystem
-                file_name = re.sub(r'[\/:*?"<>|]', "", blog.title.replace(" ", "_"))
+                file_name = BlogInfo.get_filename(blog)
 
                 print(f"summarizing: {file_name[:10]}...")
 
