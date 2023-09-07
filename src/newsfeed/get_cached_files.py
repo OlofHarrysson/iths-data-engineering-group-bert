@@ -48,10 +48,5 @@ def get_contents(warehouse_dir):
 
 # Check if the id of the file already exists. if so, it can be excluded
 def is_cached(id, warehouse_dir):
-    contents = get_contents(warehouse_dir)
-
-    for content in contents:
-        if content.unique_id == id:
-            return True
-
-    return False
+    content_ids = set([content.unique_id for content in get_contents(warehouse_dir)])
+    return id in content_ids
