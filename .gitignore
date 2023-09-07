@@ -5,6 +5,8 @@ data/data_warehouse/*
 !data/data_warehouse/README.md
 !data/data_warehouse/tech_summaries/
 !data/data_warehouse/nontech_summaries/
+!data/data_warehouse/sv_tech_summaries
+!data/data_warehouse/sv_nontech_summaries
 logs
 
 # Byte-compiled / optimized / DLL files
