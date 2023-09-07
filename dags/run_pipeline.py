@@ -2,7 +2,12 @@ from datetime import datetime
 
 from airflow.decorators import dag, task
 
-from newsfeed import download_blogs_from_rss, extract_articles, summarize
+from newsfeed import (
+    download_blogs_from_rss,
+    extract_articles,
+    send_to_discord,
+    summarize,
+)
 
 
 @task(task_id="download_blogs_from_rss_task")
@@ -23,13 +28,14 @@ def extract_articles_task() -> None:
 def summarize_task() -> None:
     summarize.summarize_articles(summary_type="nontech", model_type="api")
     summarize.summarize_articles(summary_type="tech", model_type="api")
-    # summarize.summarize_articles("openai")
+
+    summarize.summarize_articles(summary_type="sv_tech", model_type="api")
+    summarize.summarize_articles(summary_type="sv_nontech", model_type="api")
 
 
 @task(task_id="send_to_discord_task")
 def send_to_discord_task() -> None:
-    # Implement
-    pass
+    send_to_discord.main()
 
 
 # Create the dag pipeline

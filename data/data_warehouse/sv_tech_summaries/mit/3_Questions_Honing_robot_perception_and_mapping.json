@@ -1,0 +1,7 @@
+{
+    "unique_id": "89657f51-3d92-5736-98cc-4fa403ff9cb2",
+    "title": "3 Questions: Honing robot perception and mapping",
+    "summary": "Forskare vid MIT Laboratory for Information and Decision Systems (LIDS) har utvecklat Kimera, en \u00f6ppen k\u00e4llkodsbibliotek som m\u00f6jligg\u00f6r f\u00f6r robotar att skapa en tredimensionell karta av sin omgivning i realtid. Forskarna har nu \u00e4ven introducerat Kimera-Multi, d\u00e4r flera robotar kan kommunicera med varandra f\u00f6r att skapa en enhetlig karta. Genom att \u00f6ka antalet samarbetande robotar kan man uppn\u00e5 en mer konsekvent och redundant kartl\u00e4ggning av omgivningen, vilket kan vara f\u00f6rdelaktigt i till exempel s\u00f6k- och r\u00e4ddningsuppdrag eller flexibla fabriksmilj\u00f6er. Framtida till\u00e4mpningar kan inkludera f\u00f6rb\u00e4ttrad s\u00e4kerhet och samarbete mellan autonoma fordon.",
+    "link": "https://news.mit.edu/2023/honing-robot-perception-mapping-0710",
+    "published": "2023-07-10"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "e6034b65-1b85-5823-98b0-971540b10a86",
+    "title": "Robotic hand rotates objects using touch, not vision",
+    "summary": "Forskare har utvecklat en robotarm som kan rotera objekt genom att anv\u00e4nda enkla trycksensorer. Genom att sprida ut 16 l\u00e5gkostnadssensorer \u00f6ver en stor yta p\u00e5 robotarmen kan den rotera objekt utan att beh\u00f6va anv\u00e4nda synsinnet. Detta tillv\u00e4gag\u00e5ngss\u00e4tt \u00e4r unikt eftersom det inte kr\u00e4ver dyra och h\u00f6guppl\u00f6sta sensorer. Forskarna tr\u00e4nade systemet genom att k\u00f6ra simuleringar och testade sedan det p\u00e5 riktiga objekt, som en tomat och en leksaksanka. Forskarna planerar nu att utveckla tekniken f\u00f6r att kunna f\u00e5 robotarmen att utf\u00f6ra mer komplexa manipulationer.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230726113044.htm",
+    "published": "2023-07-26"
+}

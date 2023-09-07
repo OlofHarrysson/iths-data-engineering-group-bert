@@ -1,0 +1,7 @@
+{
+    "unique_id": "88a6399c-555a-5852-8006-f7e333924baf",
+    "title": "Using GPT-4 for content moderation",
+    "summary": "Inl\u00e4gget diskuterar anv\u00e4ndningen av GPT-4 f\u00f6r inneh\u00e5llsmoderation p\u00e5 digitala plattformar. Genom att anv\u00e4nda stora spr\u00e5kmodeller kan man snabbt iterera p\u00e5 policyf\u00f6r\u00e4ndringar och minska tiden fr\u00e5n m\u00e5nader till timmar. GPT-4 kan ocks\u00e5 tolka regler och nyanser i policydokument och anpassa sig omedelbart till uppdateringar, vilket ger mer konsekvent m\u00e4rkning av inneh\u00e5ll. Genom att anv\u00e4nda AI-assisterad moderation kan man avlasta m\u00e4nskliga moderatorer och skapa en mer positiv framtid f\u00f6r digitala plattformar. Metoden kan implementeras av alla med tillg\u00e5ng till OpenAI API.",
+    "link": "https://openai.com/blog/using-gpt-4-for-content-moderation",
+    "published": "2023-08-15"
+}

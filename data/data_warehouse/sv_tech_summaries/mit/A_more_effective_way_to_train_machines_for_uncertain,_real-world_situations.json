@@ -1,0 +1,7 @@
+{
+    "unique_id": "d0ce8a20-45ad-5474-8bab-abbb78f59b4d",
+    "title": "A more effective way to train machines for uncertain, real-world situations",
+    "summary": "Forskare fr\u00e5n MIT och Technion har utvecklat en algoritm som l\u00e5ter en maskin l\u00e4ra sig genom att kombinera imitation learning och reinforcement learning. Algoritmen best\u00e5r av tv\u00e5 studenter, varav den ena anv\u00e4nder en kombination av de tv\u00e5 metoderna och den andra endast anv\u00e4nder reinforcement learning. Algoritmen j\u00e4mf\u00f6r kontinuerligt resultaten mellan de tv\u00e5 studenterna och justerar vikten mellan de tv\u00e5 metoderna baserat p\u00e5 vilken som ger b\u00e4ttre resultat. Forskarna har testat algoritmen i simuleringar och funnit att den \u00e4r effektivare \u00e4n metoder som bara anv\u00e4nder en av de tv\u00e5 metoderna. Detta kan hj\u00e4lpa till att f\u00f6rb\u00e4ttra tr\u00e4ningen av maskiner som ska anv\u00e4ndas i os\u00e4kra verkliga situationer.",
+    "link": "https://news.mit.edu/2023/more-effective-train-machines-uncertain-real-world-situations-0531",
+    "published": "2023-05-31"
+}

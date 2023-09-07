@@ -1,0 +1,7 @@
+{
+    "unique_id": "f642d2f1-aa7e-578e-9f9a-e0493ad2cb72",
+    "title": "Learning the language of molecules to predict their properties",
+    "summary": "Forskare fr\u00e5n MIT och MIT-IBM Watson AI Lab har utvecklat en ny metod f\u00f6r att f\u00f6ruts\u00e4ga molekyl\u00e4ra egenskaper och generera nya molekyler mer effektivt \u00e4n traditionella djupinl\u00e4rningsmetoder. Genom att anv\u00e4nda en molekyl\u00e4r grammatik kan systemet f\u00f6rst\u00e5 likheter mellan molekylstrukturer och f\u00f6ruts\u00e4ga egenskaper med endast en liten m\u00e4ngd data. Metoden \u00f6vertr\u00e4ffade andra maskininl\u00e4rningsmetoder och kunde f\u00f6ruts\u00e4ga egenskaper och generera anv\u00e4ndbara molekyler \u00e4ven med en dataset med f\u00e4rre \u00e4n 100 prover. Forskarna planerar att ut\u00f6ka metoden till att inkludera 3D-geometri och utveckla en anv\u00e4ndargr\u00e4nssnitt f\u00f6r att f\u00f6rb\u00e4ttra systemets noggrannhet.",
+    "link": "https://news.mit.edu/2023/learning-language-molecules-predict-properties-0707",
+    "published": "2023-07-07"
+}

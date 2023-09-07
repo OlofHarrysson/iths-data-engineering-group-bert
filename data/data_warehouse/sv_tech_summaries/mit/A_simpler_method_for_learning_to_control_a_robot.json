@@ -1,0 +1,7 @@
+{
+    "unique_id": "9b3fc437-d1ce-5ad5-b8a6-1de70da8010e",
+    "title": "A simpler method for learning to control a robot",
+    "summary": "Forskare fr\u00e5n MIT och Stanford University har utvecklat en ny maskininl\u00e4rningsmetod som kan anv\u00e4ndas f\u00f6r att styra en robot, som en dr\u00f6nare eller autonom fordon, mer effektivt och effektivt i dynamiska milj\u00f6er d\u00e4r f\u00f6rh\u00e5llandena kan \u00e4ndras snabbt. Denna teknik kan hj\u00e4lpa ett autonomt fordon att l\u00e4ra sig att kompensera f\u00f6r hala v\u00e4gf\u00f6rh\u00e5llanden f\u00f6r att undvika sladd, l\u00e5ta en robotfri-flyer dra olika objekt i rymden eller m\u00f6jligg\u00f6ra att en dr\u00f6nare f\u00f6ljer en utf\u00f6rs\u00e5kare trots starka vindar. Forskarnas tillv\u00e4gag\u00e5ngss\u00e4tt innefattar viss struktur fr\u00e5n reglerteori i processen f\u00f6r att l\u00e4ra sig en modell p\u00e5 ett s\u00e4tt som leder till en effektiv metod f\u00f6r att styra komplexa dynamik, som de som orsakas av vindens p\u00e5verkan p\u00e5 en flygande fordonets bana.",
+    "link": "https://news.mit.edu/2023/simpler-method-learning-control-robot-0726",
+    "published": "2023-07-26"
+}

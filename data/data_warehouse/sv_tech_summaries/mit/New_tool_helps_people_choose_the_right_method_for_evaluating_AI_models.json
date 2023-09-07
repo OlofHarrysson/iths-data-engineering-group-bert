@@ -1,0 +1,7 @@
+{
+    "unique_id": "4be49c33-e9cb-598d-95f6-e7deec75c806",
+    "title": "New tool helps people choose the right method for evaluating AI models",
+    "summary": "Forskare fr\u00e5n MIT och IBM Research har utvecklat \"saliency cards\", ett verktyg som hj\u00e4lper anv\u00e4ndare att v\u00e4lja den b\u00e4sta saliency-metoden f\u00f6r deras specifika uppgift. Saliency-metoder anv\u00e4nds f\u00f6r att f\u00f6rklara hur maskininl\u00e4rningsmodeller fattar beslut. Saliency cards ger standardiserad dokumentation om hur en metod fungerar, inklusive dess styrkor och svagheter samt f\u00f6rklaringar f\u00f6r att hj\u00e4lpa anv\u00e4ndare att tolka den korrekt. Genom att v\u00e4lja r\u00e4tt metod kan anv\u00e4ndare f\u00e5 en mer korrekt bild av hur deras modell beter sig och d\u00e4rmed b\u00e4ttre kunna tolka dess f\u00f6ruts\u00e4gelser.",
+    "link": "https://news.mit.edu/2023/new-tool-helps-people-choose-right-method-evaluating-ai-models-0531",
+    "published": "2023-05-31"
+}
