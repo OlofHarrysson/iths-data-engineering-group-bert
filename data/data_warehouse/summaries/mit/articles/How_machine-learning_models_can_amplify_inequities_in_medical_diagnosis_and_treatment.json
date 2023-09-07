@@ -1,0 +1,7 @@
+{
+    "unique_id": "98f0a8ee-00b5-5d7e-be05-d1581c2b5860",
+    "title": "How machine-learning models can amplify inequities in medical diagnosis and treatment",
+    "summary": "Researchers at MIT have identified four types of biases that can arise in machine learning models used in healthcare. These biases, known as subpopulation shifts, can lead to disparities in medical diagnosis and treatment. The researchers aim to develop more equitable models by understanding the mechanisms behind these biases. They have found that improving certain layers of the neural network can reduce some biases, but attribute generalization remains a challenge. The researchers are conducting a study with a medical center to explore the possibility of unbiased machine learning models for all populations. The ultimate goal is to achieve fairness in healthcare, but reforming the system will be challenging. The research is funded by the MIT-IBM Watson AI Lab.",
+    "link": "https://news.mit.edu/2023/how-machine-learning-models-can-amplify-inequities-medical-diagnosis-treatment-0817",
+    "published": "2023-08-17"
+}
