@@ -182,4 +182,4 @@ def create_layout():  # This function creates the layout for the dash app
 
 if __name__ == "__main__":
     app_instance = main()
-    app_instance.run_server(debug=True)
+    app_instance.run_server(debug=False)
