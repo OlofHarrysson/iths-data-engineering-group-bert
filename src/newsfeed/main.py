@@ -45,10 +45,6 @@ def update_summary_container(
                         f"Published: {summary.published}",
                         style={"font-size": "12px", "color": "gray"},
                     ),
-                    html.P(
-                        f"Type: Tech" if toggle_switch else f"Type: Non-tech",
-                        style={"font-size": "12px", "color": "gray"},
-                    ),
                     dbc.Button(
                         f"Source: {get_source(summary)}",
                         color="primary",
@@ -107,11 +103,21 @@ def amount_summaries_from_each_source(summaries, n=10):
 def create_layout():  # This function creates the layout for the dash app
     # title of the dashboard
     header = dbc.Row(
-        dbc.Col(
-            html.H1("Newsfeed"),
-            style={"margin-top": "2%", "margin-bottom": "1%"},
-            width={"size": 10, "offset": 1},
-        )
+        [
+            dbc.Col(
+                html.H1("Newsfeed"),
+                width={"size": 7, "offset": 1},
+            ),
+            dbc.Col(
+                html.P(
+                    f"Last Updated: [placeholder]",
+                    style={"font-size": "12px", "color": "gray"},
+                ),
+                style={"text-align": "right", "vertical-align": "bottom"},
+                width={"size": 3},
+            ),
+        ],
+        style={"margin-top": "2%", "margin-bottom": "1%", "display": "flex"},
     )
 
     summary_type_toggle = html.Div(
