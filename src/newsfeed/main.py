@@ -7,7 +7,7 @@ from dash import Dash, Input, Output, html
 from newsfeed.get_cached_files import get_contents
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
-app.title = "Article Summaries from main"
+app.title = "Article Summaries from main"  # TODO: change this
 
 
 def main():
@@ -105,12 +105,12 @@ def create_layout():  # This function creates the layout for the dash app
     header = dbc.Row(
         [
             dbc.Col(
-                html.H1("Newsfeed"),
+                html.H1("Newsfeed"),  # TODO: change this
                 width={"size": 7, "offset": 1},
             ),
             dbc.Col(
                 html.P(
-                    f"Last Updated: [placeholder]",
+                    f"Last Updated: [placeholder]",  # TODO: include cached date
                     style={"font-size": "12px", "color": "gray"},
                 ),
                 style={"text-align": "right", "vertical-align": "bottom"},
