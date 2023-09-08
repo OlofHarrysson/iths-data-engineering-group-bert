@@ -2,6 +2,7 @@ import argparse
 from pathlib import Path
 
 import requests
+from bs4 import BeautifulSoup
 
 LINK_TO_XML_FILE = {
     "mit": "https://news.mit.edu/rss/topic/artificial-intelligence2",
@@ -20,15 +21,16 @@ def get_metadata_info(blog_name):
     ), f"{blog_name=} not supported. Supported blogs: {list(LINK_TO_XML_FILE)}"
     blog_url = LINK_TO_XML_FILE[blog_name]
     response = requests.get(blog_url, headers=headers)
-    xml_text = response.text
+    response.encoding = "utf-8"  # Specify the correct encoding
     print(response.status_code)
+    xml_text = response.text
     return xml_text
 
 
 def save_metadata_info(xml_text, blog_name):
     path_xml_dir = Path("data/data_lake") / blog_name
     path_xml_dir.mkdir(exist_ok=True, parents=True)
-    with open(path_xml_dir / "metadata.xml", "w") as f:
+    with open(path_xml_dir / "metadata.xml", "w", encoding="utf-8") as f:
         f.write(xml_text)
 
 
