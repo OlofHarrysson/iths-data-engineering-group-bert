@@ -6,7 +6,7 @@ from dash import Dash, Input, Output, html
 
 from newsfeed.get_cached_files import get_contents
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 app.title = "Article Summaries from main"
 
 
@@ -30,10 +30,10 @@ def update_summary_container(
     else:
         summaries = get_contents(f"{language}tech_summaries")
 
-    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
         summaries, n=5
     )  # get top n most recent summaries from each unique source
+    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
 
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
@@ -106,11 +106,13 @@ def amount_summaries_from_each_source(summaries, n=10):
 
 def create_layout():  # This function creates the layout for the dash app
     # title of the dashboard
-    header = dbc.Row(dbc.Col(html.H1("Newsfeed"), width={"size": 10, "offset": 1}))
-
-    # buttons for selecting what is displayed
-    # daq.ToggleSwitch(
-    # id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
+    header = dbc.Row(
+        dbc.Col(
+            html.H1("Newsfeed"),
+            style={"margin-top": "2%", "margin-bottom": "1%"},
+            width={"size": 10, "offset": 1},
+        )
+    )
 
     summary_type_toggle = html.Div(
         [
