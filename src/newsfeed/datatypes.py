@@ -17,7 +17,7 @@ class BlogInfo(pydantic.BaseModel):
 
     def get_filename(self):
         filename = re.sub(r'[\/:*?"<>|]', "", self.title.replace(" ", "_"))
-        return filename
+        return f"{filename}.json"
 
 
 class BlogSummary(pydantic.BaseModel):
