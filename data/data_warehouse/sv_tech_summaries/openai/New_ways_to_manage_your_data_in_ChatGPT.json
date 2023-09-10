@@ -1,7 +1,0 @@
-{
-    "unique_id": "e1d141b5-08cc-537d-ad3d-81f7ff9a564f",
-    "title": "New ways to manage your data in ChatGPT",
-    "summary": "OpenAI har introducerat m\u00f6jligheten att st\u00e4nga av chatt-historiken i ChatGPT. Samtal som startas n\u00e4r chatt-historiken \u00e4r avst\u00e4ngd kommer inte att anv\u00e4ndas f\u00f6r att tr\u00e4na och f\u00f6rb\u00e4ttra modellerna, och kommer inte att visas i sidof\u00e4ltet f\u00f6r historik. Dessa kontroller finns i ChatGPT:s inst\u00e4llningar och kan \u00e4ndras n\u00e4r som helst. N\u00e4r chatt-historiken \u00e4r avst\u00e4ngd kommer nya samtal att sparas i 30 dagar och endast granskas vid behov f\u00f6r att \u00f6vervaka missbruk, innan de permanent raderas. OpenAI arbetar ocks\u00e5 p\u00e5 en ny ChatGPT Business-prenumeration f\u00f6r professionella anv\u00e4ndare och f\u00f6retag som beh\u00f6ver mer kontroll \u00f6ver sin data.",
-    "link": "https://openai.com/blog/new-ways-to-manage-your-data-in-chatgpt",
-    "published": "2023-04-25"
-}

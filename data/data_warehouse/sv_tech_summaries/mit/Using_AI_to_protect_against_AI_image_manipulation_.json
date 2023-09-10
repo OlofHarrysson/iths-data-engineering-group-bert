@@ -1,7 +1,0 @@
-{
-    "unique_id": "cf2d0b97-5bce-574a-9d07-7aa590925f4a",
-    "title": "Using AI to protect against AI image manipulation ",
-    "summary": "Forskare fr\u00e5n MIT har utvecklat en teknik som heter \"PhotoGuard\" f\u00f6r att skydda bilder fr\u00e5n obeh\u00f6rig manipulation med hj\u00e4lp av artificiell intelligens. Tekniken anv\u00e4nder sm\u00e5 f\u00f6r\u00e4ndringar i pixelv\u00e4rden som \u00e4r osynliga f\u00f6r det m\u00e4nskliga \u00f6gat men kan uppt\u00e4ckas av datormodeller f\u00f6r att st\u00f6ra modellens f\u00f6rm\u00e5ga att manipulera bilden. Genom att anv\u00e4nda olika \"attackmetoder\" kan PhotoGuard skydda bilder fr\u00e5n att \u00e4ndras obeh\u00f6rigt. Forskarna betonar vikten av samarbete mellan utvecklare av AI-modeller, sociala medieplattformar och beslutsfattare f\u00f6r att bek\u00e4mpa obeh\u00f6rig bildmanipulation.",
-    "link": "https://news.mit.edu/2023/using-ai-protect-against-ai-image-manipulation-0731",
-    "published": "2023-07-31"
-}

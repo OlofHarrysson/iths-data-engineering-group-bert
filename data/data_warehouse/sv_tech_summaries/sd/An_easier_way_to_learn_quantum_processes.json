@@ -1,7 +1,0 @@
-{
-    "unique_id": "805f5c27-e011-5a2d-9371-2ca4cb5a57f4",
-    "title": "An easier way to learn quantum processes",
-    "summary": "En studie ledd av professor Zoe Holmes vid EPFL har funnit ett nytt s\u00e4tt att l\u00e4ra en kvantdator att f\u00f6rst\u00e5 och f\u00f6ruts\u00e4ga beteendet hos kvantsystem. Forskarna anv\u00e4nde sig av \"kvantala neurala n\u00e4tverk\" (QNNs), som \u00e4r maskininl\u00e4rningsmodeller inspirerade av kvantmekanik. Genom att tr\u00e4na QNNs med n\u00e5gra f\u00e5 enkla exempel kallade \"produkttillst\u00e5nd\" visade forskarna att datorn kan l\u00e4ra sig hur ett kvantsystem beter sig, \u00e4ven n\u00e4r det handlar om mer komplicerade och utmanande entanglade tillst\u00e5nd. Detta kan leda till f\u00f6rb\u00e4ttrade kvantdatorer och m\u00f6jligheter att l\u00f6sa viktiga problem inom materialvetenskap och molekylsimuleringar.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230705105838.htm",
-    "published": "2023-07-05"
-}

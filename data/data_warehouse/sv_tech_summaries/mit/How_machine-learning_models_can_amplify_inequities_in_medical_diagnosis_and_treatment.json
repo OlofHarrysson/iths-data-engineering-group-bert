@@ -1,7 +1,0 @@
-{
-    "unique_id": "98f0a8ee-00b5-5d7e-be05-d1581c2b5860",
-    "title": "How machine-learning models can amplify inequities in medical diagnosis and treatment",
-    "summary": "I en ny studie fr\u00e5n MIT har forskare unders\u00f6kt de olika typer av f\u00f6rskjutningar som kan uppst\u00e5 i maskininl\u00e4rningsmodeller och leda till oj\u00e4mlikhet i v\u00e5rden. Studien identifierade fyra huvudtyper av f\u00f6rskjutningar: falska korrelationer, obalans mellan attribut, obalans mellan klasser och attributgeneralisering. Forskarna testade 20 avancerade algoritmer p\u00e5 olika dataset och fann att f\u00f6rb\u00e4ttringar av klassificeraren och koden i neurala n\u00e4tverk kunde minska vissa typer av f\u00f6rskjutningar, men inte alla. Studien betonar vikten av att balansera precision och noggrannhet i maskininl\u00e4rningsmodeller f\u00f6r att uppn\u00e5 r\u00e4ttvisa i v\u00e5rden.",
-    "link": "https://news.mit.edu/2023/how-machine-learning-models-can-amplify-inequities-medical-diagnosis-treatment-0817",
-    "published": "2023-08-17"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "7baccb63-d021-5ac3-a71a-e270332c0b66",
-    "title": "Researchers use AI to identify similar materials in images",
-    "summary": "Forskare vid MIT och Adobe Research har utvecklat en teknik som kan identifiera alla pixlar i en bild som representerar ett visst material. Metoden \u00e4r noggrann \u00e4ven n\u00e4r objekt har olika former och storlekar, och den \u00e4r inte lurad av skuggor eller ljusf\u00f6rh\u00e5llanden som kan f\u00e5 samma material att se olika ut. Forskarna tr\u00e4nade sin modell med hj\u00e4lp av syntetiska data och den fungerar effektivt p\u00e5 verkliga inomhus- och utomhusscener som den aldrig tidigare har sett. Metoden kan anv\u00e4ndas f\u00f6r att identifiera material i bilder och video, samt f\u00f6r applikationer inom robotik och bildredigering.",
-    "link": "https://news.mit.edu/2023/researchers-identify-similar-materials-images-0523",
-    "published": "2023-05-23"
-}

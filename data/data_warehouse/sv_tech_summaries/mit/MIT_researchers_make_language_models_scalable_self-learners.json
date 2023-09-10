@@ -1,7 +1,0 @@
-{
-    "unique_id": "10398e11-bcdc-5518-844a-78583082cef3",
-    "title": "MIT researchers make language models scalable self-learners",
-    "summary": "Forskare vid MIT har utvecklat en metod f\u00f6r att f\u00f6rb\u00e4ttra mindre spr\u00e5kmodellers prestanda inom naturligt spr\u00e5kf\u00f6rst\u00e5else. Genom att anv\u00e4nda \"textual entailment\" och \"self-training\" har de skapat modeller som \u00f6vertr\u00e4ffar st\u00f6rre modeller p\u00e5 vissa spr\u00e5kf\u00f6rst\u00e5elseuppgifter utan m\u00e4nskligt genererade anm\u00e4rkningar. Denna metod kan bidra till mer skalbara, p\u00e5litliga och kostnadseffektiva l\u00f6sningar f\u00f6r spr\u00e5kmodellering och AI-teknologier. Forskningen visar att mindre modeller kan prestera p\u00e5 samma niv\u00e5 som st\u00f6rre modeller inom spr\u00e5kf\u00f6rst\u00e5else och banar v\u00e4g f\u00f6r mer h\u00e5llbara och integritetsskyddande AI-teknologier.",
-    "link": "https://news.mit.edu/2023/language-models-scalable-self-learners-0608",
-    "published": "2023-06-08"
-}

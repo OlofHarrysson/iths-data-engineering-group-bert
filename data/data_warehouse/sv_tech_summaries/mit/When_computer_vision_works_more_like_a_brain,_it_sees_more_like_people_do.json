@@ -1,7 +1,0 @@
-{
-    "unique_id": "3067c637-f776-5f93-9e37-0b212a5ec37f",
-    "title": "When computer vision works more like a brain, it sees more like people do",
-    "summary": "Forskare vid MIT och IBM har f\u00f6rb\u00e4ttrat datorsyn genom att tr\u00e4na artificiella neurala n\u00e4tverk att efterlikna hj\u00e4rnans neurala n\u00e4tverk. Genom att anv\u00e4nda neural aktivitet fr\u00e5n hj\u00e4rnans inferiora temporala cortex kunde de tr\u00e4na ett artificiellt neuralt n\u00e4tverk att b\u00e4ttre identifiera objekt i bilder och att tolka bilder p\u00e5 ett s\u00e4tt som liknar m\u00e4nsklig syn. Forskarna fann ocks\u00e5 att det neuralt anpassade n\u00e4tverket var mer motst\u00e5ndskraftigt mot \"adversarial attacks\", d\u00e4r sm\u00e5 f\u00f6rvr\u00e4ngningar i bilder kan lura datorsynsystem. Resultaten visar p\u00e5 m\u00f6jligheten att f\u00f6rb\u00e4ttra datorsyn genom att efterlikna hj\u00e4rnans funktioner.",
-    "link": "https://news.mit.edu/2023/when-computer-vision-works-like-human-brain-0630",
-    "published": "2023-06-30"
-}

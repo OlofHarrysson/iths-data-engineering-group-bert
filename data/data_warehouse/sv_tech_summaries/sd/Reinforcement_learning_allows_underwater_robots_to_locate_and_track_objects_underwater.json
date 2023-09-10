@@ -1,7 +1,0 @@
-{
-    "unique_id": "234c5b42-6d60-5065-af8d-1d72d2ab1e4d",
-    "title": "Reinforcement learning allows underwater robots to locate and track objects underwater",
-    "summary": "Undervattensrobotik anv\u00e4nds f\u00f6r att utforska haven och samla in data som kompletterar satellitdata. En ny studie visar att f\u00f6rst\u00e4rkningsinl\u00e4rning, en teknik inom kontroll och robotik, kan anv\u00e4ndas f\u00f6r att l\u00e4ra undervattensrobotar att utf\u00f6ra specifika uppgifter. Detta m\u00f6jligg\u00f6r optimering av robotarnas r\u00f6relser och kan anv\u00e4ndas f\u00f6r att studera ekologiska fenomen och \u00f6vervaka havsmilj\u00f6n i realtid. Studien genomf\u00f6rdes med hj\u00e4lp av neurala n\u00e4tverk som tr\u00e4nades med hj\u00e4lp av superdatorer vid Barcelona Supercomputing Center. Forskarna planerar nu att unders\u00f6ka m\u00f6jligheten att anv\u00e4nda samma teknik f\u00f6r mer komplexa uppdrag.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230728113428.htm",
-    "published": "2023-07-28"
-}

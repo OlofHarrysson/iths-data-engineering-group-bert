@@ -1,7 +1,0 @@
-{
-    "unique_id": "b8ece89c-c979-5993-ba1b-a2c8733dae8a",
-    "title": "A new way to look at data privacy",
-    "summary": "Forskare vid MIT har utvecklat en teknik som kan skydda k\u00e4nsliga data i maskininl\u00e4rningsmodeller genom att l\u00e4gga till minimalt med brus. Genom att anv\u00e4nda en ny integritetsmetrik som kallas PAC Privacy kan forskarna automatiskt best\u00e4mma den minsta m\u00e4ngden brus som beh\u00f6ver l\u00e4ggas till f\u00f6r att skydda data. Denna teknik kan hj\u00e4lpa ingenj\u00f6rer att skapa maskininl\u00e4rningsmodeller som d\u00f6ljer tr\u00e4ningsdata samtidigt som de beh\u00e5ller noggrannheten i verkliga situationer. Metoden kr\u00e4ver inte kunskap om modellens inre funktion eller tr\u00e4ningsprocess, vilket g\u00f6r den anv\u00e4ndbar f\u00f6r olika typer av modeller och applikationer.",
-    "link": "https://news.mit.edu/2023/new-way-look-data-privacy-0714",
-    "published": "2023-07-14"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "130b1e31-33c2-513e-8389-2d0f3903f944",
-    "title": "GPT-4 API general availability and deprecation of older models in the Completions API",
-    "summary": "Fr\u00e5n och med idag har alla betalande API-kunder tillg\u00e5ng till GPT-4. OpenAI rekommenderar att anv\u00e4ndare \u00f6verg\u00e5r fr\u00e5n \u00e4ldre modeller av Completions API till Chat Completions API. \u00c4ldre modeller kommer att fasas ut och ers\u00e4ttas med nya modeller. OpenAI planerar ocks\u00e5 att g\u00f6ra GPT-3.5 Turbo, DALL\u00b7E och Whisper API:er allm\u00e4nt tillg\u00e4ngliga. OpenAI arbetar ocks\u00e5 p\u00e5 att m\u00f6jligg\u00f6ra finjustering f\u00f6r GPT-4 och GPT-3.5 Turbo senare i \u00e5r.",
-    "link": "https://openai.com/blog/gpt-4-api-general-availability",
-    "published": "2023-07-06"
-}

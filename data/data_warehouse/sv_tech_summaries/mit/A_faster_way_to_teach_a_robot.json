@@ -1,7 +1,0 @@
-{
-    "unique_id": "8e1f910a-a0a4-5798-93c3-5f3abf339c2a",
-    "title": "A faster way to teach a robot",
-    "summary": "Forskare vid MIT, New York University och University of California har utvecklat en ramverk som g\u00f6r det m\u00f6jligt f\u00f6r m\u00e4nniskor att snabbt l\u00e4ra en robot vad de vill att den ska g\u00f6ra. N\u00e4r roboten misslyckas genererar systemet f\u00f6rklaringar som beskriver vad som beh\u00f6vde \u00e4ndras f\u00f6r att roboten skulle lyckas. Dessa f\u00f6rklaringar visas f\u00f6r anv\u00e4ndaren som sedan ger feedback om varf\u00f6r roboten misslyckades. Systemet anv\u00e4nder sedan denna feedback f\u00f6r att finslipa roboten. Forskarna har testat tekniken i simuleringar och funnit att den kan l\u00e4ra en robot mer effektivt \u00e4n andra metoder.",
-    "link": "https://news.mit.edu/2023/faster-way-teach-robot-technique-0718",
-    "published": "2023-07-18"
-}
