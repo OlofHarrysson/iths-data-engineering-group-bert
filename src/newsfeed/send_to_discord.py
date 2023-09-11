@@ -1,7 +1,12 @@
 import argparse
+from urllib.parse import urlparse
 
 import requests
 
+from newsfeed.filter_summarized_articles import (
+    amount_summaries_from_each_source,
+    sort_summaries,
+)
 from newsfeed.get_cached_files import get_contents
 
 
@@ -42,6 +47,10 @@ def send_summary(
 
 def main(summary_type):
     summaries = get_contents(summary_type)
+
+    summaries = sort_summaries(summaries)
+
+    summaries = amount_summaries_from_each_source(summaries, n=5)
 
     for summary in summaries:
         print("Sending summary: " + summary.title)
