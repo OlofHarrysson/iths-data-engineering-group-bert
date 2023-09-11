@@ -23,10 +23,8 @@ def get_metadata_info(blog_name):
     response = requests.get(blog_url, headers=headers)
     response.encoding = "utf-8"  # Specify the correct encoding
     print(response.status_code)
+    xml_text = response.text
 
-    # use bs to parse response text and prettify it (more readable text layout)
-    soup = BeautifulSoup(response.text, "xml")
-    xml_text = soup.prettify()
     return xml_text
 
 
