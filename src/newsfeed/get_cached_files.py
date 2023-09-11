@@ -11,7 +11,7 @@ def get_file_paths(warehouse_dir):
 
     # loop through and get all files in the summaries folder
     for root, _, files in os.walk(data_directory_path + warehouse_dir):
-        all_files = [all_files.append(os.path.join(root, file)) for file in files]
+        all_files = [os.path.join(root, file) for file in files]
 
     return all_files
 
