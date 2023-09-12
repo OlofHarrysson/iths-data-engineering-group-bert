@@ -1,8 +1,8 @@
 import argparse
-from urllib.parse import urlparse
 
 # from newsfeed.count_articles import extract_timestamps_from_json_files
 from datetime import datetime, timedelta
+from urllib.parse import urlparse
 
 import requests
 
