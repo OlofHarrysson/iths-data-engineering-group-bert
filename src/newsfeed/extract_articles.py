@@ -83,6 +83,9 @@ def extract_articles_from_xml(parsed_xml, blog_name):
             )  # NOTE: sd requires sending a request to their site to get text so a delay between requests is used
         elif blog_name == "openai":
             blog_text = get_blog_text_openai(item)
+            time.sleep(
+                0.2
+            )  # NOTE: openai requires sending a request to their site to get text so a delay between requests is used
 
         else:
             raise ValueError(f"Unknown blog_name: {blog_name}")
@@ -105,9 +108,7 @@ def extract_articles_from_xml(parsed_xml, blog_name):
 
 
 def save_articles(articles, blog_name):
-    save_dir = Path(
-        "data/data_warehouse", "articles", blog_name
-    )  # NOTE: changed to articles / blog_name
+    save_dir = Path("data/data_warehouse", "articles", blog_name)
     save_dir.mkdir(exist_ok=True, parents=True)
     for article in articles:
         save_path = save_dir / article.get_filename()

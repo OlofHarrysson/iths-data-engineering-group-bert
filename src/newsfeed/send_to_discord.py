@@ -1,10 +1,15 @@
 import argparse
+from urllib.parse import urlparse
 
 # from newsfeed.count_articles import extract_timestamps_from_json_files
 from datetime import datetime, timedelta
 
 import requests
 
+from newsfeed.filter_summarized_articles import (
+    amount_summaries_from_each_source,
+    sort_summaries,
+)
 from newsfeed.get_cached_files import get_contents
 
 
@@ -46,6 +51,10 @@ def send_summary(
 def main(summary_type):
     summaries = get_contents(summary_type)
     error_messages = []
+
+    summaries = sort_summaries(summaries)
+
+    summaries = amount_summaries_from_each_source(summaries, n=5)
 
     for summary in summaries:
         published_timestamp = summary.published
