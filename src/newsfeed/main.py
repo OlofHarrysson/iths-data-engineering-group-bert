@@ -11,8 +11,8 @@ from newsfeed.filter_summarized_articles import (
 )
 from newsfeed.get_cached_files import get_contents
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.title = "Article Summaries from main"
+app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
+app.title = "Article Summaries from main"  # TODO: change this
 
 
 def main():
@@ -35,10 +35,10 @@ def update_summary_container(
     else:
         summaries = get_contents(f"{language}tech_summaries")
 
-    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
         summaries, n=5
     )  # get top n most recent summaries from each unique source
+    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
 
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
@@ -48,10 +48,6 @@ def update_summary_container(
                     html.P(summary.summary),
                     html.P(
                         f"Published: {summary.published}",
-                        style={"font-size": "12px", "color": "gray"},
-                    ),
-                    html.P(
-                        f"Type: Tech" if toggle_switch else f"Type: Non-tech",
                         style={"font-size": "12px", "color": "gray"},
                     ),
                     dbc.Button(
@@ -73,11 +69,23 @@ def update_summary_container(
 
 def create_layout():  # This function creates the layout for the dash app
     # title of the dashboard
-    header = dbc.Row(dbc.Col(html.H1("Newsfeed"), width={"size": 10, "offset": 1}))
-
-    # buttons for selecting what is displayed
-    # daq.ToggleSwitch(
-    # id="toggle_switch", value=False, color="#9B51E0", label=["Tech", "Non-Tech"]
+    header = dbc.Row(
+        [
+            dbc.Col(
+                html.H1("Newsfeed"),  # TODO: change this
+                width={"size": 7, "offset": 1},
+            ),
+            dbc.Col(
+                html.P(
+                    f"Last Updated: [placeholder]",  # TODO: include cached date
+                    style={"font-size": "12px", "color": "gray"},
+                ),
+                style={"text-align": "right", "vertical-align": "bottom"},
+                width={"size": 3},
+            ),
+        ],
+        style={"margin-top": "2%", "margin-bottom": "1%", "display": "flex"},
+    )
 
     summary_type_toggle = html.Div(
         [
@@ -141,4 +149,4 @@ def create_layout():  # This function creates the layout for the dash app
 
 if __name__ == "__main__":
     app_instance = main()
-    app_instance.run_server(debug=True)
+    app_instance.run_server(debug=False)
