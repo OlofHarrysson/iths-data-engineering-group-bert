@@ -27,14 +27,23 @@ def extract_timestamps_from_json_files(parent_folder):
     return timestamps
 
 
-parent_folder = r"data/data_warehouse/articles/"  # Define the parent folder containing the subfolders with JSON files
-timestamps = extract_timestamps_from_json_files(parent_folder)
+# Write timestamps in a .txt file
+def write_timestamps_to_file(timestamps):
+    with open("data/data_warehouse/timestamp/timestamps.txt", "w") as file:
+        for timestamp in timestamps:
+            file.write(str(timestamp) + "\n")
 
-print(len(timestamps))
+
+if __name__ == "__main__":
+    parent_folder = r"data/data_warehouse/articles/"  # Define the parent folder containing the subfolders with JSON files
+    timestamps = extract_timestamps_from_json_files(parent_folder)
+    write_timestamps_to_file(timestamps)
+    # for timestamp in timestamps:
+    # print(timestamp)
 
 
-# count amount of files in folder data_warehouse
-file_count = sum(len(files) for _, _, files in os.walk(r"data/data_warehouse/articles"))
-print(file_count)
+# # count amount of files in folder data_warehouse
+# file_count = sum(len(files) for _, _, files in os.walk(r"data/data_warehouse/articles"))
+# print(file_count)
 # Will out put first total amount of files in folder with subfolder data_warehouse that is json files
 # second will output total amount of files in folder with subfolder data_warehouse/articles
