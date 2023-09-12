@@ -1,5 +1,8 @@
 import argparse
 
+# from newsfeed.count_articles import extract_timestamps_from_json_files
+from datetime import datetime, timedelta
+
 import requests
 
 from newsfeed.get_cached_files import get_contents
@@ -42,15 +45,29 @@ def send_summary(
 
 def main(summary_type):
     summaries = get_contents(summary_type)
+    error_messages = []
 
     for summary in summaries:
-        print("Sending summary: " + summary.title)
-        send_summary(
-            title=summary.title,
-            content=summary.summary,
-            published=str(summary.published),
-            article_url=summary.link,
-        )
+        published_timestamp = summary.published
+
+        # Calculate a timestamp 24 hours ago
+        one_day_ago = datetime.now() - timedelta(hours=24)
+
+        # Ensure published_timestamp is a datetime.datetime object
+        if not isinstance(published_timestamp, datetime):
+            published_timestamp = datetime.combine(published_timestamp, datetime.min.time())
+
+        # Check if the published timestamp is within the last 24 hours and exists in the set
+        if one_day_ago <= published_timestamp:
+            print(f"Sending summary: {summary.title}")
+            send_summary(
+                title=summary.title,
+                content=summary.summary,
+                published=str(summary.published),
+                article_url=summary.link,
+            )
+        else:
+            print(f"Skipping summary: {summary.title}")
 
 
 def parse_args():
