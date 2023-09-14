@@ -1,0 +1,7 @@
+{
+    "unique_id": "130b1e31-33c2-513e-8389-2d0f3903f944",
+    "title": "GPT-4 API general availability and deprecation of older models in the Completions API",
+    "summary": "GPT-4 API \u00e4r nu tillg\u00e4nglig f\u00f6r alla betalande API-kunder. OpenAI rekommenderar att anv\u00e4ndare \u00f6verg\u00e5r fr\u00e5n \u00e4ldre modeller av Completions API till Chat Completions API, som har visat sig vara kraftfullare och mer flexibel. \u00c4ldre modeller kommer att fasas ut och ers\u00e4ttas med nya modeller. Utvecklare beh\u00f6ver uppgradera sina integrationer och migrera till de nya modellerna senast den 4 januari 2024. OpenAI kommer att erbjuda support och t\u00e4cka kostnaderna f\u00f6r \u00f6verg\u00e5ngen.",
+    "link": "https://openai.com/blog/gpt-4-api-general-availability",
+    "published": "2023-07-06"
+}

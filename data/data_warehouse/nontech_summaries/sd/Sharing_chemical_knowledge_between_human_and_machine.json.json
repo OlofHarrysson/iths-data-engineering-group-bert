@@ -1,0 +1,7 @@
+{
+    "unique_id": "cdcf44b6-31bc-57fc-8a2a-92ff0624364a",
+    "title": "Sharing chemical knowledge between human and machine",
+    "summary": "Researchers have developed an AI tool called DECIMER (Deep Learning for Chemical Image Recognition) that can translate chemical structural formulae into machine-readable code. The tool uses deep learning algorithms to identify and classify images, and then translates the structural formulae into chemical structure code. This code can be uploaded into databases and linked to further information on the molecule. The researchers trained DECIMER using existing machine-readable databases, and it is now freely available for use. The goal is to make scientific information more accessible and usable for the global scientific community.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230822111634.htm",
+    "published": "2023-08-22"
+}

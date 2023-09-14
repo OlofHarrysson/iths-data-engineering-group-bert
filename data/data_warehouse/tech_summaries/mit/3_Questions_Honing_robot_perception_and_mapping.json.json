@@ -1,0 +1,7 @@
+{
+    "unique_id": "89657f51-3d92-5736-98cc-4fa403ff9cb2",
+    "title": "3 Questions: Honing robot perception and mapping",
+    "summary": "MIT researchers Luca Carlone and Jonathan How have developed Kimera, an open-source library that allows robots to construct real-time 3D maps of their environment and label objects. The researchers have also introduced Kimera-Multi, a system that enables multiple robots to communicate and create a unified map. The advantages of scaling this system include consistency and redundancy, as well as the ability to complete tasks more quickly. The researchers have learned that robots can exchange limited information to reach a consensus on the map, and they are working on developing a more sophisticated understanding of the environment. Potential applications of this technology include autonomous vehicles sharing information to improve mapping and models, search and rescue missions, and flexible factories where robots cooperate with humans.",
+    "link": "https://news.mit.edu/2023/honing-robot-perception-mapping-0710",
+    "published": "2023-07-10"
+}

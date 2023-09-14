@@ -1,0 +1,7 @@
+{
+    "unique_id": "a57cdb59-4cac-5ad7-ba41-f437d528ee28",
+    "title": "Autonomous innovations in an uncertain world",
+    "summary": "MIT Professor Jonathan How and his team have been developing a trajectory planning system that allows a fleet of drones to operate in the same airspace without colliding with each other. They have embedded a \"perception aware\" function in their system that allows a vehicle to use onboard sensors to gather new information about other vehicles and alter its own planned trajectory. The team's algorithmic fix resulted in a 100 percent success rate in testing. How is also working on improving the ability of autonomous vehicles to identify and track pedestrians, as well as pushing the boundaries of real-time decision-making for aircraft. He has collaborated with companies like Boeing, Lockheed Martin, and Amazon to solve real-world problems.",
+    "link": "https://news.mit.edu/2023/autonomous-innovations-uncertain-world-jonathan-how-0830",
+    "published": "2023-08-30"
+}

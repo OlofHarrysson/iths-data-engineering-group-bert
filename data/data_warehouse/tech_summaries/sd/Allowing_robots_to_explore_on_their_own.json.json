@@ -1,0 +1,7 @@
+{
+    "unique_id": "232a8204-e61d-5645-9189-fbcff2ebefb0",
+    "title": "Allowing robots to explore on their own",
+    "summary": "The Autonomous Exploration Research Team has developed robotic systems and planners that enable robots to autonomously explore and map unknown environments. The systems use a combination of sensors and algorithms to allow robots to navigate and create maps in real-time. The team has tested the systems in various indoor and outdoor locations, including underground mines and parking garages. The systems can be used in different modes, including manual control, point-to-point navigation, and pure exploration. The new systems are more efficient and can work in low-light and challenging conditions. The team's exploration system was used in a competition and won an award for mapping the most sectors. The team is open-sourcing their work to contribute to the development of autonomous exploration robots.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230719145936.htm",
+    "published": "2023-07-19"
+}

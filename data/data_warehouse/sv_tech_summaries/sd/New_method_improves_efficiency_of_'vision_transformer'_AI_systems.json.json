@@ -1,0 +1,7 @@
+{
+    "unique_id": "39a72cb7-ff26-5be5-815d-2319c8e3f7c5",
+    "title": "New method improves efficiency of 'vision transformer' AI systems",
+    "summary": "Transformatorer \u00e4r kraftfulla AI-modeller. ChatGPT anv\u00e4nder transformerarkitektur f\u00f6r att tr\u00e4na p\u00e5 spr\u00e5k, medan ViTs tr\u00e4nas med visuella insatser. ViTs kan anv\u00e4ndas f\u00f6r att detektera och kategorisera objekt i bilder. Men ViTs st\u00e5r inf\u00f6r tv\u00e5 utmaningar: komplexitet och modelltolkning. En ny metod, kallad \"Patch-to-Cluster attention\" (PaCa), l\u00f6ser dessa utmaningar genom att anv\u00e4nda klustermetoder f\u00f6r att minska ber\u00e4kningskraven och f\u00f6rb\u00e4ttra tolkningsbarheten. PaCa \u00f6vertr\u00e4ffade SWin och PVT i tester och n\u00e4sta steg \u00e4r att tr\u00e4na p\u00e5 st\u00f6rre datam\u00e4ngder.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230601160053.htm",
+    "published": "2023-06-01"
+}

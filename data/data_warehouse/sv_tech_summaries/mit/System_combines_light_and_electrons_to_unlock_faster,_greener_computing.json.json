@@ -1,0 +1,7 @@
+{
+    "unique_id": "ea8c75ba-5ab5-5f89-a899-d4788ace3661",
+    "title": "System combines light and electrons to unlock faster, greener computing",
+    "summary": "Forskare vid MIT har utvecklat en prototyp f\u00f6r en fotonic-elektronisk SmartNIC, kallad \"Lightning\", som anv\u00e4nder fotonik f\u00f6r att accelerera maskininl\u00e4rning. Genom att kombinera hastigheten hos fotonik och datafl\u00f6deskontrollf\u00f6rm\u00e5gan hos elektroniska datorer kan Lightning-systemet utf\u00f6ra inferensuppgifter i realtid. Tidigare utmaningar med fotonic-datorer har varit bristen p\u00e5 minne och instruktioner f\u00f6r att styra datafl\u00f6den, men Lightning l\u00f6ser detta genom att anv\u00e4nda en programmeringsabstraktion som fungerar som ett gemensamt spr\u00e5k mellan fotonik och elektronik. Prototypen visar ocks\u00e5 potential f\u00f6r att vara mer energieffektiv och minska koldioxidutsl\u00e4ppen j\u00e4mf\u00f6rt med traditionella accelerators.",
+    "link": "https://news.mit.edu/2023/system-combines-light-electrons-unlock-faster-greener-computing-0911",
+    "published": "2023-09-11"
+}

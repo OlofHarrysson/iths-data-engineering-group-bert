@@ -1,0 +1,7 @@
+{
+    "unique_id": "eed8df01-052f-5157-8a7f-499eacd4b58b",
+    "title": "AI helps household robots cut planning time in half",
+    "summary": "Forskare fr\u00e5n MIT:s Computer Science and Artificial Intelligence Laboratory (CSAIL) har utvecklat PIGINet, ett system som anv\u00e4nder maskininl\u00e4rning f\u00f6r att f\u00f6rb\u00e4ttra probleml\u00f6sningsf\u00f6rm\u00e5gan hos hush\u00e5llsrobotar. Genom att eliminera orealistiska uppgiftsplaner som inte uppfyller kollisionsfria krav kan PIGINet minska planeringstiden med 50-80 procent. Systemet anv\u00e4nder en neural n\u00e4tverksteknik som tar in information om uppgiftsplaner, bilder av milj\u00f6n och symboliska kodningar av start- och m\u00e5ltillst\u00e5nd f\u00f6r att f\u00f6ruts\u00e4ga sannolikheten att en uppgiftsplan kan f\u00f6rfinas f\u00f6r att hitta genomf\u00f6rbara r\u00f6relseplaner. PIGINet visade sig vara effektivt och anpassningsbart i olika milj\u00f6er och kan revolutionera utbildningen och till\u00e4mpningen av robotar i hemmet.",
+    "link": "https://news.mit.edu/2023/ai-helps-household-robots-cut-planning-time-half-0714",
+    "published": "2023-07-14"
+}

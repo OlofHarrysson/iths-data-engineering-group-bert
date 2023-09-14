@@ -1,0 +1,7 @@
+{
+    "unique_id": "f7031fbd-8590-5c68-afd9-01cb58e953c0",
+    "title": "MIT researchers combine deep learning and physics to fix motion-corrupted MRI scans",
+    "summary": "Forskare vid MIT har utvecklat en djupinl\u00e4rningsmodell som kan korrigera r\u00f6relse i hj\u00e4rn-MRI. R\u00f6relse \u00e4r ett vanligt problem i MRI och kan leda till bildartefakter som kan f\u00f6rsv\u00e5ra diagnoser och behandlingar. Metoden kombinerar fysikbaserad modellering och djupinl\u00e4rning f\u00f6r att skapa en r\u00f6relsefri bild fr\u00e5n r\u00f6relsekorrumperade data. Detta kan vara s\u00e4rskilt f\u00f6rdelaktigt f\u00f6r patienter med neurologiska sjukdomar som orsakar ofrivillig r\u00f6relse. Forskningen har potential att bli standardpraxis inom MRI-motion correction.",
+    "link": "https://news.mit.edu/2023/mit-researchers-combine-deep-learning-physics-fix-motion-corrupted-MRI-scans-0817",
+    "published": "2023-08-17"
+}

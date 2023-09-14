@@ -1,0 +1,7 @@
+{
+    "unique_id": "ea8c75ba-5ab5-5f89-a899-d4788ace3661",
+    "title": "System combines light and electrons to unlock faster, greener computing",
+    "summary": "Researchers at MIT have developed a photonic-electronic reconfigurable SmartNIC called \"Lightning\" that harnesses the power of photonics to accelerate machine learning. The system combines the speed of photonics with the dataflow control capabilities of electronic computers, allowing for real-time machine learning inference tasks. The researchers solved the challenge of dataflow control between photonics and electronics, enabling seamless communication between the two. Lightning is more energy-efficient and faster than traditional accelerators, making it a potential upgrade for data centers to reduce carbon footprints and improve inference response times.",
+    "link": "https://news.mit.edu/2023/system-combines-light-electrons-unlock-faster-greener-computing-0911",
+    "published": "2023-09-11"
+}

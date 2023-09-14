@@ -1,0 +1,7 @@
+{
+    "unique_id": "096f79ef-9e65-5f5f-8b83-f898866ef893",
+    "title": "A pose-mapping technique could remotely evaluate patients with cerebral palsy",
+    "summary": "MIT engineers have developed a method that uses computer vision and machine learning to remotely evaluate patients' motor function. The method analyzes videos of patients in real-time and computes a clinical score based on patterns of poses detected in the video frames. The researchers tested the method on videos of over 1,000 children with cerebral palsy and found that it matched with over 70% accuracy what a clinician had determined during an in-person visit. The team envisions that patients can be evaluated by setting up their phone or tablet to take a video as they move about their own home, which can then be analyzed and sent to a doctor for review. The researchers are also tailoring the approach to evaluate other neurological disorders.",
+    "link": "https://news.mit.edu/2023/pose-mapping-technique-cerebral-palsy-patients-0914",
+    "published": "2023-09-14"
+}

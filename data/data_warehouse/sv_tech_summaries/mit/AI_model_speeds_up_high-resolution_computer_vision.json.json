@@ -1,0 +1,7 @@
+{
+    "unique_id": "316027b4-e0b8-541d-9c14-78d544a3b714",
+    "title": "AI model speeds up high-resolution computer vision",
+    "summary": "Forskare fr\u00e5n MIT och MIT-IBM Watson AI Lab har utvecklat en mer effektiv datorseende-modell som kan utf\u00f6ra semantisk segmentering i realtid p\u00e5 enheter med begr\u00e4nsade h\u00e5rdvaruresurser, som till exempel autonoma fordon. Modellen har linj\u00e4r ber\u00e4kningskomplexitet och \u00e4r upp till nio g\u00e5nger snabbare \u00e4n tidigare modeller. Genom att anv\u00e4nda en enklare mekanism f\u00f6r att bygga upp uppm\u00e4rksamhetskartan kan modellen reducera ber\u00e4kningarna utan att f\u00f6rlora den globala mottagningsf\u00e4ltet. Modellen kan anv\u00e4ndas f\u00f6r att f\u00f6rb\u00e4ttra effektiviteten f\u00f6r andra datorseende-uppgifter, som medicinsk bildsegmentering.",
+    "link": "https://news.mit.edu/2023/ai-model-high-resolution-computer-vision-0912",
+    "published": "2023-09-12"
+}

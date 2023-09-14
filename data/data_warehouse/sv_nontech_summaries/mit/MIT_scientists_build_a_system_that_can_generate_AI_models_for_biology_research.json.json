@@ -1,0 +1,7 @@
+{
+    "unique_id": "4ee1c21a-d66e-590e-ad57-2056b73b765e",
+    "title": "MIT scientists build a system that can generate AI models for biology research",
+    "summary": "Forskare vid MIT har utvecklat en automatiserad maskininl\u00e4rningssystem kallad BioAutoMATED som kan bygga och v\u00e4lja en l\u00e4mplig modell f\u00f6r en given dataset inom biologi. Systemet kan \u00e4ven ta hand om den tidskr\u00e4vande processen med dataf\u00f6rberedelse och minska den fr\u00e5n flera veckor till bara n\u00e5gra timmar. BioAutoMATED \u00e4r utformat f\u00f6r att arbeta med biologiska sekvenser som DNA, RNA och proteiner och kan utforska och bygga olika typer av modeller. Forskarna hoppas att verktyget kommer att underl\u00e4tta f\u00f6r biologiska forskargrupper att anv\u00e4nda maskininl\u00e4rning utan att beh\u00f6va anst\u00e4lla specialister inom omr\u00e5det.",
+    "link": "https://news.mit.edu/2023/bioautomated-open-source-machine-learning-platform-for-research-labs-0706",
+    "published": "2023-07-06"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "9b3fc437-d1ce-5ad5-b8a6-1de70da8010e",
+    "title": "A simpler method for learning to control a robot",
+    "summary": "Researchers from MIT and Stanford have developed a machine learning technique that incorporates control theory to learn the dynamics of a system and extract an effective controller directly from the model. This approach allows for more efficient and accurate control of complex systems, such as autonomous vehicles and drones, in rapidly changing environments. The technique is data-efficient and can be applied to various types of dynamical systems. The researchers aim to further develop models that are more physically interpretable for improved controller performance.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230726171330.htm",
+    "published": "2023-07-26"
+}

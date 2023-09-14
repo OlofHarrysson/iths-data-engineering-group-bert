@@ -1,0 +1,7 @@
+{
+    "unique_id": "4c80a19f-c3e9-5c09-a52b-4f00afd75ed1",
+    "title": "Turning ChatGPT into a 'chemistry assistant'",
+    "summary": "Forskare har anv\u00e4nt en AI-modell, ChatGPT, f\u00f6r att extrahera och sammanfatta experimentell information fr\u00e5n vetenskapliga artiklar om metall-organiska ramar (MOFs). Genom att ge ChatGPT instruktioner kunde forskarna identifiera \u00f6ver 26 000 relevanta faktorer f\u00f6r att skapa cirka 800 f\u00f6reningar. Med dessa data tr\u00e4nade de en separat AI-modell f\u00f6r att f\u00f6ruts\u00e4ga kristalltillst\u00e5ndet hos MOFs baserat p\u00e5 dessa villkor. Forskarna byggde ocks\u00e5 en chattbot f\u00f6r att svara p\u00e5 fr\u00e5gor om datan. Detta system, kallat \"ChatGPT Chemistry Assistant\", kan vara anv\u00e4ndbart inom andra omr\u00e5den inom kemin och kr\u00e4ver inte expertkunskaper i kodning.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230810105459.htm",
+    "published": "2023-08-10"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "4cf1ffa8-ef0f-52ab-a8bb-4f43c9a144b7",
+    "title": "Four-legged robot traverses tricky terrains thanks to improved 3D vision",
+    "summary": "Researchers at UC San Diego have developed a model that improves a robot's 3D perception by synthesizing visual information from previous frames. The model uses a depth camera to capture images and translates them into 3D space, extracting information about the robot's leg movements. By comparing synthesized frames with captured frames, the model learns the correct representation of the 3D scene. This improved 3D perception allows the robot to remember what it has seen and inform its next moves, enabling it to traverse more challenging terrain. However, the current model does not guide the robot to a specific goal, and future work aims to include more planning techniques for navigation.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230612200423.htm",
+    "published": "2023-06-12"
+}

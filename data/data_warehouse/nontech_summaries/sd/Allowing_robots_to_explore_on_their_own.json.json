@@ -1,0 +1,7 @@
+{
+    "unique_id": "232a8204-e61d-5645-9189-fbcff2ebefb0",
+    "title": "Allowing robots to explore on their own",
+    "summary": "The Autonomous Exploration Research Team at Carnegie Mellon University has developed a suite of robotic systems and planners that enable robots to autonomously explore and map unknown environments. The systems, which can be attached to various robotic platforms, utilize sensors and algorithms to navigate and create real-time maps. The robots can operate in three modes: controlled by a person, navigating to a selected point on a map, or exploring independently. The systems have been successfully tested in various environments, including underground mines and parking garages. The team's work is open-source and aims to advance the capabilities of autonomous exploration robots.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230719145936.htm",
+    "published": "2023-07-19"
+}

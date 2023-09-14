@@ -1,0 +1,7 @@
+{
+    "unique_id": "cdcf44b6-31bc-57fc-8a2a-92ff0624364a",
+    "title": "Sharing chemical knowledge between human and machine",
+    "summary": "Artificiell intelligens (AI) verktyget \"DECIMER\" har utvecklats f\u00f6r att \u00f6vers\u00e4tta kemiska strukturformler till maskinl\u00e4sbar kod. Verktyget, utvecklat av forskare vid University of Jena och Westphalian University of Applied Sciences, kan identifiera och klassificera kemiska strukturformler i vetenskapliga artiklar och \u00f6vers\u00e4tta dem till kod som kan laddas upp i databaser. F\u00f6r att tr\u00e4na AI-verktyget anv\u00e4ndes moderna AI-metoder och \u00f6ver 450 miljoner strukturformler fr\u00e5n befintliga databaser. M\u00e5let \u00e4r att g\u00f6ra vetenskaplig information h\u00e5llbart tillg\u00e4nglig f\u00f6r den globala vetenskapliga gemenskapen.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230822111634.htm",
+    "published": "2023-08-22"
+}

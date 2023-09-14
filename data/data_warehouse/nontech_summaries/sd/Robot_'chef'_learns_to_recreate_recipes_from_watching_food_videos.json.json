@@ -1,0 +1,7 @@
+{
+    "unique_id": "09df840f-5a3c-57b3-aee9-c4f1e62fc290",
+    "title": "Robot 'chef' learns to recreate recipes from watching food videos",
+    "summary": "Researchers from the University of Cambridge have trained a robotic chef to learn and make simple salad recipes by watching videos. The robot was programmed with a \"cookbook\" of eight salad recipes and used computer vision techniques to analyze the videos and identify the ingredients and actions of the human chef. The robot was able to correctly identify the recipe being prepared 93% of the time and even came up with a new recipe on its own. The study demonstrates the potential of using video content as a valuable source of data for automated food production.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230605181344.htm",
+    "published": "2023-06-05"
+}

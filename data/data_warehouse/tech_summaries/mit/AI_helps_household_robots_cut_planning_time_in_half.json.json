@@ -1,0 +1,7 @@
+{
+    "unique_id": "eed8df01-052f-5157-8a7f-499eacd4b58b",
+    "title": "AI helps household robots cut planning time in half",
+    "summary": "Researchers from MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed PIGINet, a system that uses machine learning to enhance the problem-solving capabilities of household robots. PIGINet eliminates task plans that cannot satisfy collision-free requirements, reducing planning time by 50-80% when trained on a small number of problems. The system employs a neural network with a transformer encoder that combines task plans, images of the environment, and symbolic encodings to predict the feasibility of selected task plans. PIGINet significantly reduces planning time in both simple and complex scenarios. The system's use of multimodal embeddings and image data allows for better representation and understanding of complex geometric relationships. The scarcity of training data was a challenge, but the team addressed it by using pretrained vision language models and data augmentation techniques. The researchers aim to further refine PIGINet to suggest alternate task plans and revolutionize the way robots are trained and applied in various environments.",
+    "link": "https://news.mit.edu/2023/ai-helps-household-robots-cut-planning-time-half-0714",
+    "published": "2023-07-14"
+}
