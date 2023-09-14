@@ -1,4 +1,5 @@
 import argparse
+import time
 
 # from newsfeed.count_articles import extract_timestamps_from_json_files
 from datetime import date, datetime, timedelta
@@ -63,12 +64,16 @@ def main(summary_type):
         # Check if the published timestamp is within the last 24 hours and exists in the set
         if one_day_ago <= published_timestamp:
             print(f"Sending summary: {summary.title}")
-            send_summary(
-                title=summary.title,
-                content=summary.summary,
-                published=str(summary.published),
-                article_url=summary.link,
-            )
+            try:
+                send_summary(
+                    title=summary.title,
+                    content=summary.summary,
+                    published=str(summary.published),
+                    article_url=summary.link,
+                )
+            except:
+                print(f"\nFailed: {summary.title}")
+            time.sleep(0.2)  # wait between messages to avoid timeout
         else:
             print(f"Skipping summary: {summary.title}")
 
