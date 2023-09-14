@@ -1,0 +1,7 @@
+{
+    "unique_id": "cd01dbe0-de8f-50e8-a3cc-703092da3906",
+    "title": "Pros and cons of ChatGPT plugin, Code Interpreter, in education, biology, health",
+    "summary": "Code Interpreter, an artificial intelligence chatbot developed by OpenAI, has gained popularity since its release in December 2022. While it has proven useful in educational settings, it falls short in meeting the needs of bioinformatics, a field that combines computer science and biology. Researchers have found that Code Interpreter lacks certain features required for bioinformatics tasks, such as internet access, support for specific software, and the ability to handle large files and parallel processing. Despite these limitations, Code Interpreter shows promise in minimizing hallucinations and providing data visualization capabilities. Future upgrades are expected to address these issues and expand its use in various fields, including bioinformatics.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230825122024.htm",
+    "published": "2023-08-25"
+}

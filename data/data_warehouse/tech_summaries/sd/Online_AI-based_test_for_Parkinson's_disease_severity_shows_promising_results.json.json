@@ -1,0 +1,7 @@
+{
+    "unique_id": "6c2fc0ff-f375-5478-92d6-8a8dd8aff83c",
+    "title": "Online AI-based test for Parkinson's disease severity shows promising results",
+    "summary": "AI model uses the Movement Disorder Society Unified Parkinson's Disease Rating Scale (MDS-UPDRS) to assess movement disorders and classify the severity of tremors. It generates computational metrics and provides a rapid assessment that is consistent with medical guidebooks. In a study with 250 participants, the AI model performed slightly worse than expert neurologists but outperformed primary care physicians. The researchers believe this AI-based approach can be applied to other movement disorders and improve access to healthcare for patients. However, they caution that it should not be considered a definitive measure without a physician's input.",
+    "link": "https://www.sciencedaily.com/releases/2023/09/230907130356.htm",
+    "published": "2023-09-07"
+}

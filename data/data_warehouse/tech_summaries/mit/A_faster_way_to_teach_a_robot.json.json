@@ -1,0 +1,7 @@
+{
+    "unique_id": "8e1f910a-a0a4-5798-93c3-5f3abf339c2a",
+    "title": "A faster way to teach a robot",
+    "summary": "Researchers at MIT, New York University, and the University of California at Berkeley have developed a framework that allows humans to quickly teach robots new tasks with minimal effort. The system generates counterfactual explanations when a robot fails at a task, showing what needed to change for the robot to succeed. The human provides feedback on why the robot failed, and the system uses this feedback to generate new data to fine-tune the robot. The framework has been shown to teach robots more efficiently and with less human effort in simulations.",
+    "link": "https://news.mit.edu/2023/faster-way-teach-robot-technique-0718",
+    "published": "2023-07-18"
+}

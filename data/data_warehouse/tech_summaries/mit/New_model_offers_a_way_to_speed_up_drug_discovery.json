@@ -1,7 +1,0 @@
-{
-    "unique_id": "6ba137c7-d373-55b5-b7d7-23baf155024e",
-    "title": "New model offers a way to speed up drug discovery",
-    "summary": "Researchers at MIT and Tufts University have developed a computational approach, called ConPLex, that uses artificial intelligence algorithms to match target proteins with potential drug molecules without calculating the molecules' structures. This method allows for the screening of more than 100 million compounds in a single day, making it more efficient than existing models. The researchers trained the model on known protein-drug interactions and incorporated a training stage to distinguish between real drugs and decoys. Experimental tests showed that the model accurately identified drug-protein pairs with strong binding affinity. This approach has the potential to reduce the cost and failure rates of drug discovery.",
-    "link": "https://news.mit.edu/2023/new-model-offers-speedy-drug-discovery-0608",
-    "published": "2023-06-08"
-}

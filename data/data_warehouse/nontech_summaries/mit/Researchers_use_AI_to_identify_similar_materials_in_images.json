@@ -1,7 +1,0 @@
-{
-    "unique_id": "7baccb63-d021-5ac3-a71a-e270332c0b66",
-    "title": "Researchers use AI to identify similar materials in images",
-    "summary": "Researchers at MIT and Adobe Research have developed a technique that allows robots to identify objects made of the same material, even when the appearance of the material varies due to factors such as lighting conditions. The method uses machine learning to identify all pixels in an image representing a given material, based on a pixel selected by the user. The researchers trained their model using synthetic data, but found that it also worked effectively on real indoor and outdoor scenes. The technique has applications in robotics, image editing, material-based web recommendation systems, and more.",
-    "link": "https://news.mit.edu/2023/researchers-identify-similar-materials-images-0523",
-    "published": "2023-05-23"
-}

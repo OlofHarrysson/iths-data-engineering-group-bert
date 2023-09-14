@@ -1,7 +1,0 @@
-{
-    "unique_id": "54e3beb5-1cfb-57d9-bec0-d455ebd1d07a",
-    "title": "A better way to study ocean currents",
-    "summary": "Scientists have developed a new model that incorporates machine learning to more accurately predict ocean currents and identify areas where water rises or sinks. The model, which uses a Helmholtz decomposition to reflect the physics of fluid dynamics, outperformed traditional statistical models in predicting currents and identifying divergences. This improved accuracy could help scientists forecast weather, track the spread of oil spills, and monitor the transportation of biomass, carbon, plastics, and nutrients in the ocean. The researchers plan to further refine the model by incorporating a time element and accounting for noise in the data.",
-    "link": "https://news.mit.edu/2023/new-machine-learning-model-ocean-currents-0517",
-    "published": "2023-05-17"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "7cc284e3-faae-56dd-8ceb-24a31a42d363",
-    "title": "Generative AI imagines new protein structures ",
-    "summary": "Researchers at MIT CSAIL have developed a computational tool called \"FrameDiff\" that uses machine learning to create new protein structures. Proteins are essential for various biological functions, and the ability to engineer proteins could have significant implications for drug development, diagnostics, and biotechnology. FrameDiff generates \"frames\" that align with the properties of protein structures, allowing it to construct novel proteins independently of preexisting designs. The tool could be used to create better binders, develop more efficient photosynthesis proteins, engineer nanoparticles for gene therapy, and more. The researchers combined FrameDiff with other tools to create \"RFdiffusion,\" which has already been used to create and validate novel proteins. The team aims to improve FrameDiff's generality and expand its training to include other biological modalities. The research offers promising progress in the field of protein design and its potential to address various challenges in healthcare and beyond.",
-    "link": "https://news.mit.edu/2023/generative-ai-imagines-new-protein-structures-0712",
-    "published": "2023-07-12"
-}

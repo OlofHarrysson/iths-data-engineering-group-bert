@@ -1,0 +1,7 @@
+{
+    "unique_id": "130b1e31-33c2-513e-8389-2d0f3903f944",
+    "title": "GPT-4 API general availability and deprecation of older models in the Completions API",
+    "summary": "OpenAI has announced the general availability of GPT-4 API for all paying customers. They recommend users to adopt the Chat Completions API, which has proven to be more powerful and flexible for conversational experiences. Older models in the Completions API will be deprecated in 6 months, and new models will replace them. Developers using older embeddings models and the Edits API will also need to migrate to newer models. OpenAI will provide support and cover the cost of transitioning to the new models.",
+    "link": "https://openai.com/blog/gpt-4-api-general-availability",
+    "published": "2023-07-06"
+}

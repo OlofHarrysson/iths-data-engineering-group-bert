@@ -1,7 +1,0 @@
-{
-    "unique_id": "d7f821d0-b03c-5db1-90f1-ad6f7027dd2e",
-    "title": "OpenAI partners with Scale to provide support for enterprises fine-tuning models",
-    "summary": "OpenAI and Scale have partnered to offer fine-tuning capabilities for OpenAI's advanced models. This allows companies to customize the models on proprietary data, making them more useful. Data sent in and out of the fine-tuning API is owned by the customer and not used by OpenAI or any other organization. Scale, as a preferred partner, will help extend the benefits of fine-tuning by leveraging their expertise in data enrichment and model evaluation. Scale has already demonstrated the value of fine-tuning by working with Brex to fine-tune GPT-3.5.",
-    "link": "https://openai.com/blog/openai-partners-with-scale-to-provide-support-for-enterprises-fine-tuning-models",
-    "published": "2023-08-24"
-}

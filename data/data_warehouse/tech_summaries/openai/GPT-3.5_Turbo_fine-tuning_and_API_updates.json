@@ -1,7 +1,0 @@
-{
-    "unique_id": "061a81a1-b472-50d2-9423-5537925e4175",
-    "title": "GPT-3.5 Turbo fine-tuning and API updates",
-    "summary": "OpenAI has announced the availability of fine-tuning for GPT-3.5 Turbo, allowing developers to customize models for their specific use cases. Early tests have shown that a fine-tuned version of GPT-3.5 Turbo can match or even outperform base GPT-4 capabilities on certain tasks. Fine-tuning enables improved steerability, reliable output formatting, and custom tone. The fine-tuning process is safe and the data is owned by the customer. OpenAI will also be launching a fine-tuning UI in the future. Pricing for fine-tuning is broken down into training and usage costs. Additionally, OpenAI has introduced updated GPT-3 models as replacements for the original base models.",
-    "link": "https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates",
-    "published": "2023-08-22"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "1d322508-db87-5d89-986b-cc5a69a1fac6",
-    "title": "Function calling and other API updates",
-    "summary": "OpenAI has extended support for the gpt-3.5-turbo-0301, gpt-4-0314, and gpt-4-32k-0314 models until at least June 13, 2024, based on feedback from customers and the community. They are working on improving newer models across various aspects, such as instruction following and factual accuracy. They have introduced function calling capabilities in the Chat Completions API, updated versions of gpt-4 and gpt-3.5-turbo, a 16k context version of gpt-3.5-turbo, and have reduced the cost of their state-of-the-art embeddings model and input tokens for gpt-3.5-turbo. They have also announced the deprecation timeline for certain models.",
-    "link": "https://openai.com/blog/function-calling-and-other-api-updates",
-    "published": "2023-06-13"
-}

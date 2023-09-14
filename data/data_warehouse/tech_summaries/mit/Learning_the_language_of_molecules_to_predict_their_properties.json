@@ -1,7 +1,0 @@
-{
-    "unique_id": "f642d2f1-aa7e-578e-9f9a-e0493ad2cb72",
-    "title": "Learning the language of molecules to predict their properties",
-    "summary": "Researchers from MIT and the MIT-IBM Watson AI Lab have developed a new machine learning framework that can predict molecular properties and generate new molecules more efficiently than existing approaches. The system uses a molecular grammar to understand the rules of how building blocks combine to form valid molecules, allowing it to predict properties and generate viable molecules with only a small amount of data. The system outperformed other machine learning approaches on both small and large datasets, and has the potential to accelerate the discovery of new materials and drugs.",
-    "link": "https://news.mit.edu/2023/learning-language-molecules-predict-properties-0707",
-    "published": "2023-07-07"
-}

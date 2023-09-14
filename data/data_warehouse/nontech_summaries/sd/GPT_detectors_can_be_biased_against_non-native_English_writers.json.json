@@ -1,0 +1,7 @@
+{
+    "unique_id": "1af3dc52-6eac-5251-b1b1-661d57589c16",
+    "title": "GPT detectors can be biased against non-native English writers",
+    "summary": "AI detectors used to identify AI-generated text are unreliable and can have significant consequences if used to review job applications, college essays, or high school assignments, warns James Zou of Stanford University. In a study, seven popular detectors incorrectly labeled over half of non-native English speakers' essays as AI-generated, while correctly classifying over 90% of essays by US eighth-grade students. The detectors rely on text perplexity, penalizing essays with simpler word choices, making non-native English writers more vulnerable to being flagged as using AI. Zou advises caution in using these detectors in classrooms and suggests improving them through more diverse training.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230710113921.htm",
+    "published": "2023-07-10"
+}

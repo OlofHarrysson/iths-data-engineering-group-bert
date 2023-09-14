@@ -1,0 +1,7 @@
+{
+    "unique_id": "ed00f325-8efd-5d84-96f5-552589ea0d51",
+    "title": "How an archeological approach can help leverage biased data in AI to improve medicine",
+    "summary": "Computer science and bioethics professors argue that biased medical data should be viewed as informative artifacts rather than simply \"garbage in, garbage out.\" They suggest taking a sociotechnical perspective that considers historical and social factors when addressing bias in AI models used in medical settings. The authors emphasize the need for collaboration with bioethicists and clinicians to understand the social and historical influences on data collection. They also caution against assuming that including self-reported race in AI models improves performance, as it can lead to worse outcomes for minority populations. The authors advocate for generating high-quality, ethically sourced datasets and highlight the role of the National Institutes of Health in driving ethical practices. Treating biased datasets as artifacts can lead to a better understanding of discriminatory practices and the development of policies to eliminate bias. Ultimately, the authors argue that acknowledging and addressing bias is crucial for improving healthcare outcomes.",
+    "link": "https://news.mit.edu/2023/how-archeological-approach-can-help-leverage-biased-data-ai-improve-medicine-0913",
+    "published": "2023-09-13"
+}

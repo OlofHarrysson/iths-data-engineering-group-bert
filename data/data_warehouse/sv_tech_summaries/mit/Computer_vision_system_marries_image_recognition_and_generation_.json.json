@@ -1,0 +1,7 @@
+{
+    "unique_id": "b8997185-05cd-5189-830e-cd842484c903",
+    "title": "Computer vision system marries image recognition and generation ",
+    "summary": "Forskare vid MIT har tr\u00e4nat en modell, kallad Masked Generative Encoder (MAGE), som kan fylla i saknade delar av en bild samtidigt som den kan identifiera och skapa nya bilder. MAGE anv\u00e4nder sig av \"semantiska tokens\" ist\u00e4llet f\u00f6r r\u00e5a pixlar f\u00f6r att representera bilder, vilket m\u00f6jligg\u00f6r avancerad bildbehandling och bevarar informationen i originalbilden. Modellen har visat imponerande resultat i b\u00e5de bildgenerering och bildigenk\u00e4nning, och har potential f\u00f6r m\u00e5nga till\u00e4mpningar inom datorseende. Forskarna planerar att forts\u00e4tta f\u00f6rb\u00e4ttra modellen genom att minska informationsf\u00f6rlusten vid tokenisering och testa den p\u00e5 st\u00f6rre dataset.",
+    "link": "https://news.mit.edu/2023/computer-vision-system-marries-image-recognition-generation-0628",
+    "published": "2023-06-28"
+}
