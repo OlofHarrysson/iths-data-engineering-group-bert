@@ -10,6 +10,7 @@ from newsfeed.filter_summarized_articles import (
     sort_summaries,
 )
 from newsfeed.get_cached_files import get_contents
+from newsfeed.pipeline_last_ran import time_since_pipeline_ran
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
 app.title = "SummerEase"
@@ -77,7 +78,7 @@ def create_layout():  # This function creates the layout for the dash app
             ),
             dbc.Col(
                 html.P(
-                    f"Last Updated: [placeholder]",  # TODO: include cached date
+                    f"Last Updated: {time_since_pipeline_ran()}",
                     style={"font-size": "12px", "color": "gray"},
                 ),
                 style={"text-align": "right", "vertical-align": "bottom"},
@@ -139,7 +140,7 @@ def create_layout():  # This function creates the layout for the dash app
     contents = dbc.Row(dbc.Col(id="article_container", width={"size": 10, "offset": 1}))
 
     return dbc.Container(
-        [  # dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True)
+        [
             header,
             control_panel,
             contents,
