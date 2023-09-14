@@ -1,7 +1,8 @@
 import argparse
+import time
 
 # from newsfeed.count_articles import extract_timestamps_from_json_files
-from datetime import datetime, timedelta
+from datetime import date, datetime, timedelta
 from urllib.parse import urlparse
 
 import requests
@@ -50,31 +51,29 @@ def send_summary(
 
 def main(summary_type):
     summaries = get_contents(summary_type)
-    error_messages = []
 
-    summaries = sort_summaries(summaries)
-
-    summaries = amount_summaries_from_each_source(summaries, n=5)
+    summaries = sort_summaries(summaries)  # sort by date of each summary object
+    summaries = summaries[::-1]  # reverse to get latest summary at the bottom in discord
 
     for summary in summaries:
         published_timestamp = summary.published
 
         # Calculate a timestamp 24 hours ago
-        one_day_ago = datetime.now() - timedelta(hours=24)
-
-        # Ensure published_timestamp is a datetime.datetime object
-        if not isinstance(published_timestamp, datetime):
-            published_timestamp = datetime.combine(published_timestamp, datetime.min.time())
+        one_day_ago = datetime.now().date() - timedelta(hours=24)
 
         # Check if the published timestamp is within the last 24 hours and exists in the set
         if one_day_ago <= published_timestamp:
             print(f"Sending summary: {summary.title}")
-            send_summary(
-                title=summary.title,
-                content=summary.summary,
-                published=str(summary.published),
-                article_url=summary.link,
-            )
+            try:
+                send_summary(
+                    title=summary.title,
+                    content=summary.summary,
+                    published=str(summary.published),
+                    article_url=summary.link,
+                )
+            except:
+                print(f"\nFailed: {summary.title}")
+            time.sleep(0.2)  # wait between messages to avoid timeout
         else:
             print(f"Skipping summary: {summary.title}")
 

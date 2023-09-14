@@ -1,0 +1,7 @@
+{
+    "unique_id": "4cf1ffa8-ef0f-52ab-a8bb-4f43c9a144b7",
+    "title": "Four-legged robot traverses tricky terrains thanks to improved 3D vision",
+    "summary": "Forskare vid UC San Diego har utvecklat en modell som f\u00f6rb\u00e4ttrar en robots 3D-uppfattning genom att anv\u00e4nda en fram\u00e5triktad djupkamera. Modellen \u00f6vers\u00e4tter 2D-bilder till 3D genom att analysera en kort videosekvens och extrahera 3D-information fr\u00e5n varje bild. Informationen anv\u00e4nds f\u00f6r att syntetisera tidigare bilder och kontrollera robotens r\u00f6relse. Genom att kombinera denna 3D-uppfattning med proprioception kan roboten navigera i mer komplexa milj\u00f6er. Modellen har dock begr\u00e4nsningar och kan f\u00f6rb\u00e4ttras genom att inkludera mer planeringsteknik och navigationsstrategier.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230612200423.htm",
+    "published": "2023-06-12"
+}

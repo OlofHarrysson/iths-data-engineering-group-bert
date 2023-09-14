@@ -10,9 +10,10 @@ from newsfeed.filter_summarized_articles import (
     sort_summaries,
 )
 from newsfeed.get_cached_files import get_contents
+from newsfeed.pipeline_last_ran import time_since_pipeline_ran
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
-app.title = "Article Summaries from main"  # TODO: change this
+app.title = "SummarEase"
 
 
 def main():
@@ -35,10 +36,10 @@ def update_summary_container(
     else:
         summaries = get_contents(f"{language}tech_summaries")
 
+    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
         summaries, n=5
     )  # get top n most recent summaries from each unique source
-    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
 
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
@@ -72,12 +73,12 @@ def create_layout():  # This function creates the layout for the dash app
     header = dbc.Row(
         [
             dbc.Col(
-                html.H1("Newsfeed"),  # TODO: change this
+                html.H1("SummarEase"),
                 width={"size": 7, "offset": 1},
             ),
             dbc.Col(
                 html.P(
-                    f"Last Updated: [placeholder]",  # TODO: include cached date
+                    f"Last Updated: {time_since_pipeline_ran()}",
                     style={"font-size": "12px", "color": "gray"},
                 ),
                 style={"text-align": "right", "vertical-align": "bottom"},
@@ -139,7 +140,7 @@ def create_layout():  # This function creates the layout for the dash app
     contents = dbc.Row(dbc.Col(id="article_container", width={"size": 10, "offset": 1}))
 
     return dbc.Container(
-        [  # dbc.Card(html.H1("Newsfeed"), body=True, color="dark", inverse=True)
+        [
             header,
             control_panel,
             contents,

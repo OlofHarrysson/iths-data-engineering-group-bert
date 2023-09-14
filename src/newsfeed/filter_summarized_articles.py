@@ -36,4 +36,6 @@ def amount_summaries_from_each_source(summaries, n=10):
     for source in summaries_dict:
         top_summaries.extend(summaries_dict[source][:n])
 
+    top_summaries = sort_summaries(top_summaries)
+
     return top_summaries

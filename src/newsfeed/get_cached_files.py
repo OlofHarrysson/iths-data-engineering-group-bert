@@ -11,7 +11,8 @@ def get_file_paths(warehouse_dir):
 
     # loop through and get all files in the summaries folder
     for root, _, files in os.walk(data_directory_path + warehouse_dir):
-        all_files = [os.path.join(root, file) for file in files]
+        for file in files:
+            all_files.append(os.path.join(root, file))
 
     return all_files
 
@@ -48,3 +49,12 @@ def get_contents(warehouse_dir):
 def is_cached(id, warehouse_dir):
     content_ids = set([content.unique_id for content in get_contents(warehouse_dir)])
     return id in content_ids
+
+
+if __name__ == "__main__":
+    # for manually checking for cached files, specify an id and run this script directly
+    id = "e7a612ec-0088-5be9-ac17-eb7b75c3595e"
+    content_ids = set([content.unique_id for content in get_contents("tech_summaries")])
+
+    print(f"\n{len(content_ids)=}")
+    print(f"{id in content_ids=}\n")

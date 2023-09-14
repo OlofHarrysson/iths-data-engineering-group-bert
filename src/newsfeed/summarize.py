@@ -90,12 +90,12 @@ def summarize_articles(summary_type, model_type):
         blogs = read_articles(data_directory_path + "articles/" + dir)
 
         for blog in blogs:
+            file_name = BlogInfo.get_filename(blog)
             # Check if the blog summary already exists
             if not is_cached(
                 blog.unique_id, summary_dir
             ):  # goes into data warehouse / summary_dir and searches for matching ID
                 # Remove file name characters disallowed by the filesystem
-                file_name = BlogInfo.get_filename(blog)
 
                 print(f"summarizing: {file_name[:10]}...")
 
@@ -123,6 +123,8 @@ def summarize_articles(summary_type, model_type):
                     "w",
                 ) as file:
                     json.dump(blog_summary, file, indent=4)
+            else:
+                print(f"skipped (cached): {file_name[:10]}...")
 
 
 def parse_args():
