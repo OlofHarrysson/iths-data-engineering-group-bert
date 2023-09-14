@@ -1,7 +1,7 @@
 {
     "unique_id": "b8ece89c-c979-5993-ba1b-a2c8733dae8a",
     "title": "A new way to look at data privacy",
-    "summary": "MIT researchers have developed a technique called Probably Approximately Correct (PAC) Privacy, which allows machine-learning models to protect sensitive data while maintaining accuracy. The researchers created a privacy metric called PAC Privacy, which measures the difficulty for an adversary to reconstruct sensitive data after noise has been added. The algorithm automatically determines the optimal amount of noise to add to the model, guaranteeing privacy even if the adversary has infinite computing power. The technique does not require knowledge of the model's inner workings and can be used for different types of models and applications.",
+    "summary": "MIT researchers have developed a technique called Probably Approximately Correct (PAC) Privacy that can determine the minimal amount of noise needed to protect sensitive data in machine-learning models. The researchers created a new privacy metric and built a framework based on this metric that does not require knowledge of the model's inner workings or training process. The PAC Privacy algorithm automatically tells the user how much noise to add to the model to prevent an adversary from reconstructing the sensitive data. This technique could help create machine-learning models that hide training data while maintaining accuracy.",
     "link": "https://news.mit.edu/2023/new-way-look-data-privacy-0714",
     "published": "2023-07-14"
 }
