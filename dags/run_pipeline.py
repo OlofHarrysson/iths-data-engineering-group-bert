@@ -5,9 +5,15 @@ from airflow.decorators import dag, task
 from newsfeed import (
     download_blogs_from_rss,
     extract_articles,
+    pipeline_last_ran,
     send_to_discord,
     summarize,
 )
+
+
+@task(task_id="pipeline_last_ran_task")
+def pipeline_last_ran_task() -> None:
+    pipeline_last_ran.main()
 
 
 @task(task_id="download_blogs_from_rss_task")
@@ -52,6 +58,7 @@ def test_pipeline() -> None:
         >> extract_articles_task()
         >> summarize_task()
         >> send_to_discord_task()
+        >> pipeline_last_ran_task()
     )
 
 
