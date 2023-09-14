@@ -1,7 +1,0 @@
-{
-    "unique_id": "ad83a55b-4865-5a3a-b642-def88d86f3e6",
-    "title": "How artificial intelligence gave a paralyzed woman her voice back",
-    "summary": "Researchers at the University of California, San Francisco (UCSF) have developed a brain-computer interface (BCI) system that can synthesize speech and facial expressions from brain signals. The system can also decode these signals into text at a rate of nearly 80 words per minute. The team implanted electrodes onto the surface of a woman's brain and trained the system's artificial intelligence algorithms to recognize her unique brain signals for speech. The researchers created a system that decodes words from phonemes, enhancing accuracy and speed. They also personalized the voice to sound like the woman's voice before her injury. The team animated an avatar with software that simulates muscle movements of the face. The next step for the team is to create a wireless version of the BCI system.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230823122530.htm",
-    "published": "2023-08-23"
-}

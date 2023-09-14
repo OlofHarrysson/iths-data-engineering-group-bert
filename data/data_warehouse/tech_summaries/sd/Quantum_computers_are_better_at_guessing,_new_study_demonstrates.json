@@ -1,7 +1,0 @@
-{
-    "unique_id": "645c967b-b00f-5c6a-a721-1896648475c4",
-    "title": "Quantum computers are better at guessing, new study demonstrates",
-    "summary": "Researchers have demonstrated that quantum computers can solve certain problems more efficiently than classical computers, even in the presence of noise. The study used a noise suppression technique called dynamical decoupling to achieve a quantum speedup. While classical computers can currently solve the problem faster in absolute terms, the advantage of quantum computers becomes evident as the problems become more complex. The study shows that with proper error control, quantum computers can execute algorithms with better time scaling than conventional computers, even in the noisy intermediate-scale quantum era.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230605181221.htm",
-    "published": "2023-06-05"
-}

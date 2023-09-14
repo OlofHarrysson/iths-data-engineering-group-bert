@@ -1,7 +1,0 @@
-{
-    "unique_id": "234c5b42-6d60-5065-af8d-1d72d2ab1e4d",
-    "title": "Reinforcement learning allows underwater robots to locate and track objects underwater",
-    "summary": "Underwater robotics is becoming an important tool for studying the oceans, with the ability to explore depths of up to 4,000 meters. Researchers have found that reinforcement learning, a type of artificial intelligence, can be used to train underwater robots to optimize their actions and achieve specific goals. This technology allows for the study of small-scale phenomena and the monitoring of oceanographic instruments in real time. The researchers used range acoustic techniques and neural networks to train the algorithms, and tested them on autonomous vehicles in experimental missions. Future research will focus on applying the algorithms to more complex missions. This research was funded by the European Marie Curie Individual Fellowship and the BITER project.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230728113428.htm",
-    "published": "2023-07-28"
-}

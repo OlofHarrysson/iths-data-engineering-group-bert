@@ -1,7 +1,0 @@
-{
-    "unique_id": "a07ad3c5-fe05-51f3-a933-bf4f0961e761",
-    "title": "Robot centipedes go for a walk",
-    "summary": "Researchers from Osaka University have developed a biomimetic \"myriapod\" robot that uses a natural instability to convert straight walking into curved motion. The robot consists of six segments with flexible joints, and by adjusting the flexibility of the joints, the robot can transition from straight walking to walking in a curved pattern. This approach reduces computational complexity and energy requirements, making it useful for applications such as search and rescue or exploration in hazardous environments. Future versions of the robot may include additional segments and control mechanisms.",
-    "link": "https://www.sciencedaily.com/releases/2023/05/230529171805.htm",
-    "published": "2023-05-29"
-}

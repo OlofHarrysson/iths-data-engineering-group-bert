@@ -1,7 +1,0 @@
-{
-    "unique_id": "0c198404-32c2-5a6f-b317-065f2e159d09",
-    "title": "Self-supervised AI learns physics to reconstruct microscopic images from holograms",
-    "summary": "Researchers at UCLA have developed a new artificial intelligence (AI) model called GedankenNet that can learn from physics laws and thought experiments. Unlike existing AI models used in microscopy, GedankenNet does not require human supervision or pre-labeled data sets. Instead, it relies on the laws of physics to reconstruct microscopic images using random artificial holograms. In tests, GedankenNet successfully reconstructed microscopic images of human tissue samples and Pap smears from holograms. The model also generated output light waves that accurately represented the 3D light propagation in space. The researchers believe that this self-supervised AI model has the potential to revolutionize computational imaging tasks.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230807122001.htm",
-    "published": "2023-08-07"
-}

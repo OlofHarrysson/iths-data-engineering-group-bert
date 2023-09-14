@@ -1,7 +1,0 @@
-{
-    "unique_id": "18945096-edfb-57aa-8b7e-def64fe7195b",
-    "title": "New superconducting diode could improve performance of quantum computers and artificial intelligence",
-    "summary": "Researchers at the University of Minnesota have developed a new type of diode using superconducting materials that could potentially increase the power and energy efficiency of computers. Diodes are components in electrical circuits that allow current to flow in one direction but not the other. The researchers used a unique design with three Josephson junctions, which are made by sandwiching non-superconducting material between superconductors. This design allows for voltage control of the device's behavior and the ability to process multiple signal inputs. The device also has high energy efficiency and can be easily fabricated using industry-friendly materials. The researchers believe that their device could have applications in neuromorphic computing and could help scale up the development of quantum computers. The research was funded by the US Department of Energy, Microsoft Research, and the National Science Foundation.",
-    "link": "https://www.sciencedaily.com/releases/2023/06/230606111725.htm",
-    "published": "2023-06-06"
-}
