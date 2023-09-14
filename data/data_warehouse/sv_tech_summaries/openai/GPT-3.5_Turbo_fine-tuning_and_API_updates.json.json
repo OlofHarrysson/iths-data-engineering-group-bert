@@ -1,0 +1,7 @@
+{
+    "unique_id": "061a81a1-b472-50d2-9423-5537925e4175",
+    "title": "GPT-3.5 Turbo fine-tuning and API updates",
+    "summary": "M\u00f6jligheten att finjustera modeller f\u00f6r GPT-3.5 Turbo \u00e4r nu tillg\u00e4nglig, och finjustering f\u00f6r GPT-4 kommer senare i h\u00f6st. Detta ger utvecklare m\u00f6jlighet att anpassa modeller f\u00f6r sina anv\u00e4ndningsomr\u00e5den och k\u00f6ra dessa anpassade modeller i stor skala. Tidiga tester har visat att en finjusterad version av GPT-3.5 Turbo kan matcha eller till och med \u00f6vertr\u00e4ffa GPT-4 p\u00e5 vissa smala uppgifter. Finjusteringen \u00e4gs av kunden och anv\u00e4nds inte av OpenAI eller n\u00e5gon annan organisation f\u00f6r att tr\u00e4na andra modeller.",
+    "link": "https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates",
+    "published": "2023-08-22"
+}

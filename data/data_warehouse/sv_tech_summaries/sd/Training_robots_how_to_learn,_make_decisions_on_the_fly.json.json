@@ -1,0 +1,7 @@
+{
+    "unique_id": "366c4ee4-98b6-56f7-a5c6-26fecb391959",
+    "title": "Training robots how to learn, make decisions on the fly",
+    "summary": "Forskare vid University of Illinois har utvecklat en metod f\u00f6r att l\u00e4ra autonoma landare att snabbt kunna skopa upp olika material p\u00e5 ok\u00e4nda terr\u00e4nger. Genom att anv\u00e4nda en djup gaussisk processmodell och meta-inl\u00e4rning kan roboten l\u00e4ra sig att anpassa sig till f\u00f6r\u00e4ndrade landskap och material. Forskarna har skapat en stor dataset med olika material och terr\u00e4nger som \u00e4r tillg\u00e4nglig f\u00f6r andra att anv\u00e4nda. Metoden kommer att anv\u00e4ndas vid NASA:s Jet Propulsion Laboratory f\u00f6r att utveckla autonomi hos robotar p\u00e5 fr\u00e4mmande ytor.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230711194434.htm",
+    "published": "2023-07-11"
+}

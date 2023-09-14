@@ -1,0 +1,7 @@
+{
+    "unique_id": "0c198404-32c2-5a6f-b317-065f2e159d09",
+    "title": "Self-supervised AI learns physics to reconstruct microscopic images from holograms",
+    "summary": "Forskare vid UCLA har introducerat en sj\u00e4lvl\u00e4rande AI-modell kallad GedankenNet som l\u00e4r sig fr\u00e5n fysiklagar och tankeexperiment. Modellen anv\u00e4nder sig av hologram f\u00f6r att rekonstruera mikroskopiska bilder utan att beh\u00f6va anv\u00e4nda verkliga experiment eller stora datam\u00e4ngder. GedankenNet visade sig vara \u00f6verl\u00e4gsen andra metoder f\u00f6r mikroskopisk bildrekonstruktion och genererade \u00e4ven ljusv\u00e5gor som \u00f6verensst\u00e4mde med fysikens v\u00e5gekvationer. Denna forskning \u00f6ppnar upp f\u00f6r utvecklingen av fysikkompatibla och l\u00e4tttr\u00e4nade neurala n\u00e4tverksmodeller inom bildbehandling.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230807122001.htm",
+    "published": "2023-08-07"
+}
