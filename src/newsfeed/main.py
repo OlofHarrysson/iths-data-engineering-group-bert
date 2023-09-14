@@ -13,7 +13,7 @@ from newsfeed.get_cached_files import get_contents
 from newsfeed.pipeline_last_ran import time_since_pipeline_ran
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
-app.title = "SummerEase"
+app.title = "SummarEase"
 
 
 def main():
