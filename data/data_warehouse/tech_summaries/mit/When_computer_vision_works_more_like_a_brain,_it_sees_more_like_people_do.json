@@ -1,7 +1,0 @@
-{
-    "unique_id": "3067c637-f776-5f93-9e37-0b212a5ec37f",
-    "title": "When computer vision works more like a brain, it sees more like people do",
-    "summary": "Researchers from MIT and IBM have developed a computer vision model that mimics the way the brain's neural network processes visual images, resulting in improved object recognition and more accurate interpretations of images. By training the artificial neural network using neural activity patterns from the brain's inferior temporal cortex, the model was able to identify objects more robustly and match human interpretations of images. The researchers also found that the model was more resistant to adversarial attacks, where small distortions are introduced to mislead the system. This work highlights the potential for incorporating brain-like features into computer vision models to improve their performance.",
-    "link": "https://news.mit.edu/2023/when-computer-vision-works-like-human-brain-0630",
-    "published": "2023-06-30"
-}

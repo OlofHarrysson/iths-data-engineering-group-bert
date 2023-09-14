@@ -1,0 +1,7 @@
+{
+    "unique_id": "d7f821d0-b03c-5db1-90f1-ad6f7027dd2e",
+    "title": "OpenAI partners with Scale to provide support for enterprises fine-tuning models",
+    "summary": "OpenAI and Scale have partnered to offer fine-tuning capabilities for OpenAI's advanced models. This collaboration aims to provide companies with high performance, customization, and steerability when deploying AI in production. Fine-tuning is currently available for GPT-3.5 Turbo and will be extended to GPT-4 in the future. With fine-tuning, companies can securely customize OpenAI's models using their proprietary data. Scale, known for its expertise in enterprise AI, will assist in data enrichment and model evaluation. Scale customers can now access OpenAI models for fine-tuning while benefiting from Scale's AI expertise and Data Engine.",
+    "link": "https://openai.com/blog/openai-partners-with-scale-to-provide-support-for-enterprises-fine-tuning-models",
+    "published": "2023-08-24"
+}

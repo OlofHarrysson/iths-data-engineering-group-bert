@@ -1,7 +1,0 @@
-{
-    "unique_id": "b8997185-05cd-5189-830e-cd842484c903",
-    "title": "Computer vision system marries image recognition and generation ",
-    "summary": "Researchers at MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) have developed a system called the Masked Generative Encoder (MAGE) that can both identify and generate images. MAGE converts images into \"semantic tokens,\" which are abstracted versions of image sections. It then uses a neural network to fill in missing tokens, allowing it to understand patterns in images and generate new ones. MAGE has various applications, including object identification, image classification, image generation under specific conditions, and image enhancement. It can also perform image editing tasks and excel at few-shot learning. MAGE has achieved impressive results in generating new images and recognition tasks, but the researchers acknowledge that it is a work in progress and are exploring ways to improve its performance. The system has the potential to inspire future works in the field of computer vision.",
-    "link": "https://news.mit.edu/2023/computer-vision-system-marries-image-recognition-generation-0628",
-    "published": "2023-06-28"
-}

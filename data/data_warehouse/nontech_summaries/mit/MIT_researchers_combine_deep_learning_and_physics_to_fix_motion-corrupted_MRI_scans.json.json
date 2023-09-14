@@ -1,0 +1,7 @@
+{
+    "unique_id": "f7031fbd-8590-5c68-afd9-01cb58e953c0",
+    "title": "MIT researchers combine deep learning and physics to fix motion-corrupted MRI scans",
+    "summary": "Researchers at MIT have developed a deep learning model that can correct motion artifacts in brain MRI scans. MRI scans are highly sensitive to motion, which can result in image artifacts and misdiagnoses. The new method, called \"Data Consistent Deep Rigid MRI Motion Correction,\" combines physics-based modeling and deep learning to create motion-free images without changing the scanning procedure. This approach ensures consistency between the image output and the actual measurements, improving diagnostic accuracy. The method has the potential to benefit patients with neurological disorders and reduce healthcare costs associated with repeated scans. Future work may explore motion correction in other body parts and more complex types of motion.",
+    "link": "https://news.mit.edu/2023/mit-researchers-combine-deep-learning-physics-fix-motion-corrupted-MRI-scans-0817",
+    "published": "2023-08-17"
+}

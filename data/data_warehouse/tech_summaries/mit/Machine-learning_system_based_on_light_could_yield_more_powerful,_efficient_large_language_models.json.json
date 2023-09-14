@@ -1,0 +1,7 @@
+{
+    "unique_id": "a8149e62-2699-53ca-93c0-a3f93c7a14fc",
+    "title": "Machine-learning system based on light could yield more powerful, efficient large language models",
+    "summary": "Researchers at MIT have developed a new system that could significantly enhance the power and energy efficiency of machine-learning programs. The system, which uses light instead of electrons for computations, demonstrated over a 100-fold improvement in energy efficiency and a 25-fold improvement in compute density compared to state-of-the-art digital computers. The researchers believe that this technology could enable large-scale optoelectronic processors, allowing small devices like cellphones to run programs that currently require large data centers. The components of the system can be fabricated using existing processes, making commercial use possible in a few years.",
+    "link": "https://news.mit.edu/2023/system-could-yield-more-powerful-efficient-llms-0822",
+    "published": "2023-08-22"
+}

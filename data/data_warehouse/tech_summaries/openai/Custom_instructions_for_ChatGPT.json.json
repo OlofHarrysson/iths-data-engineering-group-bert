@@ -1,0 +1,7 @@
+{
+    "unique_id": "a8bea6ae-d11f-517b-bf71-5150f0aace79",
+    "title": "Custom instructions for ChatGPT",
+    "summary": "OpenAI is introducing custom instructions for ChatGPT, allowing users to tailor the model's responses to their specific needs. This feature will be available in beta for Plus plan users initially and will expand to all users in the coming weeks. Custom instructions eliminate the need to repeat preferences or information in every conversation. Examples include a teacher specifying a lesson plan format, a developer requesting code without explanations, and a user asking for recipe recommendations suitable for a larger group. The model will consider these instructions for every conversation going forward. OpenAI acknowledges that during the beta period, the model may not always interpret custom instructions perfectly. Safety measures have been implemented to ensure compliance with usage policies, and user privacy is protected.",
+    "link": "https://openai.com/blog/custom-instructions-for-chatgpt",
+    "published": "2023-07-20"
+}

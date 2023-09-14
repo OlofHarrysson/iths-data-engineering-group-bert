@@ -1,7 +1,0 @@
-{
-    "unique_id": "6ba137c7-d373-55b5-b7d7-23baf155024e",
-    "title": "New model offers a way to speed up drug discovery",
-    "summary": "Researchers at MIT and Tufts University have developed a new computational approach, called ConPLex, for screening potential drug compounds. The approach uses a large language model, similar to ChatGPT, to match target proteins with potential drug molecules without the need to calculate the molecules' structures. This allows for the screening of more than 100 million compounds in a single day. The researchers trained the model on known protein-drug interactions and incorporated a training stage to distinguish between real drugs and imposters. Experimental testing of the model showed strong binding affinity between the selected drug-protein pairs. This approach could help reduce the cost and failure rates of drug discovery by identifying potential drug candidates more efficiently.",
-    "link": "https://news.mit.edu/2023/new-model-offers-speedy-drug-discovery-0608",
-    "published": "2023-06-08"
-}

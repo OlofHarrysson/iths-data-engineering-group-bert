@@ -1,0 +1,7 @@
+{
+    "unique_id": "e871e154-b34a-5c49-85aa-88729729054f",
+    "title": "AI models are powerful, but are they biologically plausible?",
+    "summary": "Researchers from MIT, the MIT-IBM Watson AI Lab, and Harvard Medical School have proposed a hypothesis that astrocytes, non-neuronal cells in the brain, could perform the same core computation as a transformer, a powerful type of neural network model. By developing a mathematical model of a neuron-astrocyte network, the researchers showed that it theoretically matches a transformer. This insight could lead to a better understanding of how the human brain works and help explain the success of transformers in artificial intelligence. The next step is to compare the model's predictions to biological experiments and further investigate the role of astrocytes in long-term memory.",
+    "link": "https://news.mit.edu/2023/ai-models-astrocytes-role-brain-0815",
+    "published": "2023-08-15"
+}

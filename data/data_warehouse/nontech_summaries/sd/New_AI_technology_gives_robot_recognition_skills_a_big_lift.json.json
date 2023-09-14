@@ -1,0 +1,7 @@
+{
+    "unique_id": "949a5da6-d41a-5536-a2f3-4f44d381a8e8",
+    "title": "New AI technology gives robot recognition skills a big lift",
+    "summary": "Researchers at the University of Texas at Dallas have developed a robotic system that uses artificial intelligence (AI) to help robots better identify and remember objects. The system allows the robot to push objects multiple times, collecting a sequence of images that enable the robot to segment and recognize the objects. This approach is an improvement over previous methods that relied on a single push or grasp. The researchers presented their findings at the Robotics: Science and Systems conference in South Korea. The next step for the researchers is to improve other functions, such as planning and control.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230831121804.htm",
+    "published": "2023-08-31"
+}

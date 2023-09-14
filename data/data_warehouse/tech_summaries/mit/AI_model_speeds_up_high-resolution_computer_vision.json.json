@@ -1,0 +1,7 @@
+{
+    "unique_id": "316027b4-e0b8-541d-9c14-78d544a3b714",
+    "title": "AI model speeds up high-resolution computer vision",
+    "summary": "Researchers from MIT and the MIT-IBM Watson AI Lab have developed an efficient computer vision model for semantic segmentation, a task that requires categorizing every pixel in a high-resolution image. The new model, called EfficientViT, reduces the computational complexity of semantic segmentation and can perform real-time segmentation on devices with limited hardware resources. It achieves this by using a linear similarity function instead of a nonlinear one, reducing the amount of computation needed. The model performs up to nine times faster than previous models while maintaining the same or better accuracy. This technique could improve the efficiency of other high-resolution computer vision tasks, such as medical image segmentation.",
+    "link": "https://news.mit.edu/2023/ai-model-high-resolution-computer-vision-0912",
+    "published": "2023-09-12"
+}
