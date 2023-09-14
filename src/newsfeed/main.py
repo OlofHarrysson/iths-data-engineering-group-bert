@@ -12,7 +12,7 @@ from newsfeed.filter_summarized_articles import (
 from newsfeed.get_cached_files import get_contents
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.SUPERHERO])
-app.title = "Article Summaries from main"  # TODO: change this
+app.title = "SummerEase"
 
 
 def main():
@@ -72,7 +72,7 @@ def create_layout():  # This function creates the layout for the dash app
     header = dbc.Row(
         [
             dbc.Col(
-                html.H1("Newsfeed"),  # TODO: change this
+                html.H1("SummarEase"),
                 width={"size": 7, "offset": 1},
             ),
             dbc.Col(
