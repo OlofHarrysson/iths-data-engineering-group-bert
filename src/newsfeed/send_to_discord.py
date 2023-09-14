@@ -52,9 +52,8 @@ def main(summary_type):
     summaries = get_contents(summary_type)
     error_messages = []
 
-    summaries = sort_summaries(summaries)
-
     summaries = amount_summaries_from_each_source(summaries, n=5)
+    summaries = sort_summaries(summaries)
 
     for summary in summaries:
         published_timestamp = summary.published
