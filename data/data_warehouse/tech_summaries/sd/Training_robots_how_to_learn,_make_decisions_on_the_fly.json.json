@@ -1,0 +1,7 @@
+{
+    "unique_id": "366c4ee4-98b6-56f7-a5c6-26fecb391959",
+    "title": "Training robots how to learn, make decisions on the fly",
+    "summary": "Researchers have developed a new method for autonomous landers to quickly learn how to scoop on new materials they encounter. The proposed deep Gaussian process model is trained on an offline database and uses deep meta-learning to adapt to changing landscapes and material properties. The lack of knowledge about ocean worlds like Europa poses a challenge, but the researchers aim to develop autonomous robotic capabilities for exploring extraterrestrial surfaces. The open-source dataset created by the team is available for others to use in their applications.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230711194434.htm",
+    "published": "2023-07-11"
+}

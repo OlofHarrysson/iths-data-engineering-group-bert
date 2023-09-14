@@ -1,7 +1,0 @@
-{
-    "unique_id": "fd7193a1-2700-5293-bd6d-8bfbbefe7d30",
-    "title": "An 'introspective' AI finds diversity improves performance",
-    "summary": "Researchers at North Carolina State University have developed an artificial intelligence (AI) system that is up to 10 times more accurate than conventional AI in solving complex problems. The team gave the AI the ability to choose the number, shape and connection strength between neurons in its neural network, creating sub-networks of different neuron types and connection strengths. The AI consistently chose diversity over homogeneity, and its accuracy increased as the number of neurons and neuronal diversity increased. The research was supported by the Office of Naval Research and United Therapeutics.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230831142820.htm",
-    "published": "2023-08-31"
-}

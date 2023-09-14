@@ -1,0 +1,7 @@
+{
+    "unique_id": "dca698b0-9789-5c38-80a5-511f9b932df8",
+    "title": "Helping computer vision and language models understand what they see",
+    "summary": "Researchers from MIT and the MIT-IBM Watson AI Lab have developed a technique that uses computer-generated data to improve the understanding of vision and language models. These models, which match text with images, often struggle to understand concepts such as object attributes or the arrangement of items in a scene. The researchers created a synthetic dataset of images with detailed text descriptions to help the models learn concepts more effectively. Testing showed that the technique boosted accuracy by up to 10 percent, which could have applications in fields like e-commerce and healthcare.",
+    "link": "https://news.mit.edu/2023/helping-computer-vision-language-models-see-0913",
+    "published": "2023-09-13"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "89657f51-3d92-5736-98cc-4fa403ff9cb2",
+    "title": "3 Questions: Honing robot perception and mapping",
+    "summary": "Kimera-Multi, an open-source library developed by researchers at MIT, allows multiple robots to create a unified 3D map of their environment. The system enables robots to understand their surroundings and exchange information to improve their maps. The researchers aim to scale up the system to increase consistency and redundancy, allowing for more efficient completion of tasks. The technology has potential applications in search and rescue missions, mapping after natural disasters, and flexible factory environments. Additionally, the researchers envision autonomous vehicles communicating and sharing information to improve mapping and safety.",
+    "link": "https://news.mit.edu/2023/honing-robot-perception-mapping-0710",
+    "published": "2023-07-10"
+}

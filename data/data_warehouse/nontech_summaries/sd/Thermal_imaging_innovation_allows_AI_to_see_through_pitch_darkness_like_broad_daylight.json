@@ -1,7 +1,0 @@
-{
-    "unique_id": "3a94cb80-2218-5b18-8132-c67e387f9e02",
-    "title": "Thermal imaging innovation allows AI to see through pitch darkness like broad daylight",
-    "summary": "Researchers at Purdue University have developed a new technology called HADAR (heat-assisted detection and ranging) that combines thermal physics, infrared imaging, and machine learning to enable machines to perceive their surroundings in low-light conditions. Traditional active sensors like LiDAR, radar, and sonar have limitations when scaled up, while video cameras are hindered by low-light conditions. Traditional thermal imaging, on the other hand, can sense through darkness and inclement weather but lacks texture and features. HADAR overcomes these challenges by recovering texture from the heat signal and accurately disentangling temperature, emissivity, and texture of objects in a scene. The technology has potential applications in automated vehicles, robots, agriculture, defense, geosciences, healthcare, and wildlife monitoring. The researchers have applied for a patent on the intellectual property and are seeking industry partners for further development.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230801131652.htm",
-    "published": "2023-08-01"
-}

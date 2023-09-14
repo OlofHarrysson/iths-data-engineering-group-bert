@@ -1,0 +1,7 @@
+{
+    "unique_id": "32ad1cd0-f288-5c83-b057-7bc699fa4b3e",
+    "title": "AI helps robots manipulate objects with their whole bodies",
+    "summary": "MIT researchers have developed a method to simplify contact-rich manipulation planning for robots. They use an AI technique called smoothing to summarize many potential contact events into a smaller number of decisions, enabling a simple algorithm to quickly identify an effective manipulation plan. This method could potentially enable smaller, mobile robots to manipulate objects with their entire arms or bodies, reducing energy consumption and costs. It could also be useful for robots on exploration missions. The researchers combined their model with an efficient search algorithm, reducing computation time to about a minute. However, the model cannot handle highly dynamic motions and the researchers plan to enhance it in the future.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230824150744.htm",
+    "published": "2023-08-24"
+}

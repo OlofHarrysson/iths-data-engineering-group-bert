@@ -1,7 +1,0 @@
-{
-    "unique_id": "a8bea6ae-d11f-517b-bf71-5150f0aace79",
-    "title": "Custom instructions for ChatGPT",
-    "summary": "OpenAI introducerar anpassade instruktioner f\u00f6r ChatGPT, vilket g\u00f6r det m\u00f6jligt att anpassa modellen f\u00f6r att b\u00e4ttre m\u00f6ta anv\u00e4ndarnas behov. Funktionen kommer att vara tillg\u00e4nglig i beta f\u00f6r Plus-planen och kommer att utvidgas till alla anv\u00e4ndare inom de kommande veckorna. Anpassade instruktioner g\u00f6r det m\u00f6jligt att l\u00e4gga till preferenser eller krav som ChatGPT ska ta h\u00e4nsyn till vid generering av svar. Detta eliminerar behovet av att upprepa preferenser i varje konversation.",
-    "link": "https://openai.com/blog/custom-instructions-for-chatgpt",
-    "published": "2023-07-20"
-}

@@ -1,7 +1,0 @@
-{
-    "unique_id": "366c4ee4-98b6-56f7-a5c6-26fecb391959",
-    "title": "Training robots how to learn, make decisions on the fly",
-    "summary": "Researchers at the University of Illinois have developed a new method for autonomous landers to quickly learn how to scoop on new materials they encounter. The method involves using a deep Gaussian process model that is trained on an offline database and then adapted to online data. The researchers created a large-scale dataset on granular media and have open-sourced it for others to use. The model will be deployed at NASA's Jet Propulsion Laboratory's Ocean World Lander Autonomy Testbed to inform future missions exploring ocean worlds. The researchers believe that the adaptability and transferability of their method will be valuable in extraterrestrial exploration where there is limited information and short battery lifespan.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230711194434.htm",
-    "published": "2023-07-11"
-}

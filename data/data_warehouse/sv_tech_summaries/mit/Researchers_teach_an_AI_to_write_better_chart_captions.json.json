@@ -1,0 +1,7 @@
+{
+    "unique_id": "d80dd34d-0eba-5f56-b66d-d945fc6a7ed1",
+    "title": "Researchers teach an AI to write better chart captions",
+    "summary": "MIT-forskare har utvecklat en dataset, kallad VisText, f\u00f6r att f\u00f6rb\u00e4ttra automatisk bildtextning av diagram. Genom att tr\u00e4na maskininl\u00e4rningsmodeller med denna dataset kunde forskarna generera exakta och semantiskt rika bildtexter som beskrev data trender och komplexa m\u00f6nster. Dessa modeller presterade b\u00e4ttre \u00e4n andra system f\u00f6r automatisk bildtextning. M\u00e5let \u00e4r att erbjuda VisText som ett verktyg f\u00f6r forskare som arbetar med bildtextning av diagram f\u00f6r att f\u00f6rb\u00e4ttra tillg\u00e4ngligheten f\u00f6r personer med synneds\u00e4ttning.",
+    "link": "https://news.mit.edu/2023/researchers-chart-captions-ai-vistext-0630",
+    "published": "2023-06-30"
+}

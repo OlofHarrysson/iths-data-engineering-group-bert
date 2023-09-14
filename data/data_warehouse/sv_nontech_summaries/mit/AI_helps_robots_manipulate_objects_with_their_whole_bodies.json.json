@@ -1,0 +1,7 @@
+{
+    "unique_id": "32ad1cd0-f288-5c83-b057-7bc699fa4b3e",
+    "title": "AI helps robots manipulate objects with their whole bodies",
+    "summary": "Forskare vid MIT har utvecklat en metod f\u00f6r att f\u00f6renkla planeringen av kontaktintensiv manipulation f\u00f6r robotar. Genom att anv\u00e4nda en AI-teknik som kallas \"smoothing\" kan forskarna sammanfatta m\u00e5nga kontakt h\u00e4ndelser till ett mindre antal beslut, vilket g\u00f6r det m\u00f6jligt f\u00f6r en enkel algoritm att snabbt identifiera en effektiv manipulationsplan f\u00f6r roboten. Denna metod kan potentiellt m\u00f6jligg\u00f6ra anv\u00e4ndningen av mindre, mobila robotar i fabriker och utforskningsuppdrag, vilket kan minska energif\u00f6rbrukningen och kostnaderna. Forskarna planerar att vidareutveckla metoden f\u00f6r att hantera mer dynamiska r\u00f6relser i framtiden.",
+    "link": "https://news.mit.edu/2023/ai-technique-robots-manipulate-objects-whole-bodies-0824",
+    "published": "2023-08-24"
+}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "4c80a19f-c3e9-5c09-a52b-4f00afd75ed1",
+    "title": "Turning ChatGPT into a 'chemistry assistant'",
+    "summary": "Researchers have developed a new system called \"ChatGPT Chemistry Assistant\" that uses the language model ChatGPT to extract and summarize experimental information from scientific papers in the field of chemistry. By giving ChatGPT specific prompts, the system was able to identify and summarize relevant details from over 200 papers on metal-organic frameworks (MOFs). The extracted data was then used to train another AI model to predict the crystalline state of MOFs. The system is user-friendly and can be easily adjusted to focus on different topics, making it a valuable tool for chemists.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230810105459.htm",
+    "published": "2023-08-10"
+}

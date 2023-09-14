@@ -1,0 +1,7 @@
+{
+    "unique_id": "eed8df01-052f-5157-8a7f-499eacd4b58b",
+    "title": "AI helps household robots cut planning time in half",
+    "summary": "PIGINet \u00e4r ett system utvecklat av forskare fr\u00e5n MIT som anv\u00e4nder maskininl\u00e4rning f\u00f6r att f\u00f6rb\u00e4ttra probleml\u00f6sningsf\u00f6rm\u00e5gan hos hush\u00e5llsrobotar. Genom att anv\u00e4nda en transformer encoder kan PIGINet f\u00f6ruts\u00e4ga sannolikheten att en uppgiftsplan kan f\u00f6rfinas f\u00f6r att hitta genomf\u00f6rbara r\u00f6relseplaner. Genom att anv\u00e4nda multimodala inb\u00e4ddningar och bilddata kan modellen f\u00f6rst\u00e5 komplexa geometriska relationer och fatta snabba beslut i olika milj\u00f6er. PIGINet har visat sig minska planeringstiden med 50-80 procent och kan anpassas till olika och f\u00f6r\u00e4nderliga milj\u00f6er.",
+    "link": "https://news.mit.edu/2023/ai-helps-household-robots-cut-planning-time-half-0714",
+    "published": "2023-07-14"
+}

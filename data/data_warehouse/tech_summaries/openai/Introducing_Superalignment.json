@@ -1,7 +1,0 @@
-{
-    "unique_id": "f29f2aeb-a0a7-56d5-a622-256e396e6816",
-    "title": "Introducing Superalignment",
-    "summary": "OpenAI has announced the creation of a new team dedicated to solving the problem of superintelligence alignment. The team will focus on developing methods to ensure that AI systems, particularly those that are much smarter than humans, align with human intent. OpenAI plans to dedicate 20% of its compute resources over the next four years to this effort. The team will work on scalable training methods, validation of alignment, stress testing the alignment pipeline, and developing new research areas. OpenAI is also actively seeking top machine learning researchers and engineers to join the team.",
-    "link": "https://openai.com/blog/introducing-superalignment",
-    "published": "2023-07-05"
-}

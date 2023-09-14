@@ -1,7 +1,0 @@
-{
-    "unique_id": "826ea793-aa03-5c6f-97eb-2a42c856119c",
-    "title": "A step toward safe and reliable autopilots for flying",
-    "summary": "MIT researchers have developed a new technique that can solve complex stabilize-avoid problems better than existing methods. The stabilize-avoid problem refers to the challenge of navigating a path that avoids obstacles while also staying stable. Many existing AI methods struggle with this conflict and cannot reach their goal safely. The researchers broke the problem down into two steps: reframing it as a constrained optimization problem and then solving it using a deep reinforcement learning algorithm. Their approach was able to stabilize all trajectories while maintaining safety, outperforming other baselines. The technique could be used to design controllers for autonomous delivery drones or assist drivers in navigating extreme scenarios. The researchers plan to enhance the technique to better handle uncertainty and investigate its performance on hardware.",
-    "link": "https://news.mit.edu/2023/safe-and-reliable-autopilots-flying-0612",
-    "published": "2023-06-12"
-}

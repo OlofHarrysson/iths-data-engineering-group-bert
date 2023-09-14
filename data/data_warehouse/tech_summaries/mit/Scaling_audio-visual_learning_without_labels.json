@@ -1,7 +1,0 @@
-{
-    "unique_id": "9ac18b23-9bd2-52a8-bd3f-8b25698b5d70",
-    "title": "Scaling audio-visual learning without labels",
-    "summary": "Researchers from MIT, the MIT-IBM Watson AI Lab, IBM Research, and other institutions have developed a new technique called the contrastive audio-visual masked autoencoder (CAV-MAE) for analyzing unlabeled audio and visual data. This technique combines two architectures of self-supervised learning, contrastive learning and masked data modeling, to improve the performance of machine-learning models used in applications like speech recognition and object detection. The CAV-MAE method outperformed previous techniques and demonstrated the potential for multi-modal learning in various fields such as sports, education, and public safety.",
-    "link": "https://news.mit.edu/2023/scaling-audio-visual-learning-without-labels-0605",
-    "published": "2023-06-05"
-}

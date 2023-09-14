@@ -1,0 +1,7 @@
+{
+    "unique_id": "805f5c27-e011-5a2d-9371-2ca4cb5a57f4",
+    "title": "An easier way to learn quantum processes",
+    "summary": "Researchers at EPFL, Caltech, the Free University of Berlin, and the Los Alamos National Laboratory have developed a method to teach quantum computers how to understand and predict the behavior of quantum systems using quantum neural networks (QNNs). By training QNNs with a few simple examples called \"product states,\" the computers can effectively grasp the dynamics of entangled quantum systems. This breakthrough allows for the use of smaller, simpler quantum computers in the near future, improving their performance and opening up possibilities for solving complex problems.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230705105838.htm",
+    "published": "2023-07-05"
+}

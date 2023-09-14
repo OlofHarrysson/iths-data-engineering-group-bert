@@ -1,0 +1,7 @@
+{
+    "unique_id": "4ee1c21a-d66e-590e-ad57-2056b73b765e",
+    "title": "MIT scientists build a system that can generate AI models for biology research",
+    "summary": "MIT researchers have developed an automated machine-learning system called BioAutoMATED that can select and build appropriate models for biological datasets. The system also handles the laborious task of data preprocessing, reducing the time required from weeks to just a few hours. BioAutoMATED is particularly useful for biology-centric labs that lack machine-learning expertise and resources. The open-source code is publicly available, and the researchers encourage collaboration to improve and expand the tool. The work was supported by various grants and foundations.",
+    "link": "https://news.mit.edu/2023/bioautomated-open-source-machine-learning-platform-for-research-labs-0706",
+    "published": "2023-07-06"
+}

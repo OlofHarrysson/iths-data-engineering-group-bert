@@ -1,0 +1,7 @@
+{
+    "unique_id": "f29f2aeb-a0a7-56d5-a622-256e396e6816",
+    "title": "Introducing Superalignment",
+    "summary": "OpenAI is assembling a team to address the challenges of aligning superintelligent AI systems with human intent. They believe that superintelligence could arrive within this decade and pose significant risks if not properly managed. Their approach involves building an automated alignment researcher and developing scalable training methods, validating models, and stress testing the alignment pipeline. They are dedicating 20% of their compute resources over the next four years to this problem and are actively seeking top machine learning researchers and engineers to join their efforts. They also emphasize the importance of addressing broader societal concerns and plan to share their findings widely.",
+    "link": "https://openai.com/blog/introducing-superalignment",
+    "published": "2023-07-05"
+}

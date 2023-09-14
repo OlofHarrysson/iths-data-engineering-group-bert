@@ -1,7 +1,0 @@
-{
-    "unique_id": "eb336dc1-e4c8-55aa-835a-69ee37e452ba",
-    "title": "Researchers build bee robot that can twist",
-    "summary": "Researchers at Washington State University have developed a robotic bee prototype, called Bee++, that can fly stably in all directions, including the twisting motion known as yaw. Led by N\u00e9stor O. P\u00e9rez-Arancibia, the team used carbon fiber and mylar to create four wings and lightweight actuators to control each wing. The robot's ability to achieve six degrees of free movement could have applications in artificial pollination, search and rescue efforts, biological research, and environmental monitoring. The researchers also developed controllers that mimic an insect brain to enable takeoff and landing. The Bee++ weighs 95 mg and has a wingspan of 33 millimeters, and it can fly autonomously for about five minutes. The research was funded by the National Science Foundation and DARPA.",
-    "link": "https://www.sciencedaily.com/releases/2023/05/230523123706.htm",
-    "published": "2023-05-23"
-}

@@ -1,0 +1,7 @@
+{
+    "unique_id": "dca698b0-9789-5c38-80a5-511f9b932df8",
+    "title": "Helping computer vision and language models understand what they see",
+    "summary": "Forskare fr\u00e5n MIT och MIT-IBM Watson AI Lab har utvecklat en teknik som anv\u00e4nder datorgenererade data f\u00f6r att f\u00f6rb\u00e4ttra vision- och spr\u00e5kmodeller. Genom att skapa en syntetisk dataset av bilder och detaljerade textbeskrivningar har forskarna kunnat tr\u00e4na modellerna att f\u00f6rst\u00e5 koncept som objektattribut och arrangemang i en scen. Genom att anv\u00e4nda denna teknik har modellernas noggrannhet f\u00f6rb\u00e4ttrats med upp till 10 procent, vilket kan ha till\u00e4mpningar inom omr\u00e5den som e-handel och h\u00e4lso- och sjukv\u00e5rd.",
+    "link": "https://news.mit.edu/2023/helping-computer-vision-language-models-see-0913",
+    "published": "2023-09-13"
+}

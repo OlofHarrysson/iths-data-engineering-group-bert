@@ -1,0 +1,7 @@
+{
+    "unique_id": "4c80a19f-c3e9-5c09-a52b-4f00afd75ed1",
+    "title": "Turning ChatGPT into a 'chemistry assistant'",
+    "summary": "Chemists often struggle to find and extract relevant information from scientific papers. Researchers have attempted to use AI models to assist in this task, but previous models required technical expertise and were not easily adaptable to new topics. However, a team led by Omar Yaghi tested the use of ChatGPT, a next-generation language model, to extract experimental information from papers on metal-organic frameworks (MOFs). The system successfully extracted over 26,000 relevant factors for making around 800 compounds, and a separate AI model was trained to predict the crystalline state of MOFs based on these conditions. The researchers also developed a user-friendly chatbot to answer questions about the data. This approach, called the \"ChatGPT Chemistry Assistant,\" could be applied to other fields of chemistry as well.",
+    "link": "https://www.sciencedaily.com/releases/2023/08/230810105459.htm",
+    "published": "2023-08-10"
+}

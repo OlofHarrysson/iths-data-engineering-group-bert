@@ -1,0 +1,7 @@
+{
+    "unique_id": "23feff4b-aabe-576e-ba26-41d4d9cff68d",
+    "title": "MethaneMapper is poised to solve the problem of underreported methane emissions",
+    "summary": "Researchers at UC Santa Barbara have developed an artificial intelligence-powered tool called MethaneMapper that uses hyperspectral imaging to detect real-time methane emissions and trace them to their sources. The tool processes hyperspectral data gathered during overhead, airborne scans of an area to differentiate methane from other hydrocarbons. MethaneMapper's diverse and deep data collection allows it to detect methane against different backgrounds and terrains. The researchers aim to make the tool accessible to a wide range of users through a web platform. The project is funded by the National Science Foundation and will be featured at the 2023 Computer Vision and Pattern Recognition Conference.",
+    "link": "https://www.sciencedaily.com/releases/2023/06/230608195752.htm",
+    "published": "2023-06-08"
+}

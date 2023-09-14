@@ -1,7 +1,0 @@
-{
-    "unique_id": "f0b03fad-2f69-5817-b319-2137a366aa50",
-    "title": "Quantum material exhibits 'non-local' behavior that mimics brain function",
-    "summary": "The Quantum Materials for Energy Efficient Neuromorphic Computing (Q-MEEN-C) consortium, led by the University of California San Diego, is working on creating brain-like computers with minimal energy requirements. In the first phase of their research, they successfully created or mimicked the properties of a single brain element using quantum materials. In the second phase, they discovered that electrical stimuli passed between neighboring electrodes can also affect non-neighboring electrodes, a crucial milestone in developing devices that mimic brain functions. The team used simulations during the pandemic to test the possibility of non-locality in quantum materials and later turned the simulation into an actual device. They used a thin film of nickelate, inserted hydrogen ions, and placed a metal conductor on top to create a memory-like device. The non-local behavior in the experiment simplifies circuit design and allows for complex learning, similar to how the brain learns. The next step is to create more complex arrays with more electrodes. The goal is to improve hardware to support advanced software and create a new paradigm in artificial intelligence. The research is supported by the Department of Energy.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230808110939.htm",
-    "published": "2023-08-08"
-}

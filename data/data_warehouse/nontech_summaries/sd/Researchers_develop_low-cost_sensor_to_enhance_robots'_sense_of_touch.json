@@ -1,7 +1,0 @@
-{
-    "unique_id": "3cec5706-b373-50c2-bbaf-f74e1f71765a",
-    "title": "Researchers develop low-cost sensor to enhance robots' sense of touch",
-    "summary": "A recent study published in IEEE Robotics and Automation Letters introduces a new sensor called L3 F-TOUCH that enhances the force sensing capabilities of robot hands. The sensor is lightweight, low-cost, and wireless, making it an affordable option for upgrading existing robot hands and graspers. The human hand can sense pressure, temperature, texture, and pain, and can distinguish between objects based on their physical properties. Many current robot hands lack these capabilities, making it difficult for them to handle objects effectively. The L3 F-TOUCH sensor measures an object's geometry and determines the forces needed to interact with it. Unlike other sensors that estimate interaction forces through camera images, the L3 F-TOUCH measures forces directly, resulting in higher accuracy. The sensor uses a mechanical suspension structure and a mirror system to achieve accurate force measurements. The sensor's capabilities can be extended to measure rotational forces in the future, enabling robots to perform more dynamic and agile manipulation tasks. This breakthrough could lead to more advanced and reliable robotics in the future, as robots equipped with the L3 F-TOUCH sensor can have a sense of touch and handle objects more effectively.",
-    "link": "https://www.sciencedaily.com/releases/2023/07/230727144148.htm",
-    "published": "2023-07-27"
-}
