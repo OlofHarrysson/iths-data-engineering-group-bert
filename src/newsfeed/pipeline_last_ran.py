@@ -57,7 +57,11 @@ def time_since_pipeline_ran():
     return result
 
 
-if __name__ == "__main__":
+def main():
     # save timestamp to data warehouse (used to see when pipeline was last ran)
     save_timestamp()
     print(f"Pipeline ran at {datetime.now()} (timestamp saved)")
+
+
+if __name__ == "__main__":
+    main()
