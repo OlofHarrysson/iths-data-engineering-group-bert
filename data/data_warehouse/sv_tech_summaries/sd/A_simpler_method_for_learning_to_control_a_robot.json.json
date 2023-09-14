@@ -1,0 +1,7 @@
+{
+    "unique_id": "9b3fc437-d1ce-5ad5-b8a6-1de70da8010e",
+    "title": "A simpler method for learning to control a robot",
+    "summary": "En forskargrupp fr\u00e5n MIT och Stanford har utvecklat en teknik som anv\u00e4nder maskininl\u00e4rning f\u00f6r att l\u00e4ra sig dynamiska modeller av system och extrahera en kontrollmekanism direkt fr\u00e5n modellen. Genom att l\u00e4ra sig den struktur som \u00e4r anv\u00e4ndbar f\u00f6r att styra systemet kan deras metod uppn\u00e5 h\u00f6g prestanda med f\u00e4rre data och snabbt anpassa sig till f\u00f6r\u00e4nderliga f\u00f6rh\u00e5llanden. Denna teknik kan till\u00e4mpas p\u00e5 olika typer av dynamiska system, som dr\u00f6nare och robotar.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230726171330.htm",
+    "published": "2023-07-26"
+}

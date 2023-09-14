@@ -1,7 +1,0 @@
-{
-    "unique_id": "ac5b04ce-edbc-5256-a833-8941e2557616",
-    "title": "New model reduces bias and enhances trust in AI decision-making and knowledge organization",
-    "summary": "Researchers at the University of Waterloo have developed a new model called Pattern Discovery and Disentanglement (PDD) that aims to eliminate bias and improve the reliability of machine learning in the medical field. The PDD model untangles complex patterns from data to relate them to specific underlying causes, allowing for more accurate diagnoses and treatment recommendations. The model has been successful in predicting patients' medical results based on their clinical records and can also detect mislabels or anomalies in machine learning. The research has received an NSER Idea-to-Innovation Grant and is being commercialized through the Waterloo Commercialization Office.",
-    "link": "https://www.sciencedaily.com/releases/2023/08/230808110905.htm",
-    "published": "2023-08-08"
-}

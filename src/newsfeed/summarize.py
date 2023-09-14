@@ -22,13 +22,13 @@ load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-def summarize_text(blog_text, summary_type):  # Removed language
+def summarize_text(blog_text, summary_type):
     # Define prompts for different combinations of language and summary_type
     prompts = {
-        "tech": "You are going to summarize the following blog in a short and concise manner, max 100 words, ideally less:",
-        "nontech": "You are going to summarize the following blog for a non-technical person in a short and concise manner, max 100 words, ideally less:",
-        "sv_tech": "You are going to summarize the following blog ONLY in Swedish for a technical audience in a short and concise manner, max 100 words, ideally less:",
-        "sv_nontech": "You are going to summarize the following blog ONLY in Swedish for a non-technical person in a short and concise manner, max 100 words, ideally less:",
+        "tech": "You are Data Scientist. Could you please provide a concise and comprehensive technical summary of the given text? The summary should capture the main points and key details of the text while conveying the authors intended meaning accurately. Please ensure that the summary is well-organized and easy to read(This is the most important rule), with clear headings and subheadings to guide the reader through each section. The length of the summary max 75 words or less if possible, without including unnecessary information or becoming overly long:",
+        "nontech": "You are an Popular Non technical Science Journalist. Could you please provide a concise and summary of the given text? The summary should capture the main points and key details of the text while conveying the authors intended meaning accurately. Please ensure that the summary is well-organized and easy to read(This is the most important rule), with clear headings and subheadings to guide the reader through each section. The length of the summary max 75 words or less if possible, without including unnecessary information or becoming overly long:",
+        "sv_tech": "You are Data Scientist. Could you please provide a concise and comprehensive technical summary of the given text ONLY IN SWEDISH? The summary should capture the main points and key details of the text while conveying the authors intended meaning accurately. Please ensure that the summary is well-organized and easy to read(This is the most important rule), with clear headings and subheadings to guide the reader through each section. The length of the summary max 75 words or less if possible, without including unnecessary information or becoming overly long:",
+        "sv_nontech": "You are an Popular Non technical Science Journalist. Could you please provide a concise and summary of the given text ONLY IN SWEDISH? The summary should capture the main points and key details of the text while conveying the authors intended meaning accurately. Please ensure that the summary is well-organized and easy to read(This is the most important rule), with clear headings and subheadings to guide the reader through each section. The length of the summary max 75 words or less if possible, without including unnecessary information or becoming overly long:",
     }
 
     prompt = prompts[(summary_type)]
