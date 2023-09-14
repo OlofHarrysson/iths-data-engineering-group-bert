@@ -36,10 +36,10 @@ def update_summary_container(
     else:
         summaries = get_contents(f"{language}tech_summaries")
 
+    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
     summaries = amount_summaries_from_each_source(
         summaries, n=5
     )  # get top n most recent summaries from each unique source
-    summaries = sort_summaries(summaries)  # sort summaries so last published appears at the top
 
     cards = [  # This is the list of cards that will be displayed in the article container
         dbc.Card(
