@@ -1,7 +1,7 @@
 {
     "unique_id": "d80dd34d-0eba-5f56-b66d-d945fc6a7ed1",
     "title": "Researchers teach an AI to write better chart captions",
-    "summary": "MIT researchers have developed a dataset called VisText to improve automatic captioning systems for charts. The dataset, which contains over 12,000 charts represented as data tables, images, and scene graphs, allows machine-learning models to generate accurate and semantically rich captions. The researchers found that models trained with scene graphs performed as well or better than those trained with data tables. The goal is to improve accessibility for people with visual disabilities and provide captions for uncaptioned online charts. The researchers also emphasized the importance of considering ethical implications and potential misinformation when developing autocaptioning systems.",
+    "summary": "MIT researchers have developed a dataset called VisText to improve automatic captioning systems for charts. The dataset, which contains over 12,000 charts represented as data tables, images, and scene graphs, allows machine-learning models to generate accurate and semantically rich captions. The researchers found that their models consistently produced captions that described data trends and complex patterns more effectively than other autocaptioning systems. The goal is to improve accessibility for people with visual disabilities and provide a tool for researchers working on chart autocaptioning.",
     "link": "https://news.mit.edu/2023/researchers-chart-captions-ai-vistext-0630",
     "published": "2023-06-30"
 }
