@@ -1,0 +1,7 @@
+{
+    "unique_id": "3067c637-f776-5f93-9e37-0b212a5ec37f",
+    "title": "When computer vision works more like a brain, it sees more like people do",
+    "summary": "Forskare vid MIT och IBM har utvecklat en datorseende-modell genom att tr\u00e4na den att fungera som en del av hj\u00e4rnan som m\u00e4nniskor och andra primater anv\u00e4nder f\u00f6r att k\u00e4nna igen objekt. Genom att anv\u00e4nda neurala aktivitetsm\u00f6nster i hj\u00e4rnans inferiora temporala (IT) bark tr\u00e4nades den artificiella neurala n\u00e4tverket att identifiera objekt i bilder mer robust \u00e4n en modell som saknade denna tr\u00e4ning. Modellen tolkade ocks\u00e5 bilder mer likt m\u00e4nniskor, \u00e4ven n\u00e4r bilderna inneh\u00f6ll mindre f\u00f6rvr\u00e4ngningar. Forskarna fann ocks\u00e5 att den neuralt anpassade modellen var mer motst\u00e5ndskraftig mot \"adversariala attacker\" som anv\u00e4nds f\u00f6r att testa datorseende och AI-system.",
+    "link": "https://news.mit.edu/2023/when-computer-vision-works-like-human-brain-0630",
+    "published": "2023-06-30"
+}

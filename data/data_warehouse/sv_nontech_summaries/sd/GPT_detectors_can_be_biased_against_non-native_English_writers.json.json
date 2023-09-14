@@ -1,0 +1,7 @@
+{
+    "unique_id": "1af3dc52-6eac-5251-b1b1-661d57589c16",
+    "title": "GPT detectors can be biased against non-native English writers",
+    "summary": "Forskare vid Stanford University har varnat f\u00f6r att anv\u00e4nda AI-detektorer f\u00f6r att bed\u00f6ma elevers skolarbeten och ans\u00f6kningar. Studien visade att dessa detektorer, som anv\u00e4nds f\u00f6r att identifiera om texten \u00e4r genererad av AI, felaktigt klassificerade \u00f6ver h\u00e4lften av engelska ess\u00e4er skrivna av icke-engelskspr\u00e5kiga elever som AI-genererade. Detektorerna var dock mer framg\u00e5ngsrika p\u00e5 att korrekt klassificera ess\u00e4er skrivna av amerikanska \u00e5ttondeklassare som m\u00e4nskligt skrivna. Forskarna varnar f\u00f6r att det finns betydande bias och att detektorerna \u00e4r l\u00e4tta att lura. De f\u00f6resl\u00e5r att detektorerna beh\u00f6ver f\u00f6rb\u00e4ttras genom att tr\u00e4na dem med mer varierade typer av skrivande.",
+    "link": "https://www.sciencedaily.com/releases/2023/07/230710113921.htm",
+    "published": "2023-07-10"
+}

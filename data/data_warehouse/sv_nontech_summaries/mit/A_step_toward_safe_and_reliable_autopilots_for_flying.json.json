@@ -1,0 +1,7 @@
+{
+    "unique_id": "826ea793-aa03-5c6f-97eb-2a42c856119c",
+    "title": "A step toward safe and reliable autopilots for flying",
+    "summary": "MIT-forskare har utvecklat en ny teknik som kan l\u00f6sa komplexa problem med att stabilisera och undvika hinder b\u00e4ttre \u00e4n andra metoder. Genom att anv\u00e4nda maskininl\u00e4rning och optimering kan deras metod s\u00e4kerst\u00e4lla att en autonom agent n\u00e5r och f\u00f6rblir stabil inom sitt m\u00e5lomr\u00e5de samtidigt som den undviker kollisioner. Forskarna testade sin metod genom att framg\u00e5ngsrikt styra en simulerad jetflygplan genom en smal korridor utan att krascha. Denna teknik kan vara anv\u00e4ndbar f\u00f6r att utforma kontroller f\u00f6r autonoma dr\u00f6nare eller f\u00f6r att hj\u00e4lpa f\u00f6rare att navigera i extrema situationer.",
+    "link": "https://news.mit.edu/2023/safe-and-reliable-autopilots-flying-0612",
+    "published": "2023-06-12"
+}
